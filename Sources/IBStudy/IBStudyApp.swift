@@ -3,6 +3,8 @@ import AppKit
 
 @main
 struct IBStudyApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+
     @StateObject private var store    = ContentStore()
     @StateObject private var progress = ProgressStore()
     @StateObject private var aiSetup  = OllamaSetupManager()
@@ -17,6 +19,9 @@ struct IBStudyApp: App {
                 .environmentObject(store)
                 .environmentObject(progress)
                 .environmentObject(aiSetup)
+                .environment(\.checkForUpdates) {
+                    appDelegate.checkForUpdates()
+                }
                 .task { await aiSetup.run() }
         }
         .defaultSize(width: 1040, height: 720)
@@ -42,5 +47,13 @@ struct IBStudyApp: App {
             Image(systemName: "sparkles")
         }
         .menuBarExtraStyle(.window)
+        .commands {
+            CommandGroup(after: .appInfo) {
+                Button("Check for Updates…") {
+                    appDelegate.checkForUpdates()
+                }
+                .keyboardShortcut("U", modifiers: [.command, .shift])
+            }
+        }
     }
 }

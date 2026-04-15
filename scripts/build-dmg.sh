@@ -8,6 +8,7 @@ cd "$ROOT"
 
 BUILD_DIR="$ROOT/.build/debug"
 APP="$ROOT/IBStudy.app"
+SPARKLE_FRAMEWORK="$BUILD_DIR/Sparkle.framework"
 OUT="$ROOT/IBStudy-macos.dmg"
 ICON="$ROOT/Sources/IBStudy/Resources/AppIcon.icns"
 
@@ -15,10 +16,15 @@ echo "==> swift build"
 swift build
 
 echo "==> Sync $APP"
-mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" "$APP/Contents/Frameworks"
 cp "$BUILD_DIR/IBStudy" "$APP/Contents/MacOS/IBStudy"
-rm -rf "$APP/Contents/Resources/IBStudy_IBStudy.bundle"
-cp -R "$BUILD_DIR/IBStudy_IBStudy.bundle" "$APP/Contents/Resources/IBStudy_IBStudy.bundle"
+if [[ -d "$SPARKLE_FRAMEWORK" ]]; then
+  rm -rf "$APP/Contents/Frameworks/Sparkle.framework"
+  cp -R "$SPARKLE_FRAMEWORK" "$APP/Contents/Frameworks/Sparkle.framework"
+fi
+RESOURCE_BUNDLE="$BUILD_DIR/IBStudy_IBStudy.bundle"
+rm -rf "$APP/Contents/IBStudy_IBStudy.bundle" "$APP/Contents/Resources/IBStudy_IBStudy.bundle"
+cp -R "$RESOURCE_BUNDLE" "$APP/Contents/IBStudy_IBStudy.bundle"
 if [[ -f "$ICON" ]]; then
   cp "$ICON" "$APP/Contents/Resources/AppIcon.icns"
 fi

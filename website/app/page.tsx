@@ -1,7 +1,9 @@
+import { Reveal } from "./components/Reveal";
+
 /** Defaults match the public GitHub repo; override in Vercel if you fork. */
 const DEFAULT_REPO = "https://github.com/zBossPC/IB-Study-App";
 const DEFAULT_DOWNLOAD =
-  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.dmg";
+  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.1/IBStudy-macos.dmg";
 
 const downloadUrl =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || DEFAULT_DOWNLOAD;
@@ -48,10 +50,9 @@ export default function Home() {
 
       <main>
         <section className="hero wrap">
-          <div className="hero-badge">
-            <span className="hero-badge-dot" aria-hidden />
-            Native macOS · AP / IB-style coursework
-          </div>
+          <p className="hero-kicker">
+            Lessons, drills, and progress tracking—built for long study sessions on your Mac.
+          </p>
           <h1>
             <span className="hero-gradient">Study smarter</span>
             <br />
@@ -68,7 +69,7 @@ export default function Home() {
             </a>
             <a
               className="btn btn-ghost btn-lg"
-              href={`${repoUrl}/releases/tag/v1.0.0`}
+              href={`${repoUrl}/releases/tag/v1.0.1`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -133,84 +134,91 @@ export default function Home() {
         </section>
 
         <section id="features" className="section wrap">
-          <div className="section-head">
-            <p className="section-kicker">Features</p>
-            <h2>Built for serious study sessions</h2>
-            <p>
-              A calm, game-inspired interface that keeps you in flow—without turning
-              your desktop into a game show.
-            </p>
-          </div>
-          <div className="grid grid-3">
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                📖
-              </div>
-              <h3>Structured units</h3>
+          <Reveal>
+            <div className="section-head">
+              <p className="section-kicker">Features</p>
+              <h2>Built for serious study sessions</h2>
               <p>
-                Economics and physics content organized into clear stages with
-                checkpoints so you always know what&apos;s next.
+                A calm, game-inspired interface that keeps you in flow—without turning
+                your desktop into a game show.
               </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                📈
-              </div>
-              <h3>Interactive diagrams</h3>
-              <p>
-                Explore microeconomics graphs with sliders and labels that match
-                textbook intuition—right inside the lesson.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                🎯
-              </div>
-              <h3>XP &amp; streaks</h3>
-              <p>
-                Light gamification: earn XP, keep a streak, and see your stage
-                status without noisy distractions.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                🔍
-              </div>
-              <h3>Glossary</h3>
-              <p>
-                Searchable definitions so you can jump from “what does this mean?”
-                back to practice in seconds.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                🤖
-              </div>
-              <h3>Local AI coach</h3>
-              <p>
-                Optional Ollama integration for hints and explanations—your data
-                stays on your Mac.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden>
-                🪟
-              </div>
-              <h3>Menu bar companion</h3>
-              <p>
-                Quick access from the menu bar when you want a fast question
-                without breaking focus.
-              </p>
-            </article>
-          </div>
+            </div>
+          </Reveal>
+          <Reveal>
+            <div className="grid grid-3">
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  📖
+                </div>
+                <h3>Structured units</h3>
+                <p>
+                  Economics and physics content organized into clear stages with
+                  checkpoints so you always know what&apos;s next.
+                </p>
+              </article>
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  📈
+                </div>
+                <h3>Interactive diagrams</h3>
+                <p>
+                  Explore microeconomics graphs with sliders and labels that match
+                  textbook intuition—right inside the lesson.
+                </p>
+              </article>
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  🎯
+                </div>
+                <h3>XP &amp; streaks</h3>
+                <p>
+                  Light gamification: earn XP, keep a streak, and see your stage
+                  status without noisy distractions.
+                </p>
+              </article>
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  🔍
+                </div>
+                <h3>Glossary</h3>
+                <p>
+                  Searchable definitions so you can jump from “what does this mean?”
+                  back to practice in seconds.
+                </p>
+              </article>
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  🤖
+                </div>
+                <h3>Local AI coach</h3>
+                <p>
+                  Optional Ollama integration for hints and explanations—your data
+                  stays on your Mac.
+                </p>
+              </article>
+              <article className="card">
+                <div className="card-icon" aria-hidden>
+                  🪟
+                </div>
+                <h3>Menu bar companion</h3>
+                <p>
+                  Quick access from the menu bar when you want a fast question
+                  without breaking focus.
+                </p>
+              </article>
+            </div>
+          </Reveal>
         </section>
 
         <section id="install" className="section wrap">
-          <div className="section-head">
-            <p className="section-kicker">Install</p>
-            <h2>Three steps to get running</h2>
-            <p>Designed for friends testing the DMG—no Mac App Store required.</p>
-          </div>
+          <Reveal>
+            <div className="section-head">
+              <p className="section-kicker">Install</p>
+              <h2>Three steps to get running</h2>
+              <p>Designed for friends testing the DMG—no Mac App Store required.</p>
+            </div>
+          </Reveal>
+          <Reveal>
           <div className="steps">
             <div className="step">
               <div className="step-num">1</div>
@@ -243,17 +251,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </Reveal>
         </section>
 
         <section id="security" className="section wrap">
-          <div className="section-head">
-            <p className="section-kicker">First launch</p>
-            <h2>Unsigned build &amp; Gatekeeper</h2>
-            <p>
-              This distribution is not notarized. That keeps costs at zero and is fine
-              for friends—you just need one extra click the first time.
-            </p>
-          </div>
+          <Reveal>
+            <div className="section-head">
+              <p className="section-kicker">First launch</p>
+              <h2>Unsigned build &amp; Gatekeeper</h2>
+              <p>
+                This distribution is not notarized. That keeps costs at zero and is fine
+                for friends—you just need one extra click the first time.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal>
           <div className="callout">
             <h3>
               <span aria-hidden>⚠️</span> If macOS blocks the app
@@ -270,9 +282,11 @@ export default function Home() {
               for private sharing.
             </p>
           </div>
+          </Reveal>
         </section>
 
         <section className="section wrap">
+          <Reveal>
           <div className="cta-band">
             <h2>Ready to try IBStudy?</h2>
             <p>Download the DMG for macOS 14 or later. Questions? Open an issue on GitHub.</p>
@@ -280,6 +294,7 @@ export default function Home() {
               Download IBStudy
             </a>
           </div>
+          </Reveal>
         </section>
 
         <footer className="footer wrap">
@@ -304,8 +319,8 @@ export default function Home() {
               <a href={repoUrl} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href={`${repoUrl}/releases/tag/v1.0.0`} target="_blank" rel="noopener noreferrer">
-                v1.0.0 notes
+              <a href={`${repoUrl}/releases/tag/v1.0.1`} target="_blank" rel="noopener noreferrer">
+                v1.0.1 notes
               </a>
             </div>
           </div>

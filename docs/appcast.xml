@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+	<channel>
+		<title>IBStudy</title>
+		<link>https://github.com/zBossPC/IB-Study-App/releases</link>
+		<description>IBStudy update feed for Sparkle</description>
+		<language>en</language>
+		<!--
+		  Add a new &lt;item&gt; per release: sparkle:version, shortVersionString, enclosure url,
+		  sparkle:edSignature and length from Sparkle’s sign_update on the release zip.
+		-->
+	</channel>
+</rss>

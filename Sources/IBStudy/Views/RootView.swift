@@ -4,8 +4,12 @@ struct RootView: View {
     @EnvironmentObject private var store    : ContentStore
     @EnvironmentObject private var progress : ProgressStore
     @EnvironmentObject private var aiSetup  : OllamaSetupManager
+    @Environment(\.checkForUpdates) private var checkForUpdates
 
     @Environment(\.openWindow) private var openWindow
+
+    @AppStorage("ibstudy.welcomeSplashCompleted") private var welcomeSplashCompleted = false
+    @State private var showWelcomeSplash = false
 
     @State private var sidebarSelection : SidebarSelection = .home
     @State private var showAchievements = false
@@ -30,14 +34,43 @@ struct RootView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
-                        Button {
-                            openWindow(id: "ai-tutor")
-                        } label: {
-                            Label("Ask AI", systemImage: "sparkles")
+                        HStack(spacing: 8) {
+                            Button {
+                                checkForUpdates()
+                            } label: {
+                                Label("Update", systemImage: "arrow.down.circle")
+                            }
+                            .help("Check for updates…")
+
+                            Button {
+                                openWindow(id: "ai-tutor")
+                            } label: {
+                                Label("Ask AI", systemImage: "sparkles")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .help("Ask AI Tutor  ⌘/")
+                            .keyboardShortcut("/", modifiers: .command)
                         }
-                        .buttonStyle(.borderedProminent)
-                        .help("Ask AI Tutor  ⌘/")
-                        .keyboardShortcut("/", modifiers: .command)
+                    }
+                }
+                .onAppear {
+                    if !welcomeSplashCompleted {
+                        showWelcomeSplash = true
+                    }
+                }
+                .overlay {
+                    if showWelcomeSplash {
+                        FirstLaunchSplashView(
+                            isPresented: Binding(
+                                get: { showWelcomeSplash },
+                                set: { newValue in
+                                    showWelcomeSplash = newValue
+                                    if !newValue { welcomeSplashCompleted = true }
+                                }
+                            ),
+                            accent: subject.color
+                        )
+                        .zIndex(1000)
                     }
                 }
                 .sheet(isPresented: $showAchievements) {
@@ -307,6 +340,10 @@ struct RootView: View {
 
             sidebarToolButton(symbol: "text.magnifyingglass", color: .gray, label: "Glossary", subtitle: "Fast concept lookups") {
                 sidebarSelection = .glossary
+            }
+
+            sidebarToolButton(symbol: "arrow.down.circle", color: Color.cyan.opacity(0.9), label: "Check for Updates", subtitle: "Get the latest build") {
+                checkForUpdates()
             }
         }
         .padding(16)

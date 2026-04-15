@@ -23,7 +23,7 @@ final class ContentStore: ObservableObject {
         ]
 
         for entry in manifest {
-            guard let url = Bundle.module.url(forResource: entry.file, withExtension: "json") else {
+            guard let url = Self.urlForContentJSON(named: entry.file) else {
                 errors.append("Missing \(entry.file).json")
                 continue
             }
@@ -42,5 +42,15 @@ final class ContentStore: ObservableObject {
 
         // Default to first loaded subject
         if selectedSubjectId.isEmpty, let first = loaded.first { selectedSubjectId = first.id }
+    }
+
+    /// Resolves JSON from the SwiftPM resource bundle (`Bundle.module`). Falls back to
+    /// `Contents/Resources/` for older app layouts that copied JSON next to the icon.
+    private static func urlForContentJSON(named name: String) -> URL? {
+        if let u = Bundle.module.url(forResource: name, withExtension: "json") { return u }
+        if let u = Bundle.main.url(forResource: name, withExtension: "json", subdirectory: "IBStudy_IBStudy.bundle") {
+            return u
+        }
+        return Bundle.main.url(forResource: name, withExtension: "json")
     }
 }

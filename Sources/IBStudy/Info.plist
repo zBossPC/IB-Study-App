@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.charlie.ibstudy</string>
+	<key>CFBundleName</key>
+	<string>IBStudy</string>
+	<key>CFBundleDisplayName</key>
+	<string>IBStudy</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>3</string>
+	<!-- Sparkle: hosted appcast (update docs/appcast.xml + sign releases). -->
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/zBossPC/IB-Study-App/main/docs/appcast.xml</string>
+	<!-- EdDSA public key from Sparkle generate_keys; private key signs updates (CI / release only). -->
+	<key>SUPublicEDKey</key>
+	<string>6QFsk/Dz1gwdIzlggz1iXw0c1P6M4AY9hV+5PnV1pJA=</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+</dict>
+</plist>
