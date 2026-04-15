@@ -18,8 +18,11 @@ final class ContentStore: ObservableObject {
         var errors: [String] = []
 
         let manifest: [(file: String, id: String, title: String, subtitle: String, icon: String, color: Color)] = [
-            ("unit3",          "economics",       "Economics", "AP Unit 3 · Micro",      "chart.bar.fill", .blue),
-            ("physics_static", "physics-static",  "Physics",   "Static Electricity",     "bolt.fill",      .orange),
+            ("unit3",                     "economics",         "Economics", "AP Unit 3 · Micro",                                 "chart.bar.fill",               .blue),
+            ("econ_unit4",                "economics-unit4",   "Economics", "AP Unit 4 · Imperfect Competition",                  "building.columns.fill",        .indigo),
+            ("physics_static",            "physics-static",    "Physics",   "Static Electricity",                                "bolt.fill",                    .orange),
+            ("physics_magnetism",         "physics-magnetism", "Physics",   "Magnetism and Electromagnetism",                    "wave.3.right.circle.fill",     .mint),
+            ("history_americas_coldwar",  "history-americas",  "History",   "Americas · Cold War & Social Movements (1945-2001)", "book.pages.fill",              .brown),
         ]
 
         for entry in manifest {

@@ -63,10 +63,25 @@ enum GlassTheme {
         case "perfect-competition":      return Color(red: 0.18, green: 0.83, blue: 0.81)
         case "monopoly":                 return Color(red: 1.00, green: 0.38, blue: 0.43)
         case "monopolistic-competition": return Color(red: 0.49, green: 0.53, blue: 1.00)
+        case "market-structures-overview": return Color(red: 0.25, green: 0.58, blue: 0.96)
+        case "monopoly-behavior":          return Color(red: 0.93, green: 0.35, blue: 0.39)
+        case "price-discrimination":       return Color(red: 0.84, green: 0.46, blue: 0.95)
+        case "oligopoly-strategy":         return Color(red: 0.30, green: 0.74, blue: 0.78)
+        case "policy-and-market-failure":  return Color(red: 0.42, green: 0.74, blue: 0.44)
         case "static-lesson1":           return Color(red: 1.00, green: 0.83, blue: 0.23)
         case "static-lesson2":           return Color(red: 1.00, green: 0.60, blue: 0.24)
         case "static-lesson3":           return Color(red: 1.00, green: 0.44, blue: 0.40)
         case "static-lesson4":           return Color(red: 0.66, green: 0.47, blue: 1.00)
+        case "magnetic-fields-basics":   return Color(red: 0.20, green: 0.68, blue: 0.95)
+        case "fields-around-currents":   return Color(red: 0.27, green: 0.77, blue: 0.63)
+        case "forces-in-b-fields":       return Color(red: 0.38, green: 0.60, blue: 0.98)
+        case "electromagnetic-induction": return Color(red: 0.67, green: 0.45, blue: 1.00)
+        case "magnetism-applications":   return Color(red: 0.98, green: 0.56, blue: 0.33)
+        case "cold-war-origins":               return Color(red: 0.42, green: 0.52, blue: 0.78)
+        case "cold-war-in-the-americas":       return Color(red: 0.54, green: 0.44, blue: 0.74)
+        case "domestic-anticommunism-and-state": return Color(red: 0.67, green: 0.40, blue: 0.58)
+        case "civil-rights-and-social-movements": return Color(red: 0.37, green: 0.64, blue: 0.56)
+        case "late-cold-war-to-2001":          return Color(red: 0.58, green: 0.55, blue: 0.49)
         default:                         return Color.accentColor
         }
     }
@@ -101,10 +116,25 @@ enum GlassTheme {
         case "perfect-competition":      return "target"
         case "monopoly":                 return "crown.fill"
         case "monopolistic-competition": return "seal.fill"
+        case "market-structures-overview": return "square.grid.2x2.fill"
+        case "monopoly-behavior":          return "crown.fill"
+        case "price-discrimination":       return "tag.fill"
+        case "oligopoly-strategy":         return "person.3.sequence.fill"
+        case "policy-and-market-failure":  return "scale.3d"
         case "static-lesson1":           return "atom"
         case "static-lesson2":           return "sparkles"
         case "static-lesson3":           return "arrow.left.and.right.circle.fill"
         case "static-lesson4":           return "bolt.fill"
+        case "magnetic-fields-basics":   return "scope"
+        case "fields-around-currents":   return "point.3.connected.trianglepath.dotted"
+        case "forces-in-b-fields":       return "arrow.up.left.and.arrow.down.right.circle.fill"
+        case "electromagnetic-induction": return "arrow.triangle.2.circlepath.circle.fill"
+        case "magnetism-applications":   return "gearshape.2.fill"
+        case "cold-war-origins":               return "flag.2.crossed.fill"
+        case "cold-war-in-the-americas":       return "globe.americas.fill"
+        case "domestic-anticommunism-and-state": return "building.columns.fill"
+        case "civil-rights-and-social-movements": return "person.2.wave.2.fill"
+        case "late-cold-war-to-2001":          return "calendar.badge.clock"
         default:                         return "book.closed.fill"
         }
     }

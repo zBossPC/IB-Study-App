@@ -1,0 +1,683 @@
+{
+  "unitId": "history-americas-coldwar-social-movements",
+  "title": "History of the Americas: Cold War and Social Movements (1945-2001)",
+  "sections": [
+    {
+      "id": "cold-war-origins",
+      "title": "Origins of the Cold War (1945-1955)",
+      "lessons": [
+        {
+          "id": "cwo-postwar-order",
+          "title": "Postwar settlements and superpower rivalry",
+          "bodyMarkdown": "## A changed global system\n\nAfter World War II, the United States and Soviet Union emerged as superpowers with competing political and economic models. Wartime cooperation quickly gave way to mistrust over security zones, governance, and reconstruction.\n\nKey early flashpoints included disagreements over Eastern Europe, atomic diplomacy, and the future of Germany. Institutions such as the United Nations reflected hopes for cooperation, but security competition deepened."
+        },
+        {
+          "id": "cwo-containment-start",
+          "title": "Containment, aid, and alliances",
+          "bodyMarkdown": "## The containment framework\n\nUS policy increasingly focused on containing Soviet influence through diplomacy, military alliances, and economic aid. The Truman Doctrine and Marshall Plan linked anti-communism to reconstruction and political stability.\n\nIn the Americas, this translated into hemispheric security thinking, anti-communist intelligence cooperation, and a willingness to support aligned governments."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "cwo-fc1",
+          "front": "Cold War",
+          "back": "A prolonged geopolitical, ideological, and strategic rivalry mainly between the US and USSR after WWII."
+        },
+        {
+          "id": "cwo-fc2",
+          "front": "Containment",
+          "back": "US strategy to limit the spread of Soviet influence and communism."
+        },
+        {
+          "id": "cwo-fc3",
+          "front": "Truman Doctrine",
+          "back": "Policy commitment to support states resisting communist pressure."
+        },
+        {
+          "id": "cwo-fc4",
+          "front": "Marshall Plan",
+          "back": "US economic aid program to rebuild Europe and reduce political instability."
+        },
+        {
+          "id": "cwo-fc5",
+          "front": "Superpower",
+          "back": "A state with global military, economic, and diplomatic influence."
+        },
+        {
+          "id": "cwo-fc6",
+          "front": "Ideological rivalry",
+          "back": "Conflict between capitalist-liberal and communist-socialist political-economic models."
+        }
+      ],
+      "questions": [
+        {
+          "id": "cwo-q1",
+          "prompt": "A major post-1945 feature of global politics was:",
+          "choices": [
+            "Immediate decolonized harmony",
+            "US-Soviet rivalry",
+            "End of ideological conflict",
+            "Return to pre-1914 empires"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Cold War centered on superpower competition after WWII."
+        },
+        {
+          "id": "cwo-q2",
+          "prompt": "Containment policy aimed primarily to:",
+          "choices": [
+            "Expand Soviet influence",
+            "Limit communist expansion",
+            "Dissolve military alliances",
+            "End all foreign aid"
+          ],
+          "correctIndex": 1,
+          "explanation": "Containment sought to prevent further expansion of Soviet-aligned systems."
+        },
+        {
+          "id": "cwo-q3",
+          "prompt": "The Marshall Plan is best described as:",
+          "choices": [
+            "A Soviet military alliance",
+            "US reconstruction aid program",
+            "A domestic civil-rights law",
+            "A Latin American constitution"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Marshall Plan provided large-scale aid to rebuild postwar Europe."
+        },
+        {
+          "id": "cwo-q4",
+          "prompt": "In early Cold War discourse, US and USSR differed most in:",
+          "choices": [
+            "Climate policy",
+            "Ideological and security visions",
+            "Language families",
+            "Agricultural seasons"
+          ],
+          "correctIndex": 1,
+          "explanation": "Competing ideological systems and security goals drove the rivalry."
+        },
+        {
+          "id": "cwo-q5",
+          "prompt": "A superpower is a state that:",
+          "choices": [
+            "Has no military capacity",
+            "Has broad global influence",
+            "Only controls one region",
+            "Cannot project power abroad"
+          ],
+          "correctIndex": 1,
+          "explanation": "Superpowers combine military reach, economic strength, and diplomatic influence."
+        },
+        {
+          "id": "cwo-q6",
+          "prompt": "Which policy linked anti-communism with economic stabilization?",
+          "choices": [
+            "Marshall Plan",
+            "New Deal",
+            "Monroe Doctrine only",
+            "Warsaw Pact"
+          ],
+          "correctIndex": 0,
+          "explanation": "US aid strategy treated recovery as a bulwark against communist influence."
+        }
+      ]
+    },
+    {
+      "id": "cold-war-in-the-americas",
+      "title": "Containment and intervention in the Americas",
+      "lessons": [
+        {
+          "id": "cwa-regional-interventions",
+          "title": "Cuba, Guatemala, and regional pressure points",
+          "bodyMarkdown": "## The Americas as a Cold War theater\n\nFrom the 1950s onward, the Caribbean and Latin America became key arenas for superpower competition. The Cuban Revolution and subsequent US-Cuba conflict transformed regional security calculations.\n\nUS policymakers frequently framed intervention as anti-communist stabilization, while critics highlighted sovereignty violations and support for authoritarian partners."
+        },
+        {
+          "id": "cwa-proxy-conflicts",
+          "title": "Proxy conflict and long-term consequences",
+          "bodyMarkdown": "## Proxy dynamics\n\nCold War rivalry often operated through local conflicts and governments rather than direct US-Soviet war. Military aid, covert operations, and diplomatic pressure shaped outcomes in Central and South America.\n\nLong-term effects included human-rights debates, migration pressures, debt and development challenges, and contested public memory about state violence."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "cwa-fc1",
+          "front": "Proxy conflict",
+          "back": "Conflict where great powers support local actors instead of fighting each other directly."
+        },
+        {
+          "id": "cwa-fc2",
+          "front": "Cuban Revolution",
+          "back": "Political revolution that brought Fidel Castro to power and reshaped Cold War dynamics in the Americas."
+        },
+        {
+          "id": "cwa-fc3",
+          "front": "Intervention",
+          "back": "Direct or indirect involvement by one state in another state's political affairs."
+        },
+        {
+          "id": "cwa-fc4",
+          "front": "Sovereignty",
+          "back": "A state's authority to govern itself without external coercion."
+        },
+        {
+          "id": "cwa-fc5",
+          "front": "Authoritarian ally",
+          "back": "A non-democratic government supported for strategic reasons."
+        },
+        {
+          "id": "cwa-fc6",
+          "front": "Historical memory",
+          "back": "How societies remember and debate past political violence and intervention."
+        }
+      ],
+      "questions": [
+        {
+          "id": "cwa-q1",
+          "prompt": "Cold War rivalry in the Americas often took the form of:",
+          "choices": [
+            "Direct US-USSR conventional war in every case",
+            "Proxy conflicts and intervention",
+            "No major political effects",
+            "Only trade negotiations"
+          ],
+          "correctIndex": 1,
+          "explanation": "Superpowers frequently influenced local conflicts indirectly."
+        },
+        {
+          "id": "cwa-q2",
+          "prompt": "The Cuban Revolution mattered because it:",
+          "choices": [
+            "Ended all hemispheric tension",
+            "Introduced a communist-aligned state near the US",
+            "Removed ideology from politics",
+            "Triggered immediate decolonization"
+          ],
+          "correctIndex": 1,
+          "explanation": "Its geopolitical alignment intensified regional Cold War calculations."
+        },
+        {
+          "id": "cwa-q3",
+          "prompt": "A major criticism of some anti-communist interventions was that they:",
+          "choices": [
+            "Raised literacy everywhere",
+            "Ignored national sovereignty and rights",
+            "Always strengthened democratic institutions",
+            "Ended political repression"
+          ],
+          "correctIndex": 1,
+          "explanation": "Critics argued strategic goals often outweighed democratic or human-rights concerns."
+        },
+        {
+          "id": "cwa-q4",
+          "prompt": "Proxy conflict means:",
+          "choices": [
+            "No foreign support for any side",
+            "A conflict mediated only by the UN",
+            "Great powers backing local actors",
+            "Only economic sanctions are used"
+          ],
+          "correctIndex": 2,
+          "explanation": "Outside powers influence outcomes by supporting local forces."
+        },
+        {
+          "id": "cwa-q5",
+          "prompt": "One long-run regional effect of Cold War conflict was:",
+          "choices": [
+            "No migration changes",
+            "Debates over memory and justice",
+            "Universal democratic consolidation by 1960",
+            "End of state violence"
+          ],
+          "correctIndex": 1,
+          "explanation": "Post-conflict societies often faced unresolved truth, justice, and memory issues."
+        },
+        {
+          "id": "cwa-q6",
+          "prompt": "Support for authoritarian allies was often justified at the time as:",
+          "choices": [
+            "Cultural exchange policy",
+            "Containment strategy",
+            "Environmental policy",
+            "Labor law reform"
+          ],
+          "correctIndex": 1,
+          "explanation": "Governments framed such support as necessary to prevent communist influence."
+        }
+      ]
+    },
+    {
+      "id": "domestic-anticommunism-and-state",
+      "title": "Domestic anti-communism and state power",
+      "lessons": [
+        {
+          "id": "das-red-scare",
+          "title": "The Red Scare and political culture",
+          "bodyMarkdown": "## Fear and political legitimacy\n\nDomestic anti-communism in the United States influenced elections, media, labor politics, and public institutions. Investigations and loyalty programs reflected real security concerns but also generated overreach and civil-liberties conflicts.\n\nThe period illustrates how external rivalry can reshape internal democratic norms."
+        },
+        {
+          "id": "das-security-vs-rights",
+          "title": "Security institutions and civil liberties",
+          "bodyMarkdown": "## Balancing security and freedom\n\nCold War governance expanded surveillance capacity and national-security bureaucracy. Debates over due process, dissent, and free expression became central to constitutional politics.\n\nHistorians evaluate this era by comparing perceived threats with institutional safeguards and long-term effects on civic trust."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "das-fc1",
+          "front": "Red Scare",
+          "back": "A period of intense fear of communist influence within domestic institutions."
+        },
+        {
+          "id": "das-fc2",
+          "front": "Loyalty program",
+          "back": "Government screening systems designed to identify perceived ideological risks."
+        },
+        {
+          "id": "das-fc3",
+          "front": "Civil liberties",
+          "back": "Rights such as speech, association, and due process protected from state overreach."
+        },
+        {
+          "id": "das-fc4",
+          "front": "National-security state",
+          "back": "Expanded institutions and agencies focused on intelligence, defense, and internal security."
+        },
+        {
+          "id": "das-fc5",
+          "front": "Due process",
+          "back": "Legal principle requiring fair procedures before deprivation of rights or status."
+        },
+        {
+          "id": "das-fc6",
+          "front": "Political dissent",
+          "back": "Expression of disagreement with prevailing policy or government decisions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "das-q1",
+          "prompt": "Domestic anti-communism in the US is most associated with:",
+          "choices": [
+            "Immediate expansion of civil liberties",
+            "Heightened investigations and loyalty pressures",
+            "Elimination of national-security agencies",
+            "Non-political media culture"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cold War fears drove expanded investigations and screening mechanisms."
+        },
+        {
+          "id": "das-q2",
+          "prompt": "A central historical tension in this period was between:",
+          "choices": [
+            "Urban and rural transportation",
+            "Security and civil liberties",
+            "Agriculture and industry only",
+            "Language and religion only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Policymakers and courts grappled with rights protections under security pressure."
+        },
+        {
+          "id": "das-q3",
+          "prompt": "Due process is best understood as:",
+          "choices": [
+            "A military treaty",
+            "Fair legal procedure before state punishment",
+            "A campaign slogan",
+            "A foreign policy doctrine"
+          ],
+          "correctIndex": 1,
+          "explanation": "Due process protects individuals from arbitrary state action."
+        },
+        {
+          "id": "das-q4",
+          "prompt": "The Red Scare affected political culture by:",
+          "choices": [
+            "Reducing ideological rhetoric",
+            "Intensifying suspicion and conformity pressures",
+            "Ending party competition",
+            "Removing media influence"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fear of internal subversion raised conformity and accusation dynamics."
+        },
+        {
+          "id": "das-q5",
+          "prompt": "Expanded surveillance institutions during the Cold War are part of discussions of the:",
+          "choices": [
+            "Agrarian republic",
+            "National-security state",
+            "Mercantilist state",
+            "Minimal state"
+          ],
+          "correctIndex": 1,
+          "explanation": "Historians use this term for growth of intelligence and security apparatus."
+        },
+        {
+          "id": "das-q6",
+          "prompt": "A historian evaluating this era would most likely compare:",
+          "choices": [
+            "Weather patterns and crop output",
+            "Threat perceptions and constitutional safeguards",
+            "Sports attendance and wages",
+            "Exchange rates only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Interpretation focuses on whether state measures were proportionate and lawful."
+        }
+      ]
+    },
+    {
+      "id": "civil-rights-and-social-movements",
+      "title": "Civil rights and social movements (1950s-1980s)",
+      "lessons": [
+        {
+          "id": "crsm-civil-rights",
+          "title": "Civil Rights Movement strategies and outcomes",
+          "bodyMarkdown": "## Multiple strategies for change\n\nThe Civil Rights Movement combined legal challenges, nonviolent direct action, grassroots organizing, and federal lobbying. Landmark legislation and court decisions altered formal segregation and voting access.\n\n## Ongoing limits\n\nLegal gains did not automatically eliminate structural inequality. Activists and scholars distinguish between de jure change (law) and de facto outcomes (lived conditions)."
+        },
+        {
+          "id": "crsm-broader-movements",
+          "title": "Women's, Chicano, Indigenous, and other movements",
+          "bodyMarkdown": "## Expansion of rights-based activism\n\nPostwar movements broadened demands around gender equality, labor rights, educational access, land and treaty claims, and representation. Organizations used protest, litigation, cultural production, and coalition politics.\n\nThese movements reshaped public policy and national identity while also revealing internal tensions over leadership, strategy, and inclusion."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "crsm-fc1",
+          "front": "Civil Rights Movement",
+          "back": "A broad struggle to end racial segregation and secure equal citizenship rights."
+        },
+        {
+          "id": "crsm-fc2",
+          "front": "Nonviolent direct action",
+          "back": "Public protest tactics such as sit-ins, marches, and boycotts to force negotiation and visibility."
+        },
+        {
+          "id": "crsm-fc3",
+          "front": "De jure vs de facto",
+          "back": "De jure means by law; de facto means in practice or lived reality."
+        },
+        {
+          "id": "crsm-fc4",
+          "front": "Second-wave feminism",
+          "back": "Movement focused on workplace equality, reproductive rights, and legal reform."
+        },
+        {
+          "id": "crsm-fc5",
+          "front": "Chicano Movement",
+          "back": "A movement for civil rights, labor justice, education reform, and political representation for Mexican Americans."
+        },
+        {
+          "id": "crsm-fc6",
+          "front": "Indigenous activism",
+          "back": "Movements pressing sovereignty, treaty enforcement, land rights, and cultural self-determination."
+        }
+      ],
+      "questions": [
+        {
+          "id": "crsm-q1",
+          "prompt": "A major method used by civil-rights activists was:",
+          "choices": [
+            "Secret military coups",
+            "Nonviolent direct action",
+            "Foreign invasion",
+            "Isolation from media"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sit-ins, marches, and boycotts were central methods."
+        },
+        {
+          "id": "crsm-q2",
+          "prompt": "The phrase de jure equality refers to:",
+          "choices": [
+            "Equality in lived outcomes only",
+            "Equality guaranteed in formal law",
+            "No legal change at all",
+            "Economic equality only"
+          ],
+          "correctIndex": 1,
+          "explanation": "De jure concerns legal status and statutory rights."
+        },
+        {
+          "id": "crsm-q3",
+          "prompt": "Many post-1960s social movements shared a focus on:",
+          "choices": [
+            "Reducing democratic participation",
+            "Expanding rights and representation",
+            "Abolishing all elections",
+            "Ending education access"
+          ],
+          "correctIndex": 1,
+          "explanation": "Movements sought broader access to rights, institutions, and voice."
+        },
+        {
+          "id": "crsm-q4",
+          "prompt": "One reason historians compare de jure and de facto change is to:",
+          "choices": [
+            "Avoid discussing institutions",
+            "Measure policy rhetoric only",
+            "Assess implementation gaps",
+            "Ignore social conditions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Formal legal reform may not immediately produce equal outcomes."
+        },
+        {
+          "id": "crsm-q5",
+          "prompt": "The Chicano Movement is associated with demands for:",
+          "choices": [
+            "A return to colonial rule",
+            "Civil rights, labor justice, and educational equity",
+            "Ending voting rights",
+            "Only foreign policy reform"
+          ],
+          "correctIndex": 1,
+          "explanation": "Its agenda linked civil rights to labor and education issues."
+        },
+        {
+          "id": "crsm-q6",
+          "prompt": "Indigenous activism in this era often emphasized:",
+          "choices": [
+            "Treaty rights and sovereignty",
+            "Ending local governance",
+            "Nuclear strategy",
+            "European integration"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sovereignty, treaty enforcement, and land rights were central priorities."
+        }
+      ]
+    },
+    {
+      "id": "late-cold-war-to-2001",
+      "title": "Late Cold War transitions and new era (1980s-2001)",
+      "lessons": [
+        {
+          "id": "lcw-detente-to-end",
+          "title": "Escalation, reform, and the Cold War's end",
+          "bodyMarkdown": "## Uneven final decades\n\nThe late Cold War included renewed confrontation, arms control diplomacy, and internal reform pressures within the Soviet bloc. By 1991, the Soviet Union dissolved and bipolar rivalry formally ended.\n\nFor the Americas, this shift changed intervention logics, alliance priorities, and economic policy frameworks."
+        },
+        {
+          "id": "lcw-globalization-politics",
+          "title": "Democratization, globalization, and unresolved legacies",
+          "bodyMarkdown": "## New opportunities, old constraints\n\nThe 1990s brought market reforms, trade integration, and in many places transitions toward electoral democracy. Yet societies still faced inequality, corruption, violence, and unresolved human-rights claims from Cold War decades.\n\nBy 2001, policy agendas increasingly combined security, migration, and economic integration in new ways."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "lcw-fc1",
+          "front": "Bipolar system",
+          "back": "An international order dominated by two superpowers."
+        },
+        {
+          "id": "lcw-fc2",
+          "front": "Arms control",
+          "back": "Agreements to limit or reduce strategic weapons and reduce escalation risk."
+        },
+        {
+          "id": "lcw-fc3",
+          "front": "Post-Cold War",
+          "back": "Period after 1991 when US-USSR rivalry no longer structured global politics."
+        },
+        {
+          "id": "lcw-fc4",
+          "front": "Democratization",
+          "back": "Processes expanding competitive elections and civilian political accountability."
+        },
+        {
+          "id": "lcw-fc5",
+          "front": "Globalization",
+          "back": "Increasing integration of economies, communication networks, and cultural exchange."
+        },
+        {
+          "id": "lcw-fc6",
+          "front": "Transitional justice",
+          "back": "Mechanisms for accountability, truth, and repair after periods of state violence."
+        }
+      ],
+      "questions": [
+        {
+          "id": "lcw-q1",
+          "prompt": "The formal end of the Cold War is most closely linked to:",
+          "choices": [
+            "The Marshall Plan",
+            "Soviet dissolution in 1991",
+            "The start of WWII",
+            "The Monroe Doctrine"
+          ],
+          "correctIndex": 1,
+          "explanation": "The USSR's collapse marked the end of the bipolar Cold War framework."
+        },
+        {
+          "id": "lcw-q2",
+          "prompt": "A key feature of many 1990s economies in the Americas was:",
+          "choices": [
+            "Autarkic isolation",
+            "Trade and market integration",
+            "Return to colonial mercantilism",
+            "Elimination of migration"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regional policy trends emphasized market liberalization and integration."
+        },
+        {
+          "id": "lcw-q3",
+          "prompt": "Democratization refers to:",
+          "choices": [
+            "Military coups only",
+            "Expansion of electoral and civic accountability",
+            "End of all state institutions",
+            "Automatic equality in outcomes"
+          ],
+          "correctIndex": 1,
+          "explanation": "It means broader political participation and institutional accountability."
+        },
+        {
+          "id": "lcw-q4",
+          "prompt": "One persistent challenge after Cold War conflict in the region was:",
+          "choices": [
+            "No rights-related disputes",
+            "Unresolved memory and accountability issues",
+            "Total end of inequality",
+            "No migration pressures"
+          ],
+          "correctIndex": 1,
+          "explanation": "Many societies continued to debate truth, justice, and reparations."
+        },
+        {
+          "id": "lcw-q5",
+          "prompt": "Arms control in late Cold War diplomacy sought to:",
+          "choices": [
+            "Increase strategic instability",
+            "Reduce escalation and manage weapons competition",
+            "Ban all diplomacy",
+            "End domestic legislation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arms-control frameworks aimed to lower risk and stabilize superpower competition."
+        },
+        {
+          "id": "lcw-q6",
+          "prompt": "By 2001, policy agendas in the Americas increasingly linked:",
+          "choices": [
+            "Security, migration, and economic integration",
+            "Feudal law and dynastic rule",
+            "Nuclear disarmament only",
+            "No cross-border policy concerns"
+          ],
+          "correctIndex": 0,
+          "explanation": "Post-Cold War governance increasingly integrated these interconnected policy domains."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "hist-g1",
+      "term": "Containment",
+      "definition": "A strategy to limit expansion of rival ideological and geopolitical influence."
+    },
+    {
+      "id": "hist-g2",
+      "term": "Superpower",
+      "definition": "A state with global military, economic, and diplomatic reach."
+    },
+    {
+      "id": "hist-g3",
+      "term": "Proxy war",
+      "definition": "Conflict where major powers back local actors rather than fight each other directly."
+    },
+    {
+      "id": "hist-g4",
+      "term": "Sovereignty",
+      "definition": "A state's right to govern itself without external coercion."
+    },
+    {
+      "id": "hist-g5",
+      "term": "Red Scare",
+      "definition": "A period of intense anti-communist fear and domestic political repression pressure."
+    },
+    {
+      "id": "hist-g6",
+      "term": "Civil liberties",
+      "definition": "Freedoms protected from arbitrary state interference, including speech and due process."
+    },
+    {
+      "id": "hist-g7",
+      "term": "Due process",
+      "definition": "Legal requirement for fair procedure before state punishment or deprivation."
+    },
+    {
+      "id": "hist-g8",
+      "term": "Civil Rights Movement",
+      "definition": "Campaigns to dismantle racial segregation and secure equal citizenship rights."
+    },
+    {
+      "id": "hist-g9",
+      "term": "De jure",
+      "definition": "By law; formal legal status."
+    },
+    {
+      "id": "hist-g10",
+      "term": "De facto",
+      "definition": "In practice; lived social outcomes."
+    },
+    {
+      "id": "hist-g11",
+      "term": "Second-wave feminism",
+      "definition": "Mid-to-late 20th century movement for gender equality in law, work, and social life."
+    },
+    {
+      "id": "hist-g12",
+      "term": "Democratization",
+      "definition": "Transition toward broader electoral competition and accountable governance."
+    },
+    {
+      "id": "hist-g13",
+      "term": "Transitional justice",
+      "definition": "Processes addressing truth, accountability, and repair after political violence."
+    }
+  ]
+}

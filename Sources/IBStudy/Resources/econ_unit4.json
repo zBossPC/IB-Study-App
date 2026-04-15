@@ -1,0 +1,683 @@
+{
+  "unitId": "ap-micro-4",
+  "title": "Unit 4: Imperfect Competition and Strategic Behavior",
+  "sections": [
+    {
+      "id": "market-structures-overview",
+      "title": "Market structure foundations",
+      "lessons": [
+        {
+          "id": "ms-characteristics",
+          "title": "Comparing market structures",
+          "bodyMarkdown": "## Four core structures\n\nEconomists classify markets by **number of firms**, **product type**, and **barriers to entry**. Those three features determine pricing power and long-run outcomes.\n\n- **Perfect competition**: many firms, identical output, no barriers, price takers\n- **Monopoly**: one firm, high barriers, price maker\n- **Monopolistic competition**: many firms, differentiated output, low barriers\n- **Oligopoly**: few large firms, strategic interdependence, moderate-to-high barriers\n\n## Why structure matters\n\nStructure shapes the relationship between the firm's demand curve and marginal revenue, and therefore where profit-maximizing output occurs. It also changes whether firms earn long-run economic profit and how efficient the market is from society's perspective."
+        },
+        {
+          "id": "ms-efficiency",
+          "title": "Efficiency benchmarks and deadweight loss",
+          "bodyMarkdown": "## Productive vs allocative efficiency\n\nTwo benchmarks are central in AP Micro Unit 4:\n\n- **Productive efficiency**: output at minimum average total cost\n- **Allocative efficiency**: output where **P = MC**\n\nPerfect competition reaches both in long-run equilibrium. Imperfectly competitive markets usually do not.\n\n## Deadweight loss\n\nWhen a firm sets output where **MR = MC** but charges a price above MC, some mutually beneficial trades do not occur. The lost surplus is deadweight loss.\n\n> In many unit-4 graphs, the core logic is: lower output than socially optimal quantity, higher price than efficient level."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ms-fc1",
+          "front": "Market structure",
+          "back": "A classification based on number of firms, product differentiation, and barriers to entry."
+        },
+        {
+          "id": "ms-fc2",
+          "front": "Price taker",
+          "back": "A firm that accepts market price because its own output is too small to affect price."
+        },
+        {
+          "id": "ms-fc3",
+          "front": "Price maker",
+          "back": "A firm with downward-sloping demand that can choose a price-output combination."
+        },
+        {
+          "id": "ms-fc4",
+          "front": "Productive efficiency",
+          "back": "Production at the minimum point of ATC."
+        },
+        {
+          "id": "ms-fc5",
+          "front": "Allocative efficiency",
+          "back": "Output where price equals marginal cost (P = MC)."
+        },
+        {
+          "id": "ms-fc6",
+          "front": "Deadweight loss",
+          "back": "Lost total surplus from producing a quantity below the socially efficient level."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ms-q1",
+          "prompt": "Which structure has many firms selling identical products with no barriers to entry?",
+          "choices": [
+            "Monopoly",
+            "Oligopoly",
+            "Perfect competition",
+            "Monopolistic competition"
+          ],
+          "correctIndex": 2,
+          "explanation": "Perfect competition is defined by many firms, homogeneous output, and free entry/exit."
+        },
+        {
+          "id": "ms-q2",
+          "prompt": "Allocative efficiency occurs when:",
+          "choices": [
+            "MR = MC",
+            "P = MC",
+            "ATC is maximized",
+            "Demand is unit elastic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Allocative efficiency requires price equal to marginal cost, so social value equals social cost at the margin."
+        },
+        {
+          "id": "ms-q3",
+          "prompt": "A downward-sloping firm demand curve implies the firm is:",
+          "choices": [
+            "A pure price taker",
+            "Facing perfectly elastic demand",
+            "A price maker",
+            "In long-run zero profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "If demand slopes downward for the firm, changing output affects price; the firm has some market power."
+        },
+        {
+          "id": "ms-q4",
+          "prompt": "Compared with the efficient quantity, many imperfectly competitive firms choose:",
+          "choices": [
+            "Higher quantity and lower price",
+            "Lower quantity and higher price",
+            "Same quantity and same price",
+            "Lower quantity and lower price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Imperfect competition commonly results in underproduction and price above MC."
+        },
+        {
+          "id": "ms-q5",
+          "prompt": "Which statement best describes deadweight loss?",
+          "choices": [
+            "Transfer of surplus from buyers to sellers",
+            "Lost gains from trade from underproduction",
+            "All consumer surplus in the market",
+            "The firm's accounting profit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Deadweight loss is the surplus that disappears because some trades that should happen do not occur."
+        },
+        {
+          "id": "ms-q6",
+          "prompt": "Which market is most likely to show strategic interdependence?",
+          "choices": [
+            "Perfect competition",
+            "Monopolistic competition",
+            "Oligopoly",
+            "Monopsony"
+          ],
+          "correctIndex": 2,
+          "explanation": "Oligopolists must consider rivals' likely responses when setting output, price, or advertising."
+        }
+      ]
+    },
+    {
+      "id": "monopoly-behavior",
+      "title": "Monopoly pricing and output",
+      "lessons": [
+        {
+          "id": "mono-mrmc",
+          "title": "MR = MC and monopoly output",
+          "bodyMarkdown": "## Demand and marginal revenue for a monopoly\n\nA monopolist faces the market demand curve. Because it must lower price to sell more output, **MR lies below demand** for all positive quantities.\n\nProfit maximization still uses the same rule as other firm types:\n\n> Choose Q where MR = MC, then use demand to find P.\n\nThis creates a price above marginal cost in most cases, which is the source of allocative inefficiency."
+        },
+        {
+          "id": "mono-profit-regulation",
+          "title": "Profit, loss, and policy responses",
+          "bodyMarkdown": "## Monopoly profit condition\n\nAfter choosing quantity where MR = MC, compare price to ATC at that quantity:\n\n- P > ATC: economic profit\n- P = ATC: normal profit\n- P < ATC: economic loss\n\n## Regulation tools\n\nGovernments may use antitrust policy, price ceilings, or public ownership for natural monopolies. A marginal-cost pricing rule can restore allocative efficiency, but it may require subsidy if P < ATC. Average-cost pricing ensures the firm breaks even but keeps some inefficiency."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "mono-fc1",
+          "front": "Monopoly",
+          "back": "A market with one seller, no close substitutes, and high barriers to entry."
+        },
+        {
+          "id": "mono-fc2",
+          "front": "Monopoly demand vs MR",
+          "back": "Demand slopes downward and MR lies below demand for every positive quantity."
+        },
+        {
+          "id": "mono-fc3",
+          "front": "Monopoly output rule",
+          "back": "Set quantity where MR = MC; then read price from the demand curve at that quantity."
+        },
+        {
+          "id": "mono-fc4",
+          "front": "Natural monopoly",
+          "back": "An industry where one large firm can supply the market at lower cost than multiple smaller firms."
+        },
+        {
+          "id": "mono-fc5",
+          "front": "Marginal-cost pricing",
+          "back": "Regulatory policy setting price equal to MC, improving allocative efficiency."
+        },
+        {
+          "id": "mono-fc6",
+          "front": "Average-cost pricing",
+          "back": "Regulatory policy setting price where P = ATC to allow normal profit."
+        }
+      ],
+      "questions": [
+        {
+          "id": "mono-q1",
+          "prompt": "A monopolist maximizes profit by choosing output where:",
+          "choices": [
+            "P = MC",
+            "MR = MC",
+            "P = ATC",
+            "MR = P"
+          ],
+          "correctIndex": 1,
+          "explanation": "All profit-maximizing firms set output where marginal revenue equals marginal cost."
+        },
+        {
+          "id": "mono-q2",
+          "prompt": "After selecting Q at MR = MC, a monopolist finds price by:",
+          "choices": [
+            "Using the MC curve",
+            "Using the MR curve",
+            "Using the demand curve",
+            "Using the ATC minimum"
+          ],
+          "correctIndex": 2,
+          "explanation": "Demand gives the highest price consumers will pay at that quantity."
+        },
+        {
+          "id": "mono-q3",
+          "prompt": "For a monopoly producing positive output, MR is typically:",
+          "choices": [
+            "Greater than demand price",
+            "Equal to demand price",
+            "Below demand price",
+            "Equal to zero"
+          ],
+          "correctIndex": 2,
+          "explanation": "Selling one more unit requires lowering price on all units, so MR is less than P."
+        },
+        {
+          "id": "mono-q4",
+          "prompt": "Which is most likely to be a natural monopoly?",
+          "choices": [
+            "Wheat farming",
+            "Cell phone accessories",
+            "Local water distribution network",
+            "Street food stalls"
+          ],
+          "correctIndex": 2,
+          "explanation": "High fixed infrastructure costs and economies of scale make one provider most efficient."
+        },
+        {
+          "id": "mono-q5",
+          "prompt": "If regulators impose P = MC on a natural monopoly and this price is below ATC, the likely outcome is:",
+          "choices": [
+            "Excess profit",
+            "No need for subsidy",
+            "Potential losses unless subsidized",
+            "Higher deadweight loss"
+          ],
+          "correctIndex": 2,
+          "explanation": "At P < ATC the firm cannot cover total costs without external support."
+        },
+        {
+          "id": "mono-q6",
+          "prompt": "Compared with perfect competition, monopoly tends to produce:",
+          "choices": [
+            "More output at lower price",
+            "Less output at higher price",
+            "Same output at same price",
+            "More output at higher price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Market power allows the monopolist to restrict output and charge a markup."
+        }
+      ]
+    },
+    {
+      "id": "price-discrimination",
+      "title": "Price discrimination",
+      "lessons": [
+        {
+          "id": "pd-conditions",
+          "title": "When price discrimination is possible",
+          "bodyMarkdown": "## Core conditions\n\nA firm can price discriminate when it has market power, can separate customer groups by willingness to pay, and can prevent low-price buyers from reselling to high-price buyers.\n\nExamples include airline tickets, movie pricing by age group, and peak/off-peak utility rates.\n\n## Why firms do it\n\nCharging different prices lets the firm capture more consumer surplus as producer surplus, usually increasing profit."
+        },
+        {
+          "id": "pd-effects",
+          "title": "Surplus and policy implications",
+          "bodyMarkdown": "## Welfare effects\n\nPrice discrimination redistributes surplus from consumers to producers. In some cases it can also increase output, which may shrink deadweight loss relative to a single-price monopoly.\n\n## Fairness and regulation\n\nNot all differential pricing is illegal. Policy usually focuses on exclusionary or anti-competitive forms rather than all price differences. AP-level analysis emphasizes who gains, who loses, and whether output changes."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "pd-fc1",
+          "front": "Price discrimination",
+          "back": "Charging different prices to different buyers for the same good not based on cost differences."
+        },
+        {
+          "id": "pd-fc2",
+          "front": "Necessary condition 1",
+          "back": "Firm must have market power (cannot be a pure price taker)."
+        },
+        {
+          "id": "pd-fc3",
+          "front": "Necessary condition 2",
+          "back": "Firm must segment buyers by willingness or elasticity of demand."
+        },
+        {
+          "id": "pd-fc4",
+          "front": "Necessary condition 3",
+          "back": "Resale (arbitrage) between groups must be difficult or impossible."
+        },
+        {
+          "id": "pd-fc5",
+          "front": "Typical profit effect",
+          "back": "Usually raises producer surplus by capturing more consumer surplus."
+        },
+        {
+          "id": "pd-fc6",
+          "front": "Potential efficiency effect",
+          "back": "If output expands, deadweight loss can shrink relative to single-price monopoly."
+        }
+      ],
+      "questions": [
+        {
+          "id": "pd-q1",
+          "prompt": "Which firm type is most likely to practice price discrimination?",
+          "choices": [
+            "Perfectly competitive wheat farmer",
+            "Monopolist with segmented demand",
+            "Any firm with identical customers",
+            "Firm with no market power"
+          ],
+          "correctIndex": 1,
+          "explanation": "A firm needs market power and distinct customer segments to charge different prices."
+        },
+        {
+          "id": "pd-q2",
+          "prompt": "A cinema charges student and adult ticket prices. This is an example of:",
+          "choices": [
+            "Predatory pricing",
+            "Price discrimination",
+            "Perfect competition",
+            "Collusion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Different groups are charged different prices for similar access to the same service."
+        },
+        {
+          "id": "pd-q3",
+          "prompt": "If resale between low-price and high-price buyers is easy, price discrimination will:",
+          "choices": [
+            "Become easier",
+            "Likely fail",
+            "Always increase",
+            "Be required by law"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arbitrage destroys segmentation because buyers can resell to higher-price groups."
+        },
+        {
+          "id": "pd-q4",
+          "prompt": "Compared with a single-price monopoly, successful price discrimination usually:",
+          "choices": [
+            "Reduces producer surplus",
+            "Increases producer surplus",
+            "Eliminates all profits",
+            "Makes demand perfectly elastic"
+          ],
+          "correctIndex": 1,
+          "explanation": "The firm captures additional surplus by matching prices to willingness to pay."
+        },
+        {
+          "id": "pd-q5",
+          "prompt": "Which outcome is possible when discrimination expands output?",
+          "choices": [
+            "Higher deadweight loss for sure",
+            "No change in total output",
+            "Smaller deadweight loss",
+            "Price must be identical across groups"
+          ],
+          "correctIndex": 2,
+          "explanation": "If more units are sold, some previously unrealized gains from trade are recovered."
+        },
+        {
+          "id": "pd-q6",
+          "prompt": "Which is NOT a required condition for third-degree price discrimination?",
+          "choices": [
+            "Market power",
+            "Ability to segment customers",
+            "Prevention of resale",
+            "Perfectly elastic market demand"
+          ],
+          "correctIndex": 3,
+          "explanation": "Perfectly elastic demand would imply no market power, undermining discrimination."
+        }
+      ]
+    },
+    {
+      "id": "oligopoly-strategy",
+      "title": "Oligopoly and game theory",
+      "lessons": [
+        {
+          "id": "oligopoly-features",
+          "title": "Strategic interdependence and concentration",
+          "bodyMarkdown": "## Why oligopoly is different\n\nIn oligopoly, only a few firms dominate market share. Each firm's decision affects rivals' profits, so managers must think strategically.\n\nCommon behavior includes non-price competition, product differentiation, and repeated interaction over time.\n\n## Kinked demand intuition\n\nA common AP model suggests firms hesitate to change price: if one raises price, rivals may not follow; if one cuts price, rivals may match quickly. This can create sticky prices around an existing market level."
+        },
+        {
+          "id": "game-theory-basics",
+          "title": "Prisoner's dilemma and collusion",
+          "bodyMarkdown": "## Dominant strategy and Nash equilibrium\n\nGame theory models strategic choices. A **dominant strategy** gives the best payoff regardless of the rival's action. A **Nash equilibrium** is a stable set of choices where no player can improve payoff by changing unilaterally.\n\n## Collusion tension\n\nCartels can increase joint profits by restricting output, but each member has an incentive to cheat by cutting price or expanding output. This instability is the classic prisoner's dilemma result."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "ol-fc1",
+          "front": "Oligopoly",
+          "back": "A market dominated by a few large firms with significant barriers to entry."
+        },
+        {
+          "id": "ol-fc2",
+          "front": "Strategic interdependence",
+          "back": "Each firm must consider how rivals will respond to its actions."
+        },
+        {
+          "id": "ol-fc3",
+          "front": "Dominant strategy",
+          "back": "A strategy that yields the highest payoff regardless of the rival's move."
+        },
+        {
+          "id": "ol-fc4",
+          "front": "Nash equilibrium",
+          "back": "An outcome where no player can improve payoff by changing strategy alone."
+        },
+        {
+          "id": "ol-fc5",
+          "front": "Cartel",
+          "back": "A formal agreement among firms to coordinate output or price like a monopoly."
+        },
+        {
+          "id": "ol-fc6",
+          "front": "Prisoner's dilemma",
+          "back": "A game where individually rational cheating leads to a worse joint outcome."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ol-q1",
+          "prompt": "The defining feature of oligopoly is:",
+          "choices": [
+            "One firm and no substitutes",
+            "Many tiny firms with no barriers",
+            "Few firms with interdependent decisions",
+            "Government ownership"
+          ],
+          "correctIndex": 2,
+          "explanation": "With few firms, each firm's actions materially affect others, creating strategic behavior."
+        },
+        {
+          "id": "ol-q2",
+          "prompt": "A dominant strategy is one that:",
+          "choices": [
+            "Depends on what the rival does",
+            "Is illegal in antitrust law",
+            "Is best regardless of rival action",
+            "Always maximizes total industry profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "Dominant means best response in every contingency, not just one."
+        },
+        {
+          "id": "ol-q3",
+          "prompt": "In a one-shot prisoner's dilemma, firms often end up with:",
+          "choices": [
+            "Mutual cooperation",
+            "Mutual cheating",
+            "Perfectly competitive output",
+            "Government price controls"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each firm has an incentive to cheat, producing a stable but lower-payoff outcome."
+        },
+        {
+          "id": "ol-q4",
+          "prompt": "Collusion among competitors usually aims to:",
+          "choices": [
+            "Increase output to competitive level",
+            "Reduce price to marginal cost",
+            "Restrict output and raise price",
+            "Eliminate fixed costs"
+          ],
+          "correctIndex": 2,
+          "explanation": "By acting jointly like a monopolist, colluding firms try to raise industry profit."
+        },
+        {
+          "id": "ol-q5",
+          "prompt": "Why can cartels be unstable?",
+          "choices": [
+            "No barriers to entry",
+            "Each member gains by secretly cheating",
+            "Products are always identical",
+            "Demand is perfectly elastic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Individual firms can gain short-run profit by undercutting cartel agreements."
+        },
+        {
+          "id": "ol-q6",
+          "prompt": "A Nash equilibrium means:",
+          "choices": [
+            "Both players earn equal profits",
+            "No strategy is dominant",
+            "No player can gain by unilateral deviation",
+            "Government enforces outcomes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nash is about strategic stability, not fairness or equal payoffs."
+        }
+      ]
+    },
+    {
+      "id": "policy-and-market-failure",
+      "title": "Policy tools and market failure",
+      "lessons": [
+        {
+          "id": "policy-antitrust",
+          "title": "Antitrust and competition policy",
+          "bodyMarkdown": "## Why governments intervene\n\nWhen market power harms consumers through higher prices or exclusionary conduct, policymakers may intervene using competition law.\n\nCommon tools include merger review, anti-collusion enforcement, and actions against abuse of dominance. The goal is not to punish firm size by itself, but to preserve competitive outcomes and innovation incentives."
+        },
+        {
+          "id": "policy-externalities-overview",
+          "title": "External costs and corrective policy",
+          "bodyMarkdown": "## Externalities in market outcomes\n\nA negative externality exists when private decisions impose costs on third parties, such as pollution. Then marginal social cost exceeds marginal private cost and market output is too high.\n\n## Corrective approaches\n\n- Pigouvian taxes to align private incentives with social costs\n- Tradable permits to cap total emissions\n- Command-and-control standards when monitoring is easier than pricing\n\nThe AP lens compares private vs social efficiency and how policy closes the gap."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "pol-fc1",
+          "front": "Antitrust policy",
+          "back": "Government policy that promotes competition and limits anti-competitive conduct."
+        },
+        {
+          "id": "pol-fc2",
+          "front": "Merger review",
+          "back": "Assessment of whether a merger would substantially reduce competition."
+        },
+        {
+          "id": "pol-fc3",
+          "front": "Negative externality",
+          "back": "A cost imposed on third parties not reflected in private market prices."
+        },
+        {
+          "id": "pol-fc4",
+          "front": "Marginal social cost",
+          "back": "Marginal private cost plus marginal external cost."
+        },
+        {
+          "id": "pol-fc5",
+          "front": "Pigouvian tax",
+          "back": "A per-unit tax set to internalize external costs and reduce overproduction."
+        },
+        {
+          "id": "pol-fc6",
+          "front": "Tradable permits",
+          "back": "A system that sets a quantity cap and allows trading rights to emit or produce external costs."
+        }
+      ],
+      "questions": [
+        {
+          "id": "pol-q1",
+          "prompt": "Antitrust policy is primarily intended to:",
+          "choices": [
+            "Guarantee equal firm size",
+            "Protect competition and consumer welfare",
+            "Eliminate all profits",
+            "Set all prices directly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Competition policy targets anti-competitive behavior and harmful concentration, not profit per se."
+        },
+        {
+          "id": "pol-q2",
+          "prompt": "With a negative externality, unregulated market output is typically:",
+          "choices": [
+            "Too low",
+            "Efficient",
+            "Too high",
+            "Zero"
+          ],
+          "correctIndex": 2,
+          "explanation": "Because private decision-makers ignore external costs, they produce more than the social optimum."
+        },
+        {
+          "id": "pol-q3",
+          "prompt": "A Pigouvian tax should be set equal to:",
+          "choices": [
+            "Average fixed cost",
+            "Marginal external cost at the efficient quantity",
+            "Total external cost",
+            "Consumer surplus"
+          ],
+          "correctIndex": 1,
+          "explanation": "The optimal per-unit corrective tax equals marginal external damage at the socially efficient output."
+        },
+        {
+          "id": "pol-q4",
+          "prompt": "Which policy directly limits quantity of pollution?",
+          "choices": [
+            "A subsidy for demand",
+            "A price floor",
+            "Tradable permit cap",
+            "A lump-sum transfer"
+          ],
+          "correctIndex": 2,
+          "explanation": "Permit systems set total allowable emissions and let firms trade allowances."
+        },
+        {
+          "id": "pol-q5",
+          "prompt": "If MSC is above MPC, this implies:",
+          "choices": [
+            "A positive externality",
+            "A negative externality",
+            "A natural monopoly",
+            "Perfect competition"
+          ],
+          "correctIndex": 1,
+          "explanation": "Social cost above private cost means additional external harms are not internalized."
+        },
+        {
+          "id": "pol-q6",
+          "prompt": "Merger review usually asks whether a merger will:",
+          "choices": [
+            "Increase labor productivity",
+            "Substantially lessen competition",
+            "Reduce fixed costs to zero",
+            "Raise tax revenue"
+          ],
+          "correctIndex": 1,
+          "explanation": "Regulators focus on effects on market concentration, entry, and consumer harm."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "econ4-g1",
+      "term": "Allocative efficiency",
+      "definition": "A condition where price equals marginal cost, so marginal benefit equals marginal social cost."
+    },
+    {
+      "id": "econ4-g2",
+      "term": "Productive efficiency",
+      "definition": "A condition where production occurs at the minimum average total cost."
+    },
+    {
+      "id": "econ4-g3",
+      "term": "Deadweight loss",
+      "definition": "Net loss of total surplus due to output not being at the socially efficient quantity."
+    },
+    {
+      "id": "econ4-g4",
+      "term": "Monopoly",
+      "definition": "A market with one seller protected by strong barriers to entry."
+    },
+    {
+      "id": "econ4-g5",
+      "term": "Natural monopoly",
+      "definition": "An industry where one firm can supply total market demand at lower cost than multiple firms."
+    },
+    {
+      "id": "econ4-g6",
+      "term": "Price discrimination",
+      "definition": "Charging different buyers different prices for similar goods not due to cost differences."
+    },
+    {
+      "id": "econ4-g7",
+      "term": "Oligopoly",
+      "definition": "A market dominated by a few firms that are strategically interdependent."
+    },
+    {
+      "id": "econ4-g8",
+      "term": "Cartel",
+      "definition": "A formal collusive agreement among firms to coordinate output or price."
+    },
+    {
+      "id": "econ4-g9",
+      "term": "Dominant strategy",
+      "definition": "A strategy yielding the highest payoff regardless of rivals' choices."
+    },
+    {
+      "id": "econ4-g10",
+      "term": "Nash equilibrium",
+      "definition": "A strategic outcome where no player benefits from unilateral deviation."
+    },
+    {
+      "id": "econ4-g11",
+      "term": "Antitrust policy",
+      "definition": "Government actions designed to preserve competition and limit anti-competitive conduct."
+    },
+    {
+      "id": "econ4-g12",
+      "term": "Negative externality",
+      "definition": "A spillover cost imposed on third parties outside a market transaction."
+    },
+    {
+      "id": "econ4-g13",
+      "term": "Pigouvian tax",
+      "definition": "A corrective per-unit tax equal to marginal external damage at the efficient output."
+    }
+  ]
+}

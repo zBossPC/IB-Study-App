@@ -42,7 +42,10 @@ fi
 
 # Flat resources only (no .bundle dirs — they break ad-hoc codesign)
 cp -fX "$RESOURCE_BUNDLE/unit3.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/unit3.json" "$APP/Contents/Resources/"
+cp -fX "$RESOURCE_BUNDLE/econ_unit4.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/econ_unit4.json" "$APP/Contents/Resources/"
 cp -fX "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/"
+cp -fX "$RESOURCE_BUNDLE/physics_magnetism.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/physics_magnetism.json" "$APP/Contents/Resources/"
+cp -fX "$RESOURCE_BUNDLE/history_americas_coldwar.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/history_americas_coldwar.json" "$APP/Contents/Resources/"
 cp -fX "$RESOURCE_BUNDLE/MascotGuide.png" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/MascotGuide.png" "$APP/Contents/Resources/" 2>/dev/null || true
 if [[ -f "$ICON" ]]; then
   cp -fX "$ICON" "$APP/Contents/Resources/AppIcon.icns" 2>/dev/null || cp -f "$ICON" "$APP/Contents/Resources/AppIcon.icns"

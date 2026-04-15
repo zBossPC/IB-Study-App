@@ -1,0 +1,678 @@
+{
+  "unitId": "physics-magnetism",
+  "title": "Magnetism and Electromagnetism",
+  "sections": [
+    {
+      "id": "magnetic-fields-basics",
+      "title": "Magnetic fields and field lines",
+      "lessons": [
+        {
+          "id": "mag-field-concept",
+          "title": "What is a magnetic field?",
+          "bodyMarkdown": "## The magnetic field idea\n\nA magnetic field is a region where moving charges or magnetic materials experience force. We represent it with the vector **B** and measure it in tesla (T).\n\nField lines show direction and relative strength:\n\n- Arrows point from magnetic north to magnetic south outside a bar magnet\n- Closer lines indicate stronger field\n- Lines never cross\n\n## Sources of magnetic fields\n\nMagnetic fields are produced by permanent magnets, electric currents, and changing electric fields. At school level, the key link is that **current creates magnetism**."
+        },
+        {
+          "id": "mag-earth-and-dipoles",
+          "title": "Dipoles and Earth's magnetic field",
+          "bodyMarkdown": "## Magnetic dipoles\n\nEvery bar magnet has two poles. Isolated magnetic poles are not observed in normal classroom physics; cutting a magnet creates two smaller dipoles.\n\n## Earth as a giant magnet\n\nEarth's magnetic field acts approximately like a tilted dipole. A compass aligns with the local field direction, giving practical evidence of the field at each point.\n\nField strength and direction vary with latitude, which matters for charged particles in the magnetosphere and for navigation."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "mb-fc1",
+          "front": "Magnetic field (B)",
+          "back": "A vector field where moving charges and magnetic dipoles experience force; measured in tesla."
+        },
+        {
+          "id": "mb-fc2",
+          "front": "Tesla (T)",
+          "back": "SI unit of magnetic flux density, equivalent to N/(A*m)."
+        },
+        {
+          "id": "mb-fc3",
+          "front": "Field-line spacing",
+          "back": "Closer field lines represent stronger magnetic field magnitude."
+        },
+        {
+          "id": "mb-fc4",
+          "front": "Magnetic dipole",
+          "back": "A system with north and south poles, like a bar magnet or current loop."
+        },
+        {
+          "id": "mb-fc5",
+          "front": "Compass behavior",
+          "back": "A compass needle aligns tangent to local magnetic field lines."
+        },
+        {
+          "id": "mb-fc6",
+          "front": "Earth's field",
+          "back": "Earth behaves approximately like a tilted magnetic dipole."
+        }
+      ],
+      "questions": [
+        {
+          "id": "mb-q1",
+          "prompt": "The SI unit of magnetic field strength B is:",
+          "choices": [
+            "Volt",
+            "Tesla",
+            "Weber",
+            "Coulomb"
+          ],
+          "correctIndex": 1,
+          "explanation": "Magnetic flux density B is measured in tesla (T)."
+        },
+        {
+          "id": "mb-q2",
+          "prompt": "Where magnetic field lines are drawn closer together, the field is:",
+          "choices": [
+            "Weaker",
+            "Stronger",
+            "Zero",
+            "Uniformly random"
+          ],
+          "correctIndex": 1,
+          "explanation": "Field-line density is a visual cue for field magnitude."
+        },
+        {
+          "id": "mb-q3",
+          "prompt": "A compass needle points along:",
+          "choices": [
+            "Local electric field direction",
+            "Local magnetic field direction",
+            "Gravitational force",
+            "Earth's rotation axis only"
+          ],
+          "correctIndex": 1,
+          "explanation": "The needle aligns with the magnetic field at its location."
+        },
+        {
+          "id": "mb-q4",
+          "prompt": "Cutting a bar magnet in half produces:",
+          "choices": [
+            "A single north pole and a single south pole",
+            "Two smaller magnets each with north and south poles",
+            "No magnetism",
+            "Only south poles"
+          ],
+          "correctIndex": 1,
+          "explanation": "Magnetic dipoles persist; each piece becomes a dipole."
+        },
+        {
+          "id": "mb-q5",
+          "prompt": "Which is NOT a source of magnetic field?",
+          "choices": [
+            "Permanent magnets",
+            "Electric current",
+            "Changing electric field",
+            "Stationary isolated neutron"
+          ],
+          "correctIndex": 3,
+          "explanation": "At this level, relevant sources are magnets and moving/ changing electric phenomena."
+        },
+        {
+          "id": "mb-q6",
+          "prompt": "Earth's field is commonly approximated as:",
+          "choices": [
+            "A monopole field",
+            "A dipole field",
+            "No field",
+            "Purely electric field"
+          ],
+          "correctIndex": 1,
+          "explanation": "Earth behaves approximately like a tilted dipole magnet."
+        }
+      ]
+    },
+    {
+      "id": "fields-around-currents",
+      "title": "Fields around currents",
+      "lessons": [
+        {
+          "id": "farc-straight-wire",
+          "title": "Right-hand grip rule for a straight wire",
+          "bodyMarkdown": "## Circular fields around a wire\n\nA straight current-carrying wire creates concentric circular magnetic field lines around the wire.\n\nUse the right-hand grip rule:\n\n- Thumb points in conventional current direction\n- Curled fingers show magnetic field direction\n\nThe field magnitude near a long straight wire follows:\n\n> B = mu0 I / (2 pi r)\n\nSo stronger current gives stronger field, while greater distance weakens the field."
+        },
+        {
+          "id": "farc-solenoid",
+          "title": "Solenoids and electromagnets",
+          "bodyMarkdown": "## Solenoid behavior\n\nA solenoid is a coil of wire. Inside a long solenoid, magnetic field lines are nearly parallel and field strength is approximately uniform.\n\n> B = mu0 n I (ideal long solenoid)\n\nwhere n is turns per meter.\n\n## Practical electromagnets\n\nAdding an iron core greatly increases field strength because the core has high magnetic permeability. This principle is used in relays, doorbells, motors, and MRI hardware."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fcw-fc1",
+          "front": "Right-hand grip rule",
+          "back": "Thumb in current direction, fingers curl in magnetic field direction around the conductor."
+        },
+        {
+          "id": "fcw-fc2",
+          "front": "Field around straight wire",
+          "back": "Concentric circles centered on the wire."
+        },
+        {
+          "id": "fcw-fc3",
+          "front": "B around wire",
+          "back": "B = mu0 I / (2 pi r) for a long straight wire."
+        },
+        {
+          "id": "fcw-fc4",
+          "front": "Solenoid",
+          "back": "A coil of wire that produces a near-uniform internal magnetic field when current flows."
+        },
+        {
+          "id": "fcw-fc5",
+          "front": "Long solenoid formula",
+          "back": "B = mu0 n I, where n is turns per meter."
+        },
+        {
+          "id": "fcw-fc6",
+          "front": "Electromagnet core",
+          "back": "A ferromagnetic core increases field strength significantly."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fcw-q1",
+          "prompt": "For a straight wire, doubling current I while keeping r constant makes B:",
+          "choices": [
+            "Half as large",
+            "Unchanged",
+            "Twice as large",
+            "Four times as large"
+          ],
+          "correctIndex": 2,
+          "explanation": "B is directly proportional to I in B = mu0 I/(2 pi r)."
+        },
+        {
+          "id": "fcw-q2",
+          "prompt": "For a straight wire, doubling distance r while keeping I constant makes B:",
+          "choices": [
+            "Double",
+            "Half",
+            "Unchanged",
+            "Quadruple"
+          ],
+          "correctIndex": 1,
+          "explanation": "B is inversely proportional to r."
+        },
+        {
+          "id": "fcw-q3",
+          "prompt": "The right-hand grip rule for a wire links current to:",
+          "choices": [
+            "Electric potential direction",
+            "Magnetic field direction",
+            "Electron mass",
+            "Field magnitude only"
+          ],
+          "correctIndex": 1,
+          "explanation": "It gives the sense of circular B around the conductor."
+        },
+        {
+          "id": "fcw-q4",
+          "prompt": "Inside a long ideal solenoid, the magnetic field is approximately:",
+          "choices": [
+            "Radial and rapidly varying",
+            "Zero everywhere",
+            "Uniform and parallel to axis",
+            "Circular around each turn only"
+          ],
+          "correctIndex": 2,
+          "explanation": "Long-solenoid approximation gives near-uniform internal B."
+        },
+        {
+          "id": "fcw-q5",
+          "prompt": "Increasing turns per meter n in a solenoid generally:",
+          "choices": [
+            "Reduces B",
+            "Leaves B unchanged",
+            "Increases B",
+            "Reverses polarity only"
+          ],
+          "correctIndex": 2,
+          "explanation": "B = mu0 n I, so larger n increases field magnitude."
+        },
+        {
+          "id": "fcw-q6",
+          "prompt": "Adding an iron core to a solenoid usually:",
+          "choices": [
+            "Weakens the field",
+            "Strengthens the field",
+            "Cancels current",
+            "Makes field purely electric"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ferromagnetic material increases magnetic flux density in the coil."
+        }
+      ]
+    },
+    {
+      "id": "forces-in-b-fields",
+      "title": "Forces on charges and wires",
+      "lessons": [
+        {
+          "id": "fbf-lorentz",
+          "title": "Magnetic force on moving charges",
+          "bodyMarkdown": "## Lorentz magnetic force\n\nA charge moving in a magnetic field experiences force:\n\n> F = q v B sin(theta)\n\nwhere theta is the angle between velocity and field.\n\nThe force is perpendicular to both velocity and field, so magnetic fields do no mechanical work on the particle; they change direction of motion, not speed (in ideal conditions)."
+        },
+        {
+          "id": "fbf-wire-force",
+          "title": "Force on current-carrying conductors",
+          "bodyMarkdown": "## Motor effect\n\nA wire of length L carrying current I in field B experiences force:\n\n> F = B I L sin(theta)\n\nDirection is found by Fleming's left-hand rule (motor rule). This force underlies electric motors, speakers, and galvanometers.\n\nParallel current-carrying wires also exert forces on each other: same current direction attracts, opposite direction repels."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fbf-fc1",
+          "front": "Magnetic force on charge",
+          "back": "F = q v B sin(theta)."
+        },
+        {
+          "id": "fbf-fc2",
+          "front": "Direction of magnetic force",
+          "back": "Perpendicular to both velocity and magnetic field vectors."
+        },
+        {
+          "id": "fbf-fc3",
+          "front": "When is force maximum?",
+          "back": "When velocity/current is perpendicular to B (theta = 90 degrees)."
+        },
+        {
+          "id": "fbf-fc4",
+          "front": "Force on wire",
+          "back": "F = B I L sin(theta)."
+        },
+        {
+          "id": "fbf-fc5",
+          "front": "Parallel wires, same current direction",
+          "back": "They attract each other."
+        },
+        {
+          "id": "fbf-fc6",
+          "front": "Parallel wires, opposite current direction",
+          "back": "They repel each other."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fbf-q1",
+          "prompt": "A charged particle moves parallel to B. Magnetic force is:",
+          "choices": [
+            "Maximum",
+            "qvB",
+            "Zero",
+            "Undefined"
+          ],
+          "correctIndex": 2,
+          "explanation": "sin(0) = 0 so F = qvBsin(theta) gives zero force."
+        },
+        {
+          "id": "fbf-q2",
+          "prompt": "For a fixed charge and speed, magnetic force is largest when theta equals:",
+          "choices": [
+            "0 degrees",
+            "30 degrees",
+            "60 degrees",
+            "90 degrees"
+          ],
+          "correctIndex": 3,
+          "explanation": "The sine term is maximum at 90 degrees."
+        },
+        {
+          "id": "fbf-q3",
+          "prompt": "Magnetic force on a moving charge always acts:",
+          "choices": [
+            "Along velocity",
+            "Opposite velocity",
+            "Perpendicular to velocity",
+            "Toward electric field"
+          ],
+          "correctIndex": 2,
+          "explanation": "By cross-product direction, magnetic force is perpendicular to v and B."
+        },
+        {
+          "id": "fbf-q4",
+          "prompt": "Force on a straight conductor in a field is given by:",
+          "choices": [
+            "F = qE",
+            "F = BILsin(theta)",
+            "F = kq1q2/r^2",
+            "F = ma only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Current-carrying wire force follows F = BILsin(theta)."
+        },
+        {
+          "id": "fbf-q5",
+          "prompt": "Two parallel wires carry currents in the same direction. They:",
+          "choices": [
+            "Repel",
+            "Attract",
+            "Exert no force",
+            "Alternate attraction and repulsion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Same-direction currents attract due to their magnetic interaction."
+        },
+        {
+          "id": "fbf-q6",
+          "prompt": "Because magnetic force is perpendicular to velocity, in ideal motion it changes:",
+          "choices": [
+            "Speed only",
+            "Direction only",
+            "Mass only",
+            "Charge sign only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Perpendicular force changes direction of momentum without doing work on speed."
+        }
+      ]
+    },
+    {
+      "id": "electromagnetic-induction",
+      "title": "Electromagnetic induction",
+      "lessons": [
+        {
+          "id": "emi-faraday",
+          "title": "Faraday's law and changing flux",
+          "bodyMarkdown": "## Magnetic flux\n\nMagnetic flux through a loop is:\n\n> Phi = B A cos(theta)\n\nFaraday's law states that induced emf is proportional to the rate of change of flux:\n\n> emf = -N dPhi/dt\n\nChanging B, area, orientation, or loop number can induce voltage."
+        },
+        {
+          "id": "emi-lenz",
+          "title": "Lenz's law and direction",
+          "bodyMarkdown": "## The minus sign meaning\n\nLenz's law says induced current flows in a direction that opposes the change in flux causing it.\n\nIf flux into the page increases, induced current creates a field out of the page. If flux decreases, induced current tries to reinforce the original direction.\n\nThis conservation-consistent opposition is essential in generators, braking systems, and induction cooktops."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "emi-fc1",
+          "front": "Magnetic flux",
+          "back": "Phi = B A cos(theta), the amount of magnetic field passing through a surface."
+        },
+        {
+          "id": "emi-fc2",
+          "front": "Faraday's law",
+          "back": "emf = -N dPhi/dt. Induced emf depends on how quickly flux changes."
+        },
+        {
+          "id": "emi-fc3",
+          "front": "Lenz's law",
+          "back": "Induced current opposes the change in magnetic flux."
+        },
+        {
+          "id": "emi-fc4",
+          "front": "How to induce emf",
+          "back": "Change field strength, loop area, orientation angle, or move magnet/coil relative to each other."
+        },
+        {
+          "id": "emi-fc5",
+          "front": "Generator principle",
+          "back": "Mechanical rotation changes flux through a coil, producing alternating emf."
+        },
+        {
+          "id": "emi-fc6",
+          "front": "Negative sign in Faraday law",
+          "back": "Represents opposition to flux change, consistent with energy conservation."
+        }
+      ],
+      "questions": [
+        {
+          "id": "emi-q1",
+          "prompt": "Induced emf appears when magnetic flux through a loop is:",
+          "choices": [
+            "Constant",
+            "Changing",
+            "Zero only",
+            "Maximum only"
+          ],
+          "correctIndex": 1,
+          "explanation": "Faraday's law links emf to the rate of change of flux."
+        },
+        {
+          "id": "emi-q2",
+          "prompt": "If B doubles while area and angle are constant, flux Phi will:",
+          "choices": [
+            "Halve",
+            "Double",
+            "Stay constant",
+            "Become zero"
+          ],
+          "correctIndex": 1,
+          "explanation": "Flux is directly proportional to B in Phi = BAcos(theta)."
+        },
+        {
+          "id": "emi-q3",
+          "prompt": "The minus sign in emf = -N dPhi/dt comes from:",
+          "choices": [
+            "Unit conversion",
+            "Measurement error",
+            "Lenz's law",
+            "Resistance in the wire"
+          ],
+          "correctIndex": 2,
+          "explanation": "It encodes opposition to change in flux direction."
+        },
+        {
+          "id": "emi-q4",
+          "prompt": "Increasing the number of turns N in a coil generally makes induced emf:",
+          "choices": [
+            "Smaller",
+            "Larger",
+            "Unchanged",
+            "Impossible"
+          ],
+          "correctIndex": 1,
+          "explanation": "Induced emf is proportional to N."
+        },
+        {
+          "id": "emi-q5",
+          "prompt": "A magnet moving toward a coil causes induced current because:",
+          "choices": [
+            "Charge is created",
+            "Magnetic flux through the coil changes",
+            "Resistance becomes zero",
+            "Electric field disappears"
+          ],
+          "correctIndex": 1,
+          "explanation": "Relative motion changes flux linkage, inducing emf."
+        },
+        {
+          "id": "emi-q6",
+          "prompt": "If inward flux through a loop is decreasing, the induced field tends to be:",
+          "choices": [
+            "Inward",
+            "Outward",
+            "Zero",
+            "Random"
+          ],
+          "correctIndex": 0,
+          "explanation": "Lenz's law makes induced current reinforce inward flux to oppose its decrease."
+        }
+      ]
+    },
+    {
+      "id": "magnetism-applications",
+      "title": "Transformers and real-world systems",
+      "lessons": [
+        {
+          "id": "apps-transformers",
+          "title": "Transformer ratios and power transfer",
+          "bodyMarkdown": "## Ideal transformer model\n\nTransformers use mutual induction between primary and secondary coils:\n\n> Vs/Vp = Ns/Np\n\nFor an ideal transformer, input and output power are approximately equal:\n\n> Vp Ip approx Vs Is\n\nStep-up transformers raise voltage and lower current for efficient long-distance transmission."
+        },
+        {
+          "id": "apps-motors-generators",
+          "title": "Motors, generators, and practical limits",
+          "bodyMarkdown": "## Motor vs generator\n\n- **Motor**: electrical energy to mechanical rotation (uses force on current in B)\n- **Generator**: mechanical rotation to electrical energy (uses changing flux)\n\n## Non-ideal effects\n\nReal systems lose energy due to resistance, heating, eddy currents, and hysteresis. Engineering design reduces losses using laminated cores, suitable materials, and cooling."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "app-fc1",
+          "front": "Transformer voltage ratio",
+          "back": "Vs/Vp = Ns/Np for an ideal transformer."
+        },
+        {
+          "id": "app-fc2",
+          "front": "Step-up transformer",
+          "back": "Has more turns on the secondary; raises voltage and lowers current."
+        },
+        {
+          "id": "app-fc3",
+          "front": "Step-down transformer",
+          "back": "Has fewer turns on the secondary; lowers voltage and raises current."
+        },
+        {
+          "id": "app-fc4",
+          "front": "Why high-voltage transmission?",
+          "back": "For the same power, higher voltage means lower current and less I^2R loss."
+        },
+        {
+          "id": "app-fc5",
+          "front": "Motor principle",
+          "back": "Force on current-carrying conductors in magnetic fields creates torque."
+        },
+        {
+          "id": "app-fc6",
+          "front": "Generator principle",
+          "back": "Changing magnetic flux through coils induces emf and current."
+        }
+      ],
+      "questions": [
+        {
+          "id": "app-q1",
+          "prompt": "In an ideal transformer, if Ns > Np then output voltage is:",
+          "choices": [
+            "Lower than input",
+            "Equal to input",
+            "Higher than input",
+            "Always zero"
+          ],
+          "correctIndex": 2,
+          "explanation": "From Vs/Vp = Ns/Np, greater secondary turns means higher secondary voltage."
+        },
+        {
+          "id": "app-q2",
+          "prompt": "For fixed transmitted power, raising transmission voltage generally makes current:",
+          "choices": [
+            "Increase",
+            "Decrease",
+            "Stay unchanged",
+            "Oscillate unpredictably"
+          ],
+          "correctIndex": 1,
+          "explanation": "P = VI, so for constant P, larger V implies smaller I."
+        },
+        {
+          "id": "app-q3",
+          "prompt": "Lower transmission current reduces line losses because resistive loss scales as:",
+          "choices": [
+            "I",
+            "I^2R",
+            "IR^2",
+            "1/I"
+          ],
+          "correctIndex": 1,
+          "explanation": "Joule heating in wires is P_loss = I^2R."
+        },
+        {
+          "id": "app-q4",
+          "prompt": "A device that converts electrical energy into rotational mechanical energy is a:",
+          "choices": [
+            "Generator",
+            "Transformer",
+            "Motor",
+            "Rectifier"
+          ],
+          "correctIndex": 2,
+          "explanation": "Motors use magnetic forces on current-carrying coils to produce torque."
+        },
+        {
+          "id": "app-q5",
+          "prompt": "Which device relies directly on changing magnetic flux to produce emf?",
+          "choices": [
+            "Motor",
+            "Generator",
+            "Resistor",
+            "Capacitor"
+          ],
+          "correctIndex": 1,
+          "explanation": "Generators use electromagnetic induction from rotating coils/fields."
+        },
+        {
+          "id": "app-q6",
+          "prompt": "Which is a common source of transformer inefficiency?",
+          "choices": [
+            "No core material",
+            "Infinite conductivity",
+            "Eddy-current and hysteresis losses",
+            "Zero magnetic field"
+          ],
+          "correctIndex": 2,
+          "explanation": "Real cores and windings produce thermal and magnetic losses."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "mag-g1",
+      "term": "Magnetic field (B)",
+      "definition": "A vector field that exerts force on moving charges and magnetic dipoles."
+    },
+    {
+      "id": "mag-g2",
+      "term": "Tesla (T)",
+      "definition": "SI unit of magnetic flux density."
+    },
+    {
+      "id": "mag-g3",
+      "term": "Magnetic dipole",
+      "definition": "A source with north and south poles, such as a bar magnet or current loop."
+    },
+    {
+      "id": "mag-g4",
+      "term": "Right-hand grip rule",
+      "definition": "A rule for current direction and circular magnetic field direction around conductors."
+    },
+    {
+      "id": "mag-g5",
+      "term": "Solenoid",
+      "definition": "A helical coil producing an approximately uniform internal magnetic field when current flows."
+    },
+    {
+      "id": "mag-g6",
+      "term": "Lorentz force",
+      "definition": "Magnetic force on a moving charge, F = qvBsin(theta)."
+    },
+    {
+      "id": "mag-g7",
+      "term": "Motor effect",
+      "definition": "Force on a current-carrying conductor in a magnetic field."
+    },
+    {
+      "id": "mag-g8",
+      "term": "Magnetic flux",
+      "definition": "Phi = BAcos(theta), amount of field through a surface."
+    },
+    {
+      "id": "mag-g9",
+      "term": "Faraday's law",
+      "definition": "Induced emf is proportional to the rate of change of magnetic flux linkage."
+    },
+    {
+      "id": "mag-g10",
+      "term": "Lenz's law",
+      "definition": "Induced current direction opposes the change in flux that caused it."
+    },
+    {
+      "id": "mag-g11",
+      "term": "Transformer",
+      "definition": "A device using mutual induction to change AC voltage levels."
+    },
+    {
+      "id": "mag-g12",
+      "term": "Eddy currents",
+      "definition": "Circulating currents induced in conductors that can cause unwanted heating losses."
+    }
+  ]
+}
