@@ -6,6 +6,26 @@
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
 		<item>
+			<title>IBStudy v1.0.5 — Big Dog</title>
+			<sparkle:version>8</sparkle:version>
+			<sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+			<description><![CDATA[
+				<ul>
+					<li>Local AI tuned for Gemma 4 e2b with context-aware tutor prompts</li>
+					<li>Mascot-forward welcome copy and system prompt aligned with the in-app coach</li>
+					<li>DMG: faster codesign path (xattr strip immediately before outer sign)</li>
+				</ul>
+			]]></description>
+			<pubDate>Wed, 15 Apr 2026 23:07:19 +0000</pubDate>
+			<enclosure
+				url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.5/IBStudy-macos.dmg"
+				type="application/octet-stream"
+				sparkle:edSignature="Yv44WoYMNDF1E+iSxoya+Azyvl7CJTYOs3pcfkPDnstkcS466PmCJKVGjV3p7NcBxSA1F3jfxSOOJ3sjbzXECA=="
+				length="3942662"
+			/>
+		</item>
+		<item>
 			<title>IBStudy v1.0.5</title>
 			<sparkle:version>7</sparkle:version>
 			<sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
