@@ -8,6 +8,7 @@ struct IBStudyApp: App {
     @StateObject private var store    = ContentStore()
     @StateObject private var progress = ProgressStore()
     @StateObject private var aiSetup  = OllamaSetupManager()
+    @StateObject private var themeManager = ThemeManager.shared
 
     init() {
         DispatchQueue.main.async { NSApp.activate(ignoringOtherApps: true) }
@@ -19,6 +20,7 @@ struct IBStudyApp: App {
                 .environmentObject(store)
                 .environmentObject(progress)
                 .environmentObject(aiSetup)
+                .environmentObject(themeManager)
                 .environment(\.checkForUpdates) {
                     appDelegate.checkForUpdates()
                 }
@@ -28,21 +30,20 @@ struct IBStudyApp: App {
         .windowStyle(.automatic)
         .windowToolbarStyle(.unified)
 
-        // Floating AI Tutor window — opened with ⌘/ or the toolbar button.
         Window("AI Tutor", id: "ai-tutor") {
             AITutorView()
                 .environmentObject(aiSetup)
                 .environmentObject(progress)
+                .environmentObject(themeManager)
         }
         .defaultSize(width: 520, height: 640)
         .windowResizability(.contentSize)
 
-        // Menu bar extra — sparkles icon in the system menu bar.
-        // Drops down a compact AI chat panel; accessible even when the main window is hidden.
         MenuBarExtra {
             MenuBarAIView()
                 .environmentObject(aiSetup)
                 .environmentObject(progress)
+                .environmentObject(themeManager)
         } label: {
             Image(systemName: "sparkles")
         }

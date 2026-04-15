@@ -42,13 +42,11 @@ final class OllamaService: ObservableObject {
 
     static let shared = OllamaService()
 
-    // Ordered preference list. Setup tries each in turn until one pulls successfully.
-    // gemma4:e4b = Gemma 4 Efficient 4B — fits ~3 GB, fast on M4 Apple Silicon.
-    static let modelCandidates  = ["gemma4:e4b", "gemma4:e2b", "gemma3:4b"]
+    // Ordered preference list — e2b first for lighter resource usage.
+    static let modelCandidates  = ["gemma4:e2b", "gemma4:e4b", "gemma3:4b"]
     static let baseURL          = "http://127.0.0.1:11434"
 
-    // Set by OllamaSetupManager once a model is confirmed present.
-    static var recommendedModel = "gemma4:e4b"
+    static var recommendedModel = "gemma4:e2b"
 
     // MARK: - Streaming chat
 

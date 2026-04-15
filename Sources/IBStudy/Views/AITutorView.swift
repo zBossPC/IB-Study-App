@@ -3,19 +3,23 @@ import AppKit
 
 // MARK: - System prompt
 
-private let systemPrompt = """
-You are an expert AP Microeconomics tutor specialising in Unit 3: Production, Costs, and Market Structures. \
-You help students understand concepts like production functions, short- and long-run costs, \
-perfect competition, monopoly, and monopolistic competition.
+@MainActor
+private func buildSystemPrompt() -> String {
+    let base = """
+    You are a knowledgeable and friendly study tutor for IB and AP coursework. \
+    You help students understand concepts across economics, physics, and other subjects.
 
-Guidelines:
-- Be concise but thorough. Use bullet points and numbered steps where helpful.
-- When relevant, reference diagrams (e.g. "on the cost curves diagram, notice that MC crosses AVC at its minimum").
-- Use real-world examples to ground abstract ideas.
-- If a student seems confused, break the concept into smaller steps.
-- Encourage the student and celebrate correct reasoning.
-- All monetary values use US dollars. All exam references are AP Microeconomics.
-"""
+    Guidelines:
+    - Be concise but thorough. Use bullet points and numbered steps where helpful.
+    - When relevant, reference diagrams and visual aids.
+    - Use real-world examples to ground abstract ideas.
+    - If a student seems confused, break the concept into smaller steps.
+    - Encourage the student and celebrate correct reasoning.
+    - Adapt your expertise to whatever subject the student is studying.
+    """
+    let context = StudyContext.shared.contextBlock
+    return base + context
+}
 
 private let accent = GlassTheme.mascotGlow
 
@@ -356,12 +360,11 @@ private struct ChatView: View {
             }
             Spacer()
 
-            // Switch to Gemma 4 button (shown when a different model is active)
-            if serverOnline && OllamaService.recommendedModel != "gemma4:e4b" {
+            if serverOnline && OllamaService.recommendedModel != "gemma4:e2b" {
                 Button {
-                    Task { await setup.reinstall(model: "gemma4:e4b") }
+                    Task { await setup.reinstall(model: "gemma4:e2b") }
                 } label: {
-                    Label("Switch to Gemma 4", systemImage: "arrow.triangle.2.circlepath")
+                    Label("Switch to Gemma 4 e2b", systemImage: "arrow.triangle.2.circlepath")
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(accent)
                 }
@@ -434,21 +437,34 @@ private struct ChatView: View {
     // ── Suggestion chips ──────────────────────────────────────────────────────
 
     private var welcomeState: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            MascotCalloutCard(
-                title: "Ask me anything about AP Micro Unit 3",
-                message: "I can explain graphs, compare market structures, and break down tricky cost logic into quick study steps.",
-                mood: .guiding
-            )
+        let ctx = StudyContext.shared
+        let hasContext = !ctx.currentSectionTitle.isEmpty
+        let title = hasContext
+            ? "Ask me about \(ctx.currentSectionTitle)"
+            : "Ask me anything about your studies"
+        let message = hasContext
+            ? "I have context about what you're studying right now. Ask me to explain, quiz you, or break down any concept in \(ctx.currentSubjectTitle)."
+            : "I can explain concepts, compare ideas, and break down tricky topics into quick study steps."
+
+        return VStack(alignment: .leading, spacing: 14) {
+            MascotCalloutCard(title: title, message: message, mood: .guiding)
+
+            if hasContext {
+                HStack(spacing: 6) {
+                    Image(systemName: "scope")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(accent)
+                    Text("Context: \(ctx.currentSubjectTitle) → \(ctx.currentSectionTitle)")
+                        .font(.caption.weight(.medium))
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.horizontal, 10).padding(.vertical, 6)
+                .background(accent.opacity(0.08), in: RoundedRectangle(cornerRadius: 8))
+            }
+
             FlowLayout(spacing: 8) {
-                ForEach([
-                    "Why is MR < P for a monopolist?",
-                    "Explain economic vs accounting profit.",
-                    "What happens in the long run for competitive firms?",
-                    "Describe monopolistic competition long-run equilibrium.",
-                    "When should a firm shut down vs. exit?",
-                    "How does the LRATC envelope curve work?",
-                ], id: \.self) { s in
+                let suggestions = hasContext ? contextualSuggestions(ctx) : defaultSuggestions
+                ForEach(suggestions, id: \.self) { s in
                     Button { input = s; sendMessage() } label: {
                         Text(s)
                             .font(.caption.weight(.semibold)).foregroundStyle(accent)
@@ -459,6 +475,25 @@ private struct ChatView: View {
                 }
             }
         }
+    }
+
+    private let defaultSuggestions = [
+        "Explain supply and demand.",
+        "What is Coulomb's law?",
+        "Compare monopoly vs. perfect competition.",
+        "What are the methods of charging?",
+        "How do electric fields work?",
+        "Explain short-run vs. long-run costs.",
+    ]
+
+    private func contextualSuggestions(_ ctx: StudyContext) -> [String] {
+        [
+            "Summarize the key concepts in \(ctx.currentSectionTitle).",
+            "What are the most important formulas for this topic?",
+            "Give me a practice question on \(ctx.currentSectionTitle).",
+            "Explain the hardest part of \(ctx.currentSectionTitle).",
+            "How does this connect to other topics?",
+        ]
     }
 
     // ── Error bar ─────────────────────────────────────────────────────────────
@@ -508,7 +543,7 @@ private struct ChatView: View {
         guard !text.isEmpty, !isGenerating else { return }
         input = ""; errorMessage = nil; serverOnline = true
 
-        if history.isEmpty { history.append(ChatMessage(role: .system, content: systemPrompt)) }
+        if history.isEmpty { history.append(ChatMessage(role: .system, content: buildSystemPrompt())) }
         history.append(ChatMessage(role: .user, content: text))
         let placeholder = ChatMessage(role: .assistant, content: "")
         history.append(placeholder)

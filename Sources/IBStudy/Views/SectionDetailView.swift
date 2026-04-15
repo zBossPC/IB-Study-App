@@ -4,6 +4,7 @@ struct SectionDetailView: View {
     let section: ContentSection
 
     @EnvironmentObject private var progress: ProgressStore
+    @EnvironmentObject private var store: ContentStore
 
     @State private var studyTab: StudyTab = .learn
     @State private var selectedLesson: Lesson?
@@ -57,6 +58,10 @@ struct SectionDetailView: View {
         }
         .onAppear {
             if selectedLesson == nil { selectedLesson = section.lessons.first }
+            updateStudyContext()
+        }
+        .onChange(of: selectedLesson?.id) { _, _ in
+            updateStudyContext()
         }
     }
 
@@ -327,5 +332,17 @@ struct SectionDetailView: View {
 
     private func lessonIndex(for lesson: Lesson) -> Int {
         section.lessons.firstIndex(where: { $0.id == lesson.id }) ?? 0
+    }
+
+    private func updateStudyContext() {
+        let subjectTitle = store.selectedSubject?.title ?? ""
+        let snippet = selectedLesson?.bodyMarkdown ?? ""
+        StudyContext.shared.update(
+            subject: subjectTitle,
+            section: section.title,
+            sectionId: section.id,
+            lesson: selectedLesson?.title ?? "",
+            snippet: snippet
+        )
     }
 }

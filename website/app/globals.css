@@ -238,6 +238,33 @@ a:hover {
   text-align: center;
 }
 
+.hero-mascot {
+  margin: 0 auto 24px;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 28px rgba(126, 184, 234, 0.35));
+}
+
+.hero-mascot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-mascot {
+    animation: hero-in 0.8s var(--ease-out) both, mascot-float 4s ease-in-out infinite 1s;
+  }
+}
+
+@keyframes mascot-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .hero-kicker {
   margin: 0 auto 20px;
   max-width: 520px;

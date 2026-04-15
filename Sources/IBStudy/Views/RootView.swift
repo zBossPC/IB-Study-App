@@ -4,15 +4,18 @@ struct RootView: View {
     @EnvironmentObject private var store    : ContentStore
     @EnvironmentObject private var progress : ProgressStore
     @EnvironmentObject private var aiSetup  : OllamaSetupManager
+    @EnvironmentObject private var themeManager: ThemeManager
     @Environment(\.checkForUpdates) private var checkForUpdates
 
     @Environment(\.openWindow) private var openWindow
 
     @AppStorage("ibstudy.welcomeSplashCompleted") private var welcomeSplashCompleted = false
-    @State private var showWelcomeSplash = false
+    /// Starts true on first install so the main window can sit “behind” scaled down before first frame.
+    @State private var showWelcomeSplash = !UserDefaults.standard.bool(forKey: "ibstudy.welcomeSplashCompleted")
 
     @State private var sidebarSelection : SidebarSelection = .home
     @State private var showAchievements = false
+    @State private var columnVisibility: NavigationSplitViewVisibility = .all
 
     var body: some View {
         Group {
@@ -22,7 +25,7 @@ struct RootView: View {
                 } description: { Text(error) }
 
             } else if let subject = store.selectedSubject {
-                NavigationSplitView(columnVisibility: .constant(.all)) {
+                NavigationSplitView(columnVisibility: $columnVisibility) {
                     sidebarContent(subject: subject)
                         .navigationSplitViewColumnWidth(min: 232, ideal: 268, max: 320)
                         .safeAreaInset(edge: .bottom, spacing: 0) {
@@ -32,7 +35,25 @@ struct RootView: View {
                 } detail: {
                     detailView(subject: subject)
                 }
+                .navigationSplitViewStyle(.balanced)
+                .background(themeManager.pageGradient)
+                .scaleEffect(showWelcomeSplash ? 0.93 : 1.0)
+                .opacity(showWelcomeSplash ? 0.86 : 1.0)
+                .animation(.spring(response: 0.5, dampingFraction: 0.72), value: showWelcomeSplash)
                 .toolbar {
+                    ToolbarItem(placement: .navigation) {
+                        Button {
+                            withAnimation(.spring(response: 0.3)) {
+                                columnVisibility = columnVisibility == .all ? .detailOnly : .all
+                            }
+                        } label: {
+                            Label(
+                                columnVisibility == .all ? "Hide Sidebar" : "Show Sidebar",
+                                systemImage: columnVisibility == .all ? "sidebar.left" : "sidebar.left"
+                            )
+                        }
+                        .help(columnVisibility == .all ? "Hide sidebar" : "Show sidebar")
+                    }
                     ToolbarItem(placement: .primaryAction) {
                         HStack(spacing: 8) {
                             Button {
@@ -51,11 +72,6 @@ struct RootView: View {
                             .help("Ask AI Tutor  ⌘/")
                             .keyboardShortcut("/", modifiers: .command)
                         }
-                    }
-                }
-                .onAppear {
-                    if !welcomeSplashCompleted {
-                        showWelcomeSplash = true
                     }
                 }
                 .overlay {
@@ -112,6 +128,7 @@ struct RootView: View {
                     homeLaunchCard(subject: subject)
                     pathRail(subject: subject)
                     toolsCard
+                    appCards
                 }
             }
             .padding(16)
@@ -124,7 +141,7 @@ struct RootView: View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .fill(
                         LinearGradient(
-                            colors: [subject.color.opacity(0.95), GlassTheme.mascotGlow.opacity(0.78)],
+                            colors: [subject.color.opacity(0.95), themeManager.current.accentGlow.opacity(0.78)],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
                         )
@@ -334,20 +351,42 @@ struct RootView: View {
                 .font(.headline.weight(.black))
                 .foregroundStyle(.white)
 
-            sidebarToolButton(symbol: "sparkles", color: GlassTheme.mascotCore, label: "AI Tutor", subtitle: "Ask for hints and explanations") {
+            sidebarToolButton(symbol: "sparkles", color: themeManager.current.accentCore, label: "AI Tutor", subtitle: "Ask for hints and explanations", sel: .aiTutor) {
                 sidebarSelection = .aiTutor
             }
 
-            sidebarToolButton(symbol: "text.magnifyingglass", color: .gray, label: "Glossary", subtitle: "Fast concept lookups") {
+            sidebarToolButton(symbol: "text.magnifyingglass", color: .gray, label: "Glossary", subtitle: "Fast concept lookups", sel: .glossary) {
                 sidebarSelection = .glossary
             }
 
-            sidebarToolButton(symbol: "arrow.down.circle", color: Color.cyan.opacity(0.9), label: "Check for Updates", subtitle: "Get the latest build") {
+            sidebarToolButton(symbol: "arrow.down.circle", color: Color.cyan.opacity(0.9), label: "Check for Updates", subtitle: "Get the latest build", sel: nil) {
                 checkForUpdates()
             }
         }
         .padding(16)
-        .glassPanel(tint: GlassTheme.mascotCore, glow: .clear, radius: 24)
+        .glassPanel(tint: themeManager.current.accentCore, glow: .clear, radius: 24)
+    }
+
+    private var appCards: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("App")
+                .font(.headline.weight(.black))
+                .foregroundStyle(.white)
+
+            sidebarToolButton(symbol: "gearshape.fill", color: .gray, label: "Settings", subtitle: "Themes and preferences", sel: .settings) {
+                sidebarSelection = .settings
+            }
+
+            sidebarToolButton(symbol: "person.crop.circle", color: themeManager.current.accentGlow, label: "Accounts", subtitle: "Coming soon", sel: .accounts) {
+                sidebarSelection = .accounts
+            }
+
+            sidebarToolButton(symbol: "info.circle.fill", color: .white.opacity(0.6), label: "About", subtitle: "Version & credits", sel: .about) {
+                sidebarSelection = .about
+            }
+        }
+        .padding(16)
+        .glassPanel(tint: .white, glow: .clear, radius: 24)
     }
 
     private func sidebarToolButton(
@@ -355,13 +394,15 @@ struct RootView: View {
         color: Color,
         label: String,
         subtitle: String,
+        sel: SidebarSelection?,
         action: @escaping () -> Void
     ) -> some View {
-        Button(action: action) {
+        let isSelected = sel != nil && sidebarSelection == sel
+        return Button(action: action) {
             HStack(spacing: 12) {
                 ZStack {
                     Circle()
-                        .fill(color.opacity(0.16))
+                        .fill(color.opacity(isSelected ? 0.28 : 0.16))
                     Image(systemName: symbol)
                         .font(.system(size: 15, weight: .bold))
                         .foregroundStyle(color)
@@ -378,14 +419,14 @@ struct RootView: View {
                 }
 
                 Spacer(minLength: 0)
-                Image(systemName: "chevron.right")
-                    .foregroundStyle(.white.opacity(0.72))
+                Image(systemName: isSelected ? "checkmark.circle.fill" : "chevron.right")
+                    .foregroundStyle(isSelected ? color : .white.opacity(0.72))
             }
             .padding(14)
             .frame(maxWidth: .infinity)
         }
         .buttonStyle(GameCardButtonStyle())
-        .glassPanel(tint: color, glow: .clear, radius: 18)
+        .glassPanel(tint: isSelected ? color : color.opacity(0.5), glow: isSelected ? color : .clear, radius: 18)
     }
 
     // MARK: - Detail
@@ -408,6 +449,19 @@ struct RootView: View {
                 GlossaryView(terms: payload.glossary)
                     .navigationTitle("Glossary")
             }
+
+        case .settings:
+            SettingsView()
+                .environmentObject(themeManager)
+                .environmentObject(progress)
+
+        case .about:
+            AboutView()
+                .environmentObject(themeManager)
+
+        case .accounts:
+            AccountsView()
+                .environmentObject(themeManager)
 
         case .section(let id):
             if let section = payload.sections.first(where: { $0.id == id }) {

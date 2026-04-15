@@ -123,6 +123,14 @@ final class ProgressStore: ObservableObject {
         }.count
     }
 
+    func resetAll() {
+        xp = 0; streakDays = 0; lastStudyDay = nil
+        exploredSectionIds = []; quizBestBySection = [:]; unlockedAchievementIds = []
+        for key in [Keys.xp, Keys.streak, Keys.lastDay, Keys.explored, Keys.quizBest, Keys.achievements] {
+            defaults.removeObject(forKey: key)
+        }
+    }
+
     private func awardXP(_ amount: Int, reason: String) {
         guard amount > 0 else { return }
         xp += amount

@@ -5,6 +5,7 @@
 		<link>https://github.com/zBossPC/IB-Study-App/releases</link>
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
+		<!-- v1.0.5: after `scripts/build-dmg.sh` + `sign_update IBStudy-macos.dmg`, insert a new <item> above v1.0.4 with sparkle:version 7, enclosure url, edSignature, length. -->
 		<item>
 			<title>IBStudy v1.0.4</title>
 			<sparkle:version>6</sparkle:version>

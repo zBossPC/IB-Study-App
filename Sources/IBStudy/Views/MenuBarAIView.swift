@@ -200,7 +200,7 @@ private struct MenuBarChatView: View {
         guard !text.isEmpty, !isGenerating else { return }
         input = ""; errorMessage = nil
         if history.isEmpty {
-            history.append(ChatMessage(role: .system, content: menuBarSystemPrompt))
+            history.append(ChatMessage(role: .system, content: menuBarSystemPrompt()))
         }
         history.append(ChatMessage(role: .user, content: text))
         let placeholder = ChatMessage(role: .assistant, content: "")
@@ -336,8 +336,12 @@ private struct NativeMenuBarField: NSViewRepresentable {
 
 // MARK: - System prompt (concise for the compact popup)
 
-private let menuBarSystemPrompt = """
-You are a concise AP Microeconomics tutor. Answer questions about Unit 3 \
-(production, costs, perfect competition, monopoly, monopolistic competition). \
-Keep answers short and clear — 2-4 sentences unless the student asks for more detail.
-"""
+@MainActor
+private func menuBarSystemPrompt() -> String {
+    let base = """
+    You are a concise study tutor for IB and AP coursework. \
+    Answer questions across economics, physics, and other subjects. \
+    Keep answers short and clear — 2-4 sentences unless the student asks for more detail.
+    """
+    return base + StudyContext.shared.contextBlock
+}

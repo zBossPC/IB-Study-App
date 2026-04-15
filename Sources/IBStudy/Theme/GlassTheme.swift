@@ -111,18 +111,20 @@ enum GlassTheme {
 }
 
 struct PlayfieldBackground: View {
+    @EnvironmentObject private var themeManager: ThemeManager
+
     var body: some View {
         ZStack {
-            GlassTheme.pageGradient
+            themeManager.pageGradient
             RadialGradient(
-                colors: [GlassTheme.mascotCore.opacity(0.18), .clear],
+                colors: [themeManager.current.accentCore.opacity(0.18), .clear],
                 center: .topLeading,
                 startRadius: 40,
                 endRadius: 380
             )
             .offset(x: -120, y: -80)
             RadialGradient(
-                colors: [GlassTheme.mascotGlow.opacity(0.16), .clear],
+                colors: [themeManager.current.accentGlow.opacity(0.16), .clear],
                 center: .topTrailing,
                 startRadius: 30,
                 endRadius: 400
