@@ -25,6 +25,10 @@ fi
 RESOURCE_BUNDLE="$BUILD_DIR/IBStudy_IBStudy.bundle"
 rm -rf "$APP/Contents/IBStudy_IBStudy.bundle" "$APP/Contents/Resources/IBStudy_IBStudy.bundle"
 cp -R "$RESOURCE_BUNDLE" "$APP/Contents/IBStudy_IBStudy.bundle"
+# Flat JSON in Resources so Bundle.main finds them even if the SPM helper bundle path fails.
+cp -f "$RESOURCE_BUNDLE/unit3.json" "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/"
+# Copy under Resources/ too (alternate lookups + older layouts).
+cp -R "$RESOURCE_BUNDLE" "$APP/Contents/Resources/IBStudy_IBStudy.bundle"
 if [[ -f "$ICON" ]]; then
   cp "$ICON" "$APP/Contents/Resources/AppIcon.icns"
 fi

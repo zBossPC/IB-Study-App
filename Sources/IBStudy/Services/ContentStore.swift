@@ -44,13 +44,46 @@ final class ContentStore: ObservableObject {
         if selectedSubjectId.isEmpty, let first = loaded.first { selectedSubjectId = first.id }
     }
 
-    /// Resolves JSON from the SwiftPM resource bundle (`Bundle.module`). Falls back to
-    /// `Contents/Resources/` for older app layouts that copied JSON next to the icon.
+    /// Resolves course JSON. Prefer flat files in the app’s `Resources/` folder (reliable in
+    /// distributed `.app` bundles), then SwiftPM’s `Bundle.module`, then explicit paths.
     private static func urlForContentJSON(named name: String) -> URL? {
-        if let u = Bundle.module.url(forResource: name, withExtension: "json") { return u }
-        if let u = Bundle.main.url(forResource: name, withExtension: "json", subdirectory: "IBStudy_IBStudy.bundle") {
-            return u
+        let fm = FileManager.default
+        let fileName = "\(name).json"
+
+        func firstExisting(_ urls: [URL]) -> URL? {
+            for u in urls where fm.fileExists(atPath: u.path) { return u }
+            return nil
         }
-        return Bundle.main.url(forResource: name, withExtension: "json")
+
+        // 1) Standard macOS app Resources (sync scripts copy JSON here).
+        if let u = Bundle.main.url(forResource: name, withExtension: "json") {
+            if fm.fileExists(atPath: u.path) { return u }
+        }
+
+        // 2) SwiftPM bundle (development + packaged IBStudy_IBStudy.bundle).
+        if let u = Bundle.module.url(forResource: name, withExtension: "json") {
+            if fm.fileExists(atPath: u.path) { return u }
+        }
+
+        // 3) Nested resource bundle under Resources.
+        if let u = Bundle.main.url(forResource: name, withExtension: "json", subdirectory: "IBStudy_IBStudy.bundle") {
+            if fm.fileExists(atPath: u.path) { return u }
+        }
+
+        let contents = Bundle.main.bundleURL
+        var paths: [URL] = [
+            contents.appendingPathComponent("Resources/\(fileName)"),
+            contents.appendingPathComponent("Resources/IBStudy_IBStudy.bundle/\(fileName)"),
+            contents.appendingPathComponent("IBStudy_IBStudy.bundle/\(fileName)"),
+        ]
+
+        // 4) If `bundleURL` is the `.app` root (some contexts), try Contents/…
+        if contents.pathExtension == "app" {
+            paths.append(contents.appendingPathComponent("Contents/Resources/\(fileName)"))
+            paths.append(contents.appendingPathComponent("Contents/Resources/IBStudy_IBStudy.bundle/\(fileName)"))
+            paths.append(contents.appendingPathComponent("Contents/IBStudy_IBStudy.bundle/\(fileName)"))
+        }
+
+        return firstExisting(paths)
     }
 }

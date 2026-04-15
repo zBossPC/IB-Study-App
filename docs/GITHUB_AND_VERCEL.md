@@ -37,11 +37,11 @@ Friends should download a **zip of the app**, not clone the whole repo.
 
    Or zip only: `ditto -c -k --sequesterRsrc --keepParent IBStudy.app IBStudy-macos.zip`
 
-3. On GitHub: **Releases** → **Draft a new release** → tag e.g. `v1.0.1` → upload **`IBStudy-macos.dmg`** (and optionally the zip) → publish.
+3. On GitHub: **Releases** → **Draft a new release** → tag e.g. `v1.0.2` → upload **`IBStudy-macos.dmg`** (and optionally the zip) → publish.
 
-4. Direct download URL for the DMG (example **v1.0.1**):
+4. Direct download URL for the DMG (example **v1.0.2**):
 
-   `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.1/IBStudy-macos.dmg`
+   `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.2/IBStudy-macos.dmg`
 
 ## 3. Deploy the site on Vercel
 
@@ -54,7 +54,7 @@ Friends should download a **zip of the app**, not clone the whole repo.
    - `NEXT_PUBLIC_DOWNLOAD_URL` — override if you publish a new release with a different tag.
    - `NEXT_PUBLIC_GITHUB_REPO_URL` — override if you fork.
 
-   Defaults are set in `website/app/page.tsx` for **zBossPC/IB-Study-App** and **v1.0.1**.
+   Defaults are set in `website/app/page.tsx` for **zBossPC/IB-Study-App** and **v1.0.2**.
 
 6. **Deploy**. Your site will be at something like `ib-study.vercel.app` (you can add a custom domain later).
 

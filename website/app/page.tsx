@@ -3,7 +3,7 @@ import { Reveal } from "./components/Reveal";
 /** Defaults match the public GitHub repo; override in Vercel if you fork. */
 const DEFAULT_REPO = "https://github.com/zBossPC/IB-Study-App";
 const DEFAULT_DOWNLOAD =
-  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.1/IBStudy-macos.dmg";
+  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.2/IBStudy-macos.dmg";
 
 const downloadUrl =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || DEFAULT_DOWNLOAD;
@@ -69,7 +69,7 @@ export default function Home() {
             </a>
             <a
               className="btn btn-ghost btn-lg"
-              href={`${repoUrl}/releases/tag/v1.0.1`}
+              href={`${repoUrl}/releases/tag/v1.0.2`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -319,8 +319,8 @@ export default function Home() {
               <a href={repoUrl} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href={`${repoUrl}/releases/tag/v1.0.1`} target="_blank" rel="noopener noreferrer">
-                v1.0.1 notes
+              <a href={`${repoUrl}/releases/tag/v1.0.2`} target="_blank" rel="noopener noreferrer">
+                v1.0.2 notes
               </a>
             </div>
           </div>
