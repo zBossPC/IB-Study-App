@@ -1,0 +1,1845 @@
+{
+  "unitId": "ap-micro-3",
+  "title": "Unit 3: Production, Cost, and Perfect Competition",
+  "sections": [
+    {
+      "id": "production",
+      "title": "The production function",
+      "lessons": [
+        {
+          "id": "prod-horizons",
+          "title": "Short run vs. long run",
+          "bodyMarkdown": "## Two time horizons\n\nIn economics, \"short run\" and \"long run\" are not calendar time — they describe which inputs can be changed. In the **short run**, at least one input is **fixed** and cannot be adjusted no matter how much time passes. In the **long run**, **all inputs are variable** and the firm can change anything.\n\n## What is fixed, and what varies?\n\nThe fixed input is usually **capital** — the factory, the kitchen, the delivery trucks, the software infrastructure. Variable inputs are things you can adjust quickly: labor hours, raw materials, electricity, packaging.\n\nA pizzeria has one oven (fixed capital). She can hire more cooks tonight, order more flour tomorrow, and run longer shifts — but the oven is the constraint. That is the short run. In the long run, she can lease a second location, install two more ovens, and redesign her entire operation.\n\n## The production function\n\nA **production function** maps inputs to the maximum output a firm can produce. Holding capital (K) constant in the short run, we write:\n\n> Q = f(L)   where Q is units of output and L is labor input\n\nAs L rises with K fixed, output rises — but not at a constant rate, and not forever. The pattern of how output responds to more labor is the subject of the next two lessons.\n\n## Why the distinction matters\n\nMany cost concepts behave very differently in the two horizons. Fixed costs only exist in the short run. Economies of scale is purely a long-run idea. Diminishing returns applies only in the short run. Getting these distinctions right is the foundation of the entire unit."
+        },
+        {
+          "id": "prod-measures",
+          "title": "TP, MP, and AP — the three measures",
+          "bodyMarkdown": "## Three ways to measure production\n\n**Total product (TP):** the total units of output produced with a given quantity of labor. TP starts at zero with no workers and rises as labor is added.\n\n**Marginal product of labor (MPL):** the extra output gained from one additional worker — the slope of the TP curve.\n\n> MPL = change in TP / change in L\n\n**Average product of labor (APL):** output per worker — how productive the average worker is.\n\n> APL = TP / L\n\n## A worked example\n\nHere is a short-run production table for the pizzeria (one oven):\n\n- 0 workers: TP = 0, MPL = —, APL = —\n- 1 worker: TP = 8, MPL = 8, APL = 8.0\n- 2 workers: TP = 18, MPL = 10, APL = 9.0\n- 3 workers: TP = 26, MPL = 8, APL = 8.7\n- 4 workers: TP = 32, MPL = 6, APL = 8.0\n- 5 workers: TP = 35, MPL = 3, APL = 7.0\n- 6 workers: TP = 36, MPL = 1, APL = 6.0\n- 7 workers: TP = 35, MPL = −1, APL = 5.0\n\n## The three stages of returns\n\n**Stage 1 — Increasing marginal returns (workers 1-2):** MPL rises. Two workers are more than twice as productive as one because of specialization — one shapes dough while the other applies toppings. This is the increasing-returns region where TP accelerates.\n\n**Stage 2 — Diminishing marginal returns (workers 3-6):** MPL is positive but falling. TP still increases but at a decreasing rate. The kitchen gets crowded. Workers wait for oven space. The fixed input is the bottleneck. This is where most real-world firms operate in the short run.\n\n**Stage 3 — Negative marginal returns (7th worker):** MPL turns negative and TP actually falls. Workers get in each other's way; they cause accidents or distraction. No rational firm operates here intentionally.\n\n## The key relationship: MP and AP\n\nWhen **MPL > APL**, the marginal worker is more productive than the average, so APL rises. When **MPL < APL**, the marginal worker drags the average down, so APL falls. **MPL crosses APL at APL's maximum** — just like any average/marginal relationship."
+        },
+        {
+          "id": "prod-mc-link",
+          "title": "The MP-to-MC connection",
+          "bodyMarkdown": "## Why production shapes cost\n\nThe connection between the production function and the cost curves is direct and mechanical. Suppose labor is the only variable input and the wage rate is W (dollars per worker). To produce one more unit of output, how many more workers do you need? Roughly 1/MPL. So the extra cost of one more unit is:\n\n> MC = W / MPL\n\nWhen MPL is high (early workers are very productive), each pizza is cheap to produce — **MC is low**. When MPL falls due to diminishing returns, each extra pizza requires relatively more labor — **MC rises**.\n\n## The mirror image\n\nThis creates a perfect mirror relationship between production curves and cost curves:\n\n- When MPL rises → MC falls\n- When MPL is at its maximum → MC is at its minimum\n- When MPL falls → MC rises\n- When MPL = APL (at APL's maximum) → MC = AVC (at AVC's minimum)\n\nThe cost curves are essentially the production curves flipped horizontally and inverted. This is why the MC curve has a swoosh shape — it mirrors the MPL curve.\n\n## What shifts these curves?\n\nA **higher wage (W)** makes each unit more expensive to produce, shifting MC, AVC, and ATC upward. Improved worker **productivity** (higher MPL through better training, better tools, or improved processes) lowers MC. On the AP exam, \"wages rise\" is a cost shock that shifts MC and AVC up but leaves TFC and AFC unaffected."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-sr",
+          "front": "Short run (firm)",
+          "back": "Period in which at least one input is fixed — usually capital. Variable inputs (labor, materials) can still change."
+        },
+        {
+          "id": "fc-lr",
+          "front": "Long run (firm)",
+          "back": "All inputs are variable; the firm can adjust scale, enter or exit, and redesign its entire operation."
+        },
+        {
+          "id": "fc-tp",
+          "front": "Total product (TP)",
+          "back": "Total output produced with a given amount of labor, holding capital fixed."
+        },
+        {
+          "id": "fc-mpl",
+          "front": "Marginal product of labor (MPL)",
+          "back": "Extra output from one additional worker: change in TP / change in L. It is the slope of the TP curve."
+        },
+        {
+          "id": "fc-apl",
+          "front": "Average product of labor (APL)",
+          "back": "Output per worker: TP / L. APL is maximized where MPL = APL."
+        },
+        {
+          "id": "fc-dmr",
+          "front": "Law of diminishing marginal returns",
+          "back": "Adding more of a variable input to a fixed input eventually reduces MPL. This is a SHORT-RUN concept only."
+        },
+        {
+          "id": "fc-mcwmp",
+          "front": "MC = W / MPL",
+          "back": "When labor is the only variable input, marginal cost equals the wage rate divided by marginal product. Falling MP drives rising MC."
+        },
+        {
+          "id": "fc-stages",
+          "front": "Three stages of returns",
+          "back": "Stage 1: increasing MPL (TP accelerates). Stage 2: positive but falling MPL (TP grows slowly). Stage 3: negative MPL (TP falls)."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-prod-1",
+          "prompt": "In the short run, which input is typically held fixed?",
+          "choices": [
+            "Labor",
+            "Raw materials",
+            "Capital (plant size)",
+            "All inputs are fixed in the short run"
+          ],
+          "correctIndex": 2,
+          "explanation": "The short run is defined by having at least one fixed input, and textbooks conventionally fix capital while allowing labor and materials to vary."
+        },
+        {
+          "id": "q-prod-2",
+          "prompt": "When marginal product of labor exceeds average product of labor, what happens to APL?",
+          "choices": [
+            "APL falls",
+            "APL rises",
+            "APL stays constant",
+            "APL equals zero"
+          ],
+          "correctIndex": 1,
+          "explanation": "When MPL > APL, the marginal worker is more productive than the average, pulling the average up — just like a test score above your average raises your average."
+        },
+        {
+          "id": "q-prod-3",
+          "prompt": "At the quantity of labor where total product reaches its maximum, marginal product is:",
+          "choices": [
+            "At its maximum",
+            "Equal to average product",
+            "Zero",
+            "Negative"
+          ],
+          "correctIndex": 2,
+          "explanation": "TP is maximized when its slope equals zero, and the slope of TP is MPL. So MPL = 0 at maximum TP."
+        },
+        {
+          "id": "q-prod-4",
+          "prompt": "Diminishing marginal returns is primarily a:",
+          "choices": [
+            "Long-run concept related to scale",
+            "Short-run concept caused by a fixed input",
+            "Result of diseconomies of scale",
+            "Feature of monopoly markets"
+          ],
+          "correctIndex": 1,
+          "explanation": "Diminishing marginal returns arises specifically because one input (capital) is fixed in the short run. It is NOT the same as diseconomies of scale, which is a long-run idea."
+        },
+        {
+          "id": "q-prod-5",
+          "prompt": "If the wage rate rises and labor is the only variable input, what happens to marginal cost?",
+          "choices": [
+            "MC falls because MPL rises",
+            "MC rises because MC = W/MPL",
+            "MC is unaffected since wages are an implicit cost",
+            "MC only changes in the long run"
+          ],
+          "correctIndex": 1,
+          "explanation": "MC = W/MPL. If W rises while MPL stays the same, each unit becomes more expensive to produce, so MC shifts upward."
+        },
+        {
+          "id": "q-prod-6",
+          "prompt": "A firm adds the 5th worker and total product rises from 35 to 42. The marginal product of the 5th worker is:",
+          "choices": [
+            "35",
+            "7",
+            "42",
+            "8.4"
+          ],
+          "correctIndex": 1,
+          "explanation": "MPL = change in TP / change in L = (42 - 35) / (5 - 4) = 7 units."
+        },
+        {
+          "id": "q-prod-7",
+          "prompt": "Which statement correctly describes stage 2 of production (diminishing marginal returns)?",
+          "choices": [
+            "MPL is negative and TP is falling",
+            "MPL is rising and TP is accelerating",
+            "MPL is positive but falling; TP is still growing",
+            "MPL equals zero and TP is flat"
+          ],
+          "correctIndex": 2,
+          "explanation": "In stage 2, each additional worker still adds positive output (MPL > 0), but contributes less than the previous worker (MPL falling). TP still grows, just at a slowing rate."
+        },
+        {
+          "id": "q-prod-8",
+          "prompt": "When total product is at its absolute maximum, marginal product equals:",
+          "choices": [
+            "Its average value",
+            "Zero",
+            "Its maximum value",
+            "The wage rate"
+          ],
+          "correctIndex": 1,
+          "explanation": "At the peak of the TP curve the slope is zero, so MP (the slope of TP) equals zero. Adding one more worker adds nothing to output."
+        },
+        {
+          "id": "q-prod-9",
+          "prompt": "Diminishing marginal returns set in because:",
+          "choices": [
+            "The wage rate rises as more workers are hired",
+            "Fixed inputs become congested as more variable inputs are added",
+            "Workers become less motivated over time",
+            "The firm's technology becomes outdated"
+          ],
+          "correctIndex": 1,
+          "explanation": "With at least one fixed input (e.g. capital), each extra worker has less capital to work with. The fixed factor becomes the bottleneck—this is the essence of diminishing marginal returns."
+        },
+        {
+          "id": "q-prod-10",
+          "prompt": "When marginal product equals average product, average product is:",
+          "choices": [
+            "Rising",
+            "Falling",
+            "At its maximum",
+            "At its minimum"
+          ],
+          "correctIndex": 2,
+          "explanation": "AP is maximised at the exact output where MP = AP. When MP > AP the average is pulled up; when MP < AP it is pulled down. So the crossover point is the peak of AP."
+        },
+        {
+          "id": "q-prod-11",
+          "prompt": "A bakery has two ovens (fixed) and can hire bakers (variable). The 4th baker produces 20 loaves, the 5th produces 15. This illustrates:",
+          "choices": [
+            "Increasing returns to scale",
+            "Economies of scale",
+            "Diminishing marginal returns",
+            "Constant returns to scale"
+          ],
+          "correctIndex": 2,
+          "explanation": "Output per additional worker is falling (20→15 loaves), which is diminishing marginal returns. This is a short-run, fixed-input phenomenon—not to be confused with returns to scale."
+        },
+        {
+          "id": "q-prod-12",
+          "prompt": "A firm triples all inputs and output exactly doubles. This is an example of:",
+          "choices": [
+            "Economies of scale",
+            "Constant returns to scale",
+            "Diminishing marginal returns",
+            "Decreasing returns to scale"
+          ],
+          "correctIndex": 3,
+          "explanation": "When inputs triple but output only doubles (less than triples), the firm experiences decreasing returns to scale—output grows proportionally less than input growth."
+        },
+        {
+          "id": "q-prod-13",
+          "prompt": "In stage I of production (increasing MP), which statement is true?",
+          "choices": [
+            "MP is falling but positive",
+            "MP > AP and both may be rising",
+            "AP is falling",
+            "Total product is declining"
+          ],
+          "correctIndex": 1,
+          "explanation": "In Stage I, marginal product exceeds average product, which pulls AP upward. Both MP and AP may be rising. A rational firm would not stop in Stage I because hiring more workers still raises productivity."
+        },
+        {
+          "id": "q-prod-14",
+          "prompt": "If a firm uses only labor (variable) and capital (fixed), which input CAN be changed in the long run?",
+          "choices": [
+            "Only labor",
+            "Only capital",
+            "Both labor and capital",
+            "Neither—technology is fixed"
+          ],
+          "correctIndex": 2,
+          "explanation": "In the long run, ALL inputs are variable. The firm can expand its capital stock, move to a larger plant, or adopt new technology. The short-run / long-run distinction is precisely about which inputs can change."
+        },
+        {
+          "id": "q-prod-15",
+          "prompt": "The 3rd worker increases TP from 18 to 24 units; the 4th raises it from 24 to 28 units. What is the marginal product of the 4th worker?",
+          "choices": [
+            "28",
+            "6",
+            "4",
+            "7"
+          ],
+          "correctIndex": 2,
+          "explanation": "MP = ΔTP / ΔL = (28 − 24) / 1 = 4. The marginal product is the change in total product from adding that one worker, not total output."
+        }
+      ]
+    },
+    {
+      "id": "short-run-costs",
+      "title": "Short-run costs",
+      "lessons": [
+        {
+          "id": "src-fixed-variable",
+          "title": "Fixed, variable, and total cost",
+          "bodyMarkdown": "## The cost split\n\nEvery dollar a firm spends in the short run falls into one of two categories:\n\n**Total fixed cost (TFC):** costs that do not change with output, no matter how much or how little is produced. TFC is owed whether the factory produces 0 or 1,000 units. Common examples: monthly rent, equipment loan payments, insurance premiums, annual software licenses. On a graph, TFC is a horizontal line.\n\n**Total variable cost (TVC):** costs that change with output. More production requires more labor, more raw materials, more electricity. TVC = 0 when output is zero, and rises as output increases. Because of the law of diminishing marginal returns, TVC eventually rises at an increasing rate (it is S-shaped — first concave, then convex).\n\n**Total cost:** TC = TFC + TVC at every quantity. The TC curve has the same shape as TVC, shifted vertically upward by the constant amount TFC.\n\n## A bakery example\n\nYou run a small bread bakery. Each month:\n\n- Fixed costs: $1,200 rent + $300 insurance + $500 equipment lease = **TFC = $2,000**\n- Variable costs: flour, butter, eggs, hourly bakers\n\nWhether you bake zero loaves or 800 loaves, the $2,000 is already owed. Your variable costs only accumulate as you bake.\n\n## The sunk cost insight\n\nFixed costs are often **sunk** — already paid and unrecoverable. This is critical for shutdown decisions. A firm that shuts down in the short run still loses TFC. So producing is better than shutting down as long as revenue at least covers variable costs (we return to this in the perfect competition section)."
+        },
+        {
+          "id": "src-per-unit",
+          "title": "The four per-unit cost measures",
+          "bodyMarkdown": "## Why per-unit costs matter\n\nFirms compare price per unit to cost per unit to decide whether producing is profitable. There are four per-unit measures, each answering a different question about efficiency and cost.\n\n## AFC — spreading the fixed cost\n\n> AFC = TFC / Q\n\nAFC **always declines** as output rises. You are spreading a fixed number over more and more units. If TFC = $400 and you produce 10 units, AFC = $40. Produce 100 units, AFC = $4. AFC approaches zero but never reaches it. On a graph, AFC is a **hyperbola** — strictly decreasing, never zero.\n\n## AVC — the U-shaped average variable cost\n\n> AVC = TVC / Q\n\nAVC is **U-shaped** because of the law of diminishing marginal returns. At low output, increasing returns mean each unit is cheap to produce — AVC falls. As diminishing returns set in, costs per unit rise — AVC increases.\n\n## ATC — the big-picture cost per unit\n\n> ATC = TC / Q = AFC + AVC\n\nATC is also **U-shaped**, but its minimum is further to the right than AVC's minimum. Why? Even after AVC starts rising, the still-falling AFC keeps pulling ATC down for a while. Eventually AVC rises fast enough to overwhelm the declining AFC, and ATC also rises. At any quantity, the vertical gap between ATC and AVC equals AFC.\n\n## MC — the most important cost\n\n> MC = change in TC / change in Q = change in TVC / change in Q\n\nMC is the cost of producing the **next** unit. Since TFC is fixed, only TVC changes, so MC = change in TVC / change in Q.\n\nMC has a **swoosh shape** — falls at first (increasing returns), then rises as diminishing returns take hold.\n\n## The two crossing rules\n\n**MC crosses AVC at AVC's minimum.** When MC < AVC, each new unit is cheaper than average, pulling AVC down. When MC > AVC, each new unit is pricier than average, pushing AVC up. At the crossing point, MC = AVC and AVC is flat — its minimum.\n\n**MC crosses ATC at ATC's minimum** — by the same exact logic."
+        },
+        {
+          "id": "src-table-skill",
+          "title": "Working with cost tables",
+          "bodyMarkdown": "## The AP exam skill\n\nOn the AP exam, you will almost always see a cost table with some information given and some missing. The key is to know the relationships and work systematically. Use this example with TFC = $50:\n\n## Step 1 — Fill in TC from TVC\n\n- Q = 0: TVC = $0, TC = TFC + TVC = $50 + $0 = **$50**\n- Q = 1: TVC = $30, TC = $50 + $30 = **$80**\n- Q = 2: TVC = $55, TC = $50 + $55 = **$105**\n- Q = 3: TVC = $75, TC = $50 + $75 = **$125**\n- Q = 4: TVC = $100, TC = $50 + $100 = **$150**\n- Q = 5: TVC = $135, TC = $50 + $135 = **$185**\n\n## Step 2 — Find MC (change in TC between rows)\n\n- MC at Q = 1: $80 - $50 = **$30**\n- MC at Q = 2: $105 - $80 = **$25**\n- MC at Q = 3: $125 - $105 = **$20** ← minimum MC\n- MC at Q = 4: $150 - $125 = **$25**\n- MC at Q = 5: $185 - $150 = **$35**\n\nMC fell, hit a minimum at Q = 3, then rose — the classic swoosh from increasing returns then diminishing returns.\n\n## Step 3 — Per-unit averages at Q = 4\n\n- AFC = $50 / 4 = **$12.50**\n- AVC = $100 / 4 = **$25.00**\n- ATC = $150 / 4 = **$37.50** (check: $12.50 + $25.00 = $37.50 ✓)\n\n## Quick-access rules\n\n- TFC is the value of TC when Q = 0 (since TVC = 0 at zero output)\n- TFC = TC - TVC at any quantity\n- If only TC and TFC are given: TVC = TC - TFC at each row\n- MC is always measured between rows, never divided by Q"
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-tfc",
+          "front": "Total fixed cost (TFC)",
+          "back": "Cost that does not change with output in the short run. Owed whether output is zero or maximum. Shown as a horizontal line on graphs."
+        },
+        {
+          "id": "fc-tvc",
+          "front": "Total variable cost (TVC)",
+          "back": "Cost that changes with output: rises as Q rises, equals zero when Q = 0. S-shaped curve due to returns to scale."
+        },
+        {
+          "id": "fc-mc",
+          "front": "Marginal cost (MC)",
+          "back": "Change in TC from producing one more unit: change in TC / change in Q = change in TVC / change in Q. Swoosh-shaped."
+        },
+        {
+          "id": "fc-afc",
+          "front": "Average fixed cost (AFC)",
+          "back": "TFC / Q. Always declines as output rises (spreading fixed cost). Hyperbola-shaped, never reaches zero."
+        },
+        {
+          "id": "fc-avc",
+          "front": "Average variable cost (AVC)",
+          "back": "TVC / Q. U-shaped due to diminishing marginal returns. MC crosses AVC at AVC's minimum."
+        },
+        {
+          "id": "fc-atc",
+          "front": "Average total cost (ATC)",
+          "back": "TC / Q = AFC + AVC. U-shaped; minimum is to the right of AVC's minimum. MC crosses ATC at its minimum."
+        },
+        {
+          "id": "fc-avc-atc-gap",
+          "front": "Gap between ATC and AVC",
+          "back": "ATC - AVC = AFC at any quantity. As Q rises, this gap shrinks because AFC always falls."
+        },
+        {
+          "id": "fc-mc-cross",
+          "front": "MC crossing rules",
+          "back": "MC passes through the minimum of AVC and the minimum of ATC. This is because if MC < average, the average falls; if MC > average, the average rises."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-src-1",
+          "prompt": "If output increases, average fixed cost (AFC) will:",
+          "choices": [
+            "Increase, because fixed costs get spread more thinly",
+            "Decrease, because the same fixed cost is spread over more units",
+            "Stay constant, because TFC does not change",
+            "Become negative at high output"
+          ],
+          "correctIndex": 1,
+          "explanation": "AFC = TFC / Q. With TFC fixed, a larger Q means each unit bears a smaller share of fixed cost — so AFC always falls as output rises."
+        },
+        {
+          "id": "q-src-2",
+          "prompt": "At the output where ATC is minimized, which statement is true?",
+          "choices": [
+            "MC is above ATC",
+            "MC equals ATC",
+            "MC is zero",
+            "AVC equals AFC"
+          ],
+          "correctIndex": 1,
+          "explanation": "MC crosses ATC at its minimum. When MC < ATC, the marginal unit is cheaper than average and pulls ATC down. When MC > ATC, ATC is pulled up. At the crossing, MC = ATC and ATC is at its lowest."
+        },
+        {
+          "id": "q-src-3",
+          "prompt": "In the short run, marginal cost equals:",
+          "choices": [
+            "TFC / change in Q",
+            "Change in TVC / change in Q",
+            "TVC / Q",
+            "TC / Q"
+          ],
+          "correctIndex": 1,
+          "explanation": "Since TFC never changes, any change in TC comes entirely from TVC. So MC = change in TC / change in Q = change in TVC / change in Q."
+        },
+        {
+          "id": "q-src-4",
+          "prompt": "The vertical distance between ATC and AVC at any output equals:",
+          "choices": [
+            "MC",
+            "TFC",
+            "AFC",
+            "TVC divided by output"
+          ],
+          "correctIndex": 2,
+          "explanation": "ATC - AVC = (TC/Q) - (TVC/Q) = (TFC + TVC)/Q - TVC/Q = TFC/Q = AFC."
+        },
+        {
+          "id": "q-src-5",
+          "prompt": "A firm's total cost when output is zero equals $400. When output is 5 units, total variable cost is $200. What is ATC at Q = 5?",
+          "choices": [
+            "$40",
+            "$80",
+            "$120",
+            "$600"
+          ],
+          "correctIndex": 2,
+          "explanation": "TFC = TC at Q=0 = $400. TC at Q=5 = TFC + TVC = $400 + $200 = $600. ATC = $600 / 5 = $120."
+        },
+        {
+          "id": "q-src-6",
+          "prompt": "If a government levies a per-unit tax (a tax on each unit produced), which cost curves shift upward?",
+          "choices": [
+            "TFC and AFC only",
+            "MC, AVC, and ATC",
+            "ATC only",
+            "TVC only, not the per-unit averages"
+          ],
+          "correctIndex": 1,
+          "explanation": "A per-unit tax increases the variable cost of each additional unit, raising MC, AVC, and ATC. Fixed costs and AFC are unaffected because the tax only applies to units actually produced."
+        },
+        {
+          "id": "q-src-7",
+          "prompt": "From the following cost data, what is MC when output rises from 3 to 4 units? (TC at Q=3 is $90, TC at Q=4 is $115)",
+          "choices": [
+            "$25",
+            "$28.75",
+            "$90",
+            "$115"
+          ],
+          "correctIndex": 0,
+          "explanation": "MC = change in TC / change in Q = ($115 - $90) / (4 - 3) = $25 / 1 = $25."
+        },
+        {
+          "id": "q-src-8",
+          "prompt": "When output is zero, a firm's total cost equals:",
+          "choices": [
+            "Zero",
+            "Total variable cost",
+            "Total fixed cost",
+            "Average total cost"
+          ],
+          "correctIndex": 2,
+          "explanation": "At Q = 0, variable costs are zero because no output is being produced. Total cost therefore equals only total fixed cost—the costs the firm owes regardless of output."
+        },
+        {
+          "id": "q-src-9",
+          "prompt": "A lump-sum tax (a fixed fee unrelated to output) will shift which cost curves upward?",
+          "choices": [
+            "MC and AVC only",
+            "ATC and AFC only",
+            "MC, ATC, and AVC",
+            "Only MC"
+          ],
+          "correctIndex": 1,
+          "explanation": "A lump-sum tax acts like an increase in fixed cost. It raises ATC (= AFC + AVC) and AFC, but does NOT affect MC or AVC because those depend only on variable costs."
+        },
+        {
+          "id": "q-src-10",
+          "prompt": "A per-unit production tax (e.g. $3 per unit produced) shifts which curves upward?",
+          "choices": [
+            "AFC and ATC only",
+            "MC, AVC, and ATC",
+            "Only ATC",
+            "Only MC"
+          ],
+          "correctIndex": 1,
+          "explanation": "A per-unit tax increases the variable cost of each unit, raising MC (the tax is the additional cost of one more unit), AVC (average variable cost rises), and therefore ATC as well. AFC is unchanged."
+        },
+        {
+          "id": "q-src-11",
+          "prompt": "When MC is below ATC, average total cost is:",
+          "choices": [
+            "Rising",
+            "Falling",
+            "At its minimum",
+            "Constant"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the marginal unit costs less than the average, it pulls the average down—just as a below-average test score lowers your GPA. ATC falls whenever MC < ATC."
+        },
+        {
+          "id": "q-src-12",
+          "prompt": "At 10 units of output, AFC = $5. At 20 units, AFC equals:",
+          "choices": [
+            "$10",
+            "$5",
+            "$2.50",
+            "$1"
+          ],
+          "correctIndex": 2,
+          "explanation": "AFC = TFC / Q. TFC = AFC × Q = $5 × 10 = $50. At Q = 20: AFC = $50 / 20 = $2.50. Fixed cost is constant, so it is simply spread over more units."
+        },
+        {
+          "id": "q-src-13",
+          "prompt": "Short-run variable costs include which of the following?",
+          "choices": [
+            "Rent on a long-term factory lease",
+            "Interest on a bank loan signed last year",
+            "Wages for hourly production workers",
+            "Depreciation on existing machinery"
+          ],
+          "correctIndex": 2,
+          "explanation": "Variable costs change with output. Hourly wages rise when the firm produces more. Long-term leases, existing loans, and depreciation are fixed obligations that do not vary with output in the short run."
+        },
+        {
+          "id": "q-src-14",
+          "prompt": "The minimum point of the AVC curve occurs where:",
+          "choices": [
+            "AVC = ATC",
+            "MC = ATC",
+            "MC = AVC",
+            "AFC = 0"
+          ],
+          "correctIndex": 2,
+          "explanation": "By the same 'marginal pulls the average' logic, AVC is at its minimum where MC = AVC. Similarly, ATC is minimised where MC = ATC. The MC curve cuts both AVC and ATC from below at their respective minimum points."
+        },
+        {
+          "id": "q-src-15",
+          "prompt": "A firm's total variable cost at 8 units is $160, and its total fixed cost is $40. Average total cost at 8 units is:",
+          "choices": [
+            "$20",
+            "$25",
+            "$5",
+            "$160"
+          ],
+          "correctIndex": 1,
+          "explanation": "TC = TVC + TFC = $160 + $40 = $200. ATC = TC / Q = $200 / 8 = $25. Alternatively, AVC = $160/8 = $20 and AFC = $40/8 = $5, so ATC = $20 + $5 = $25."
+        }
+      ]
+    },
+    {
+      "id": "cost-revenue-profit",
+      "title": "Cost, revenue, and profit",
+      "lessons": [
+        {
+          "id": "crp-revenue",
+          "title": "Revenue in a competitive market",
+          "bodyMarkdown": "## Total revenue\n\n> TR = P x Q\n\nTotal revenue is simply price times quantity — the total dollars brought in from selling output. For a competitive firm selling every unit at the same market price P, the total revenue curve is a **straight line through the origin** with slope equal to P.\n\n## Marginal revenue\n\n> MR = change in TR / change in Q\n\nMarginal revenue is the extra revenue from selling one more unit. For a perfectly competitive firm, every unit sells at the same price P — the firm cannot charge more without losing all customers, and has no reason to charge less. So **MR = P for every unit a competitive firm sells**.\n\n## The firm's demand curve: MRDARP\n\nBecause the competitive firm takes price as given, the demand curve it faces is **perfectly elastic (horizontal) at market price P**. This single horizontal line is simultaneously:\n\n- **D** — the demand curve for this firm's output\n- **MR** — each unit sold adds exactly P to revenue\n- **AR** — total revenue divided by quantity sold always equals P\n- **P** — the market price\n\nOn AP Free Response Questions, you must label this line **MRDARP**. It is one of the most tested graphing elements in the entire course.\n\n## Why competitive firms are price takers\n\nA single wheat farmer's output is a tiny fraction of the world wheat market. If she tries to charge even one cent above market price, buyers buy from the thousands of other farms. She cannot affect price — she can only decide how much to produce at the given price."
+        },
+        {
+          "id": "crp-profit-types",
+          "title": "Explicit costs, implicit costs, and two profits",
+          "bodyMarkdown": "## Explicit costs — money out the door\n\nExplicit costs are direct, out-of-pocket cash payments: wages paid to employees, rent paid to a landlord, the cost of ingredients, electricity bills, interest on business loans. These appear in accounting records.\n\n## Implicit costs — the hidden opportunity cost\n\nImplicit costs are what the owner gives up by using resources in this business instead of their next-best alternative — **no cash changes hands**. The most common implicit costs:\n\n- **Owner's labor:** if you manage your own business full-time, you forgo whatever salary you could earn elsewhere\n- **Owner's capital:** money invested in the business could instead earn a market return in stocks or bonds\n- **Owner's property:** a building you own could be rented to another tenant\n\n## A concrete example\n\nMs. Park leaves a $70,000 teaching salary to open a tutoring center. She invests $100,000 of savings (which could earn $6,000/year in a bond fund). The tutoring center earns $180,000 in revenue with $110,000 in explicit costs.\n\n- Accounting profit = $180,000 - $110,000 = **$70,000**\n- Implicit costs = $70,000 foregone salary + $6,000 foregone return = **$76,000**\n- Economic profit = $70,000 - $76,000 = **-$6,000**\n\nAccounting says she is profitable. Economics says she is doing $6,000 worse than her alternatives. She should reconsider!\n\n## Normal profit — zero economic profit\n\nWhen economic profit = 0, the firm earns a **normal profit**: it is covering all explicit and implicit costs, earning exactly the opportunity cost of its resources. Note that accounting profit is positive — the owner is earning money, just not more than what those resources could earn elsewhere. Zero economic profit signals that this is the right use of resources (they earn exactly what the market requires)."
+        },
+        {
+          "id": "crp-maximize",
+          "title": "The MR = MC profit maximization rule",
+          "bodyMarkdown": "## The universal rule\n\n**Produce where MR = MC** (and MC is rising). This rule applies to every firm in every market structure — competitive, monopoly, oligopoly, all of them.\n\n## The marginal logic — think at the edges\n\nShould you produce the next unit? Ask two questions: what does it add to revenue (MR), and what does it add to cost (MC)?\n\n- If **MR > MC**: the next unit adds more revenue than cost. Produce it — profit increases.\n- If **MR < MC**: the next unit adds more cost than revenue. Do not produce it — profit would fall.\n- If **MR = MC**: the marginal unit adds exactly the same to revenue as to cost. Profit is at its maximum.\n\n## The total approach\n\nYou can also find the profit-maximizing quantity graphically by plotting TR and TC against Q. **Economic profit is the vertical distance TR - TC**. The quantity where this gap is largest maximizes profit.\n\n- If TR > TC: positive economic profit (firm earns above-normal returns)\n- If TR = TC: zero economic profit (normal profit — covers all costs including opportunity costs)\n- If TR < TC: economic loss (firm is losing money, but may still produce short-run)\n\n## Calculating profit from the diagram\n\nOnce you find Q* (where MR = MC):\n\n> Economic profit = (P - ATC) x Q*\n\nIf P > ATC at Q*: profit is positive. Shade the rectangle above ATC up to the price line.\nIf P = ATC: zero economic profit. The price line just touches ATC.\nIf P < ATC: economic loss. Shade the rectangle below the price line down to ATC.\n\nThis formula works for all market structures. The key step is always finding Q* at MR = MC, then reading ATC at that quantity."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-tr",
+          "front": "Total revenue (TR)",
+          "back": "Price times quantity: TR = P x Q. The straight line from the origin with slope P for a competitive firm."
+        },
+        {
+          "id": "fc-mr",
+          "front": "Marginal revenue (MR)",
+          "back": "Change in TR from selling one more unit: change in TR / change in Q. For a competitive firm, MR = P always."
+        },
+        {
+          "id": "fc-explicit",
+          "front": "Explicit cost",
+          "back": "Actual out-of-pocket payments — wages, rent, materials, interest. Recorded in accounting books."
+        },
+        {
+          "id": "fc-implicit",
+          "front": "Implicit cost",
+          "back": "Opportunity cost without a cash payment — owner's foregone salary, foregone return on invested capital. NOT in accounting records."
+        },
+        {
+          "id": "fc-accprofit",
+          "front": "Accounting profit",
+          "back": "TR minus explicit costs only. Always >= economic profit when implicit costs are positive."
+        },
+        {
+          "id": "fc-ecoprofit",
+          "front": "Economic profit",
+          "back": "TR minus both explicit AND implicit costs. The true measure of whether resources are well-used."
+        },
+        {
+          "id": "fc-normal",
+          "front": "Normal profit (zero economic profit)",
+          "back": "Earns exactly the opportunity cost of all resources. Accounting profit is still positive, but no above-normal returns."
+        },
+        {
+          "id": "fc-mreqmc",
+          "front": "MR = MC rule",
+          "back": "Produce where marginal revenue equals marginal cost (with MC rising). True for all market structures. Maximizes profit (or minimizes loss)."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-crp-1",
+          "prompt": "Which profit concept subtracts both explicit and implicit costs from total revenue?",
+          "choices": [
+            "Accounting profit",
+            "Economic profit",
+            "Normal profit",
+            "Gross profit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Economic profit = TR - explicit costs - implicit costs. Accounting profit only subtracts explicit costs, so it is always at least as large as economic profit when implicit costs exist."
+        },
+        {
+          "id": "q-crp-2",
+          "prompt": "For a perfectly competitive firm, marginal revenue equals:",
+          "choices": [
+            "Average total cost",
+            "Market price P",
+            "The slope of market demand",
+            "Total fixed cost divided by quantity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each unit a competitive firm sells adds exactly P to revenue because the firm faces a perfectly horizontal demand curve at price P. So MR = P at every quantity."
+        },
+        {
+          "id": "q-crp-3",
+          "prompt": "A firm earning zero economic profit is:",
+          "choices": [
+            "Necessarily going bankrupt",
+            "Earning exactly the opportunity cost of its resources — a normal profit",
+            "Maximizing MR above MC",
+            "Shut down in the short run"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zero economic profit means accounting profit covers all explicit AND implicit costs. The entrepreneur earns exactly what they could earn in their next-best alternative — this is normal profit, not failure."
+        },
+        {
+          "id": "q-crp-4",
+          "prompt": "An entrepreneur runs a bakery and earns $60,000 in accounting profit. If she could otherwise earn $55,000 as a salaried chef, what is her economic profit?",
+          "choices": [
+            "$60,000",
+            "$115,000",
+            "$5,000",
+            "-$55,000"
+          ],
+          "correctIndex": 2,
+          "explanation": "Economic profit = accounting profit - implicit costs = $60,000 - $55,000 (foregone salary) = $5,000. She is earning above-normal returns by $5,000."
+        },
+        {
+          "id": "q-crp-5",
+          "prompt": "Using the MR = MC rule, at the profit-maximizing quantity the firm finds P = $20, ATC = $14, and Q* = 100 units. Economic profit equals:",
+          "choices": [
+            "$1,400",
+            "$600",
+            "$2,000",
+            "$200"
+          ],
+          "correctIndex": 1,
+          "explanation": "Economic profit = (P - ATC) x Q* = ($20 - $14) x 100 = $6 x 100 = $600."
+        },
+        {
+          "id": "q-crp-6",
+          "prompt": "Profit maximization using the total approach finds the quantity where:",
+          "choices": [
+            "TR is maximized alone",
+            "TR - TC is maximized (largest vertical gap)",
+            "TC is minimized",
+            "AFC equals AVC"
+          ],
+          "correctIndex": 1,
+          "explanation": "The total approach graphs TR and TC, and finds the Q where the vertical distance TR - TC is greatest. That gap is economic profit, and its maximum is the profit-maximizing output."
+        },
+        {
+          "id": "q-crp-7",
+          "prompt": "A competitive firm's total revenue function is TR = P × Q. If market price is $12 and it sells 50 units, total revenue is:",
+          "choices": [
+            "$50",
+            "$12",
+            "$600",
+            "$62"
+          ],
+          "correctIndex": 2,
+          "explanation": "TR = P × Q = $12 × 50 = $600. In perfect competition price is constant, so TR rises linearly with output and the slope of TR equals the market price."
+        },
+        {
+          "id": "q-crp-8",
+          "prompt": "A firm's accounting profit is $90,000. Its owner forgoes a $40,000 salary she could earn elsewhere. Economic profit equals:",
+          "choices": [
+            "$130,000",
+            "$90,000",
+            "$50,000",
+            "$40,000"
+          ],
+          "correctIndex": 2,
+          "explanation": "Economic profit = Accounting profit − Implicit costs = $90,000 − $40,000 = $50,000. The forgone salary is an implicit (opportunity) cost that accountants ignore but economists include."
+        },
+        {
+          "id": "q-crp-9",
+          "prompt": "If price equals ATC exactly, a firm's economic profit is:",
+          "choices": [
+            "Positive",
+            "Negative",
+            "Zero",
+            "Indeterminate"
+          ],
+          "correctIndex": 2,
+          "explanation": "Economic profit = (P − ATC) × Q. When P = ATC, the difference is zero, so economic profit = 0. The firm earns normal profit—it is covering all costs including the opportunity cost of the owner's capital."
+        },
+        {
+          "id": "q-crp-10",
+          "prompt": "Under the MR = MC rule, a firm should expand output if:",
+          "choices": [
+            "MR > MC, because each extra unit adds more to revenue than to cost",
+            "MR < MC, because the firm needs higher revenue",
+            "MR = 0, because revenue is maximised",
+            "P > ATC, because the firm is profitable"
+          ],
+          "correctIndex": 0,
+          "explanation": "When MR > MC, producing one more unit adds more to total revenue than to total cost, increasing profit. The firm should expand until MR = MC (the profit-maximising point)."
+        },
+        {
+          "id": "q-crp-11",
+          "prompt": "Which of the following is an implicit cost?",
+          "choices": [
+            "A monthly electricity bill",
+            "Employee wages",
+            "The entrepreneur's forgone salary from a previous job",
+            "A bank loan interest payment"
+          ],
+          "correctIndex": 2,
+          "explanation": "Implicit costs are opportunity costs that do not involve a direct payment—they represent the value of resources the owner provides to the firm. Forgone salary is the classic example. The others are explicit (cash) costs."
+        },
+        {
+          "id": "q-crp-12",
+          "prompt": "A firm should shut down in the short run if:",
+          "choices": [
+            "Price is below ATC",
+            "Price is below AVC",
+            "Economic profit is negative",
+            "Accounting profit is zero"
+          ],
+          "correctIndex": 1,
+          "explanation": "Shut down when P < AVC. At that price the firm cannot cover even its variable costs—it loses less by producing nothing (paying only fixed costs) than by operating. If P > AVC, continuing covers some fixed costs."
+        },
+        {
+          "id": "q-crp-13",
+          "prompt": "A firm earns TR = $500, pays $200 in wages, $100 in materials, and the owner gives up a $120 salary. Economic profit is:",
+          "choices": [
+            "$300",
+            "$200",
+            "$80",
+            "$180"
+          ],
+          "correctIndex": 2,
+          "explanation": "Economic profit = TR − explicit costs − implicit costs = $500 − $200 − $100 − $120 = $80. The implicit cost (forgone salary) is subtracted even though no cash changes hands."
+        },
+        {
+          "id": "q-crp-14",
+          "prompt": "Break-even output (zero economic profit) occurs where:",
+          "choices": [
+            "MR = MC",
+            "TR = TC",
+            "P = MC",
+            "TC is minimised"
+          ],
+          "correctIndex": 1,
+          "explanation": "Zero economic profit means TR = TC. This is also the point where P = ATC (because TR/Q = P and TC/Q = ATC). The MR = MC rule finds the profit-maximising quantity, not the break-even quantity."
+        }
+      ]
+    },
+    {
+      "id": "long-run-costs",
+      "title": "Long-run costs and scale",
+      "lessons": [
+        {
+          "id": "lr-lratc",
+          "title": "The LRATC curve — the planning curve",
+          "bodyMarkdown": "## All inputs are flexible in the long run\n\nIn the short run, the firm is stuck with a particular factory size. In the long run, it can choose any scale it wants. The long-run average total cost curve (LRATC) shows the **lowest possible average cost for each output level** when the firm can select its optimal plant size.\n\nThink of LRATC as the **planning curve**: before building a factory, engineers and economists map out the cheapest way to produce each quantity. Each point on LRATC is the minimum cost achievable with the optimal-sized plant for that output.\n\n## LRATC as the envelope of SRATC curves\n\nImagine drawing five different short-run ATC curves — one for a small plant, one for a medium plant, one for a large plant, and so on. Each SRATC is U-shaped for its own output range. The **LRATC is the lower envelope**: the smooth curve that just touches the bottom of each SRATC at the scale where that plant size is optimal. No point on any SRATC can be below LRATC.\n\nIn the short run, the firm is stuck on one particular SRATC. In the long run, it can move along LRATC to any point.\n\n## Minimum efficient scale\n\n**Minimum efficient scale (MES)** is the smallest output at which the firm reaches the lowest attainable LRATC. In industries with a large MES (airlines, steel mills, semiconductor fabs), only very large firms can achieve minimum cost. This naturally leads to concentrated markets with few large competitors. In industries with a small MES (restaurants, haircut salons, independent tutors), many small firms can all operate at minimum cost, supporting a competitive market structure."
+        },
+        {
+          "id": "lr-returns-scale",
+          "title": "Economies, diseconomies, and returns to scale",
+          "bodyMarkdown": "## Three regions of the LRATC\n\n**Economies of scale (LRATC falling):** larger output lowers average cost. Causes include:\n\n- Worker and machine specialization — narrower tasks allow mastery and efficiency\n- Indivisible fixed inputs — a CEO, a legal team, or an assembly line has high setup cost but serves a huge volume\n- Bulk purchasing power — larger orders at lower per-unit prices from suppliers\n- Technical advantages — some production processes (steel blast furnaces, microchip fabs) are only efficient at massive scale\n\n**Constant returns to scale (LRATC flat):** doubling all inputs doubles output and leaves average cost unchanged.\n\n**Diseconomies of scale (LRATC rising):** further growth raises average cost. Causes:\n\n- Management and communication overload — layers of bureaucracy slow decisions\n- Coordination costs grow faster than output\n- Worker motivation can decline in impersonal mega-firms\n\n## Returns to scale: the exact definition\n\n**Returns to scale** asks: if you double ALL inputs simultaneously, what happens to output?\n\n- Output more than doubles → **increasing returns to scale** (economies of scale region)\n- Output exactly doubles → **constant returns to scale**\n- Output less than doubles → **decreasing returns to scale** (diseconomies of scale region)\n\n## The critical distinction: DMR vs. returns to scale\n\nThis is one of the most tested distinctions on the AP exam:\n\n- **Diminishing marginal returns:** a SHORT-RUN concept. Capital is fixed. Adding more labor eventually gives less additional output.\n- **Returns to scale:** a LONG-RUN concept. ALL inputs scale together. There is no fixed input by definition.\n\nA firm can simultaneously experience diminishing marginal returns in the short run AND enjoy economies of scale in the long run. They are completely separate ideas."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-lratc",
+          "front": "LRATC (long-run average total cost)",
+          "back": "The lowest possible ATC for each output level when the firm can choose its optimal plant size. It is the envelope of all SRATC curves."
+        },
+        {
+          "id": "fc-eos",
+          "front": "Economies of scale",
+          "back": "LRATC falls as output increases. Causes: specialization, indivisible inputs, bulk purchasing, technical advantages of large-scale production."
+        },
+        {
+          "id": "fc-des",
+          "front": "Diseconomies of scale",
+          "back": "LRATC rises as output increases. Causes: management overload, coordination failures, communication costs growing faster than output."
+        },
+        {
+          "id": "fc-crs",
+          "front": "Constant returns to scale",
+          "back": "LRATC is flat: doubling all inputs exactly doubles output, leaving average cost unchanged."
+        },
+        {
+          "id": "fc-mes",
+          "front": "Minimum efficient scale (MES)",
+          "back": "The smallest output at which the firm achieves the lowest LRATC. Large MES leads to fewer, larger firms; small MES allows many small firms."
+        },
+        {
+          "id": "fc-rts-vs-dmr",
+          "front": "Returns to scale vs. diminishing returns",
+          "back": "Diminishing marginal returns: SHORT-RUN, one input fixed. Returns to scale: LONG-RUN, all inputs vary together. These are completely separate concepts."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-lr-1",
+          "prompt": "If doubling all inputs more than doubles output, the firm experiences:",
+          "choices": [
+            "Diminishing marginal returns",
+            "Diseconomies of scale",
+            "Increasing returns to scale (economies of scale)",
+            "Constant returns to scale"
+          ],
+          "correctIndex": 2,
+          "explanation": "Increasing returns to scale means output rises proportionally more than the increase in inputs — LRATC is falling. This is distinct from diminishing marginal returns, which is a short-run concept with one input fixed."
+        },
+        {
+          "id": "q-lr-2",
+          "prompt": "The LRATC curve is best described as:",
+          "choices": [
+            "The sum of all firms' MC curves",
+            "The envelope of SRATC curves showing lowest achievable cost at each output",
+            "Identical to the market demand curve",
+            "Always a horizontal line"
+          ],
+          "correctIndex": 1,
+          "explanation": "LRATC is formed by the lower envelope of all possible SRATC curves — for each output level it shows the minimum ATC when plant size can be optimally chosen."
+        },
+        {
+          "id": "q-lr-3",
+          "prompt": "Diminishing marginal returns occurs because:",
+          "choices": [
+            "All inputs double but output less than doubles",
+            "A variable input is added to a fixed input in the short run",
+            "LRATC rises as the firm grows very large",
+            "Workers become less skilled over time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Diminishing marginal returns is a short-run phenomenon caused by adding more of a variable input (like labor) to a fixed input (like capital). It has nothing to do with long-run scale changes."
+        },
+        {
+          "id": "q-lr-4",
+          "prompt": "Which industry characteristic is most associated with a large minimum efficient scale?",
+          "choices": [
+            "Many small competitive firms producing identical products",
+            "Markets with frequent entry and exit",
+            "High setup costs and large indivisible capital, like chip fabrication",
+            "Services requiring personal customization"
+          ],
+          "correctIndex": 2,
+          "explanation": "Large MES means a firm must reach a very large scale to minimize average cost. This is typical of industries with enormous fixed capital costs (factories, distribution networks) where spreading those costs requires massive output."
+        },
+        {
+          "id": "q-lr-5",
+          "prompt": "A pharmaceutical company doubles all its inputs (scientists, labs, equipment) and output only increases by 60%. This represents:",
+          "choices": [
+            "Diminishing marginal returns in the short run",
+            "Increasing returns to scale",
+            "Decreasing returns to scale (diseconomies of scale)",
+            "Constant returns to scale"
+          ],
+          "correctIndex": 2,
+          "explanation": "Output increased by 60% while inputs doubled (100% increase). Output rose proportionally less than inputs — this is decreasing returns to scale, associated with rising LRATC."
+        },
+        {
+          "id": "q-lr-6",
+          "prompt": "The LRATC curve is described as the 'planning curve' because:",
+          "choices": [
+            "It shows costs only in the planning stage before production begins",
+            "It shows the lowest possible ATC for each output level, given that all inputs can be varied",
+            "It plans how many workers to hire each quarter",
+            "It is always downward sloping"
+          ],
+          "correctIndex": 1,
+          "explanation": "In the long run, the firm can choose its optimal plant size. The LRATC is the envelope of all possible SRATC curves—for every output level it shows the minimum cost achievable when no inputs are fixed."
+        },
+        {
+          "id": "q-lr-7",
+          "prompt": "If the LRATC curve is flat (horizontal) over a range of output, the firm experiences:",
+          "choices": [
+            "Economies of scale",
+            "Diseconomies of scale",
+            "Constant returns to scale",
+            "Diminishing marginal returns"
+          ],
+          "correctIndex": 2,
+          "explanation": "A flat LRATC means average long-run cost neither falls nor rises as output expands—a proportional increase in inputs produces a proportional increase in output. This is constant returns to scale."
+        },
+        {
+          "id": "q-lr-8",
+          "prompt": "Which industry characteristic is most strongly associated with economies of scale?",
+          "choices": [
+            "Many small firms competing",
+            "High minimum efficient scale relative to market demand",
+            "Homogeneous products",
+            "Easy entry and exit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Economies of scale create a high minimum efficient scale (MES). When the MES is large relative to market demand, only a few (or one) large firm can operate efficiently—a hallmark of natural monopoly industries like water and electricity."
+        },
+        {
+          "id": "q-lr-9",
+          "prompt": "Diseconomies of scale might arise from:",
+          "choices": [
+            "Specialisation of labour",
+            "Bulk purchasing discounts",
+            "Communication and coordination problems in very large firms",
+            "Access to cheaper capital markets"
+          ],
+          "correctIndex": 2,
+          "explanation": "Very large firms often struggle with bureaucracy, slow decision-making, and coordination costs. These managerial inefficiencies are the most common source of diseconomies of scale, causing LRATC to rise beyond some output level."
+        },
+        {
+          "id": "q-lr-10",
+          "prompt": "In the long run, a profit-maximising firm chooses a plant size that:",
+          "choices": [
+            "Maximises total output regardless of cost",
+            "Minimises total fixed cost",
+            "Produces the desired output at the lowest possible average total cost",
+            "Keeps marginal cost as high as possible"
+          ],
+          "correctIndex": 2,
+          "explanation": "The firm uses the LRATC curve as its guide: for a given target output, it picks the plant size (SRATC) that lies on the LRATC—minimising average cost for that output level."
+        },
+        {
+          "id": "q-lr-11",
+          "prompt": "A firm doubles all inputs. Output rises from 100 to 230 units. This firm experiences:",
+          "choices": [
+            "Decreasing returns to scale",
+            "Constant returns to scale",
+            "Increasing returns to scale",
+            "Diminishing marginal returns"
+          ],
+          "correctIndex": 2,
+          "explanation": "Doubling inputs raised output by more than double (100 → 230 > 200). This is increasing returns to scale. Long-run cost per unit is therefore falling as the firm grows."
+        },
+        {
+          "id": "q-lr-12",
+          "prompt": "Minimum efficient scale (MES) is the output level at which:",
+          "choices": [
+            "Marginal cost is minimised",
+            "LRATC first reaches its lowest point",
+            "Total cost stops increasing",
+            "SRATC equals LRATC at every output"
+          ],
+          "correctIndex": 1,
+          "explanation": "MES is the smallest output at which the firm exhausts economies of scale—the point where LRATC first hits its minimum. Producing at MES is the most efficient scale of operation."
+        },
+        {
+          "id": "q-lr-13",
+          "prompt": "As a firm moves along its LRATC curve to higher output levels and LRATC is declining, the firm:",
+          "choices": [
+            "Is experiencing diminishing marginal returns",
+            "Has no fixed costs",
+            "Is enjoying economies of scale",
+            "Has a horizontal demand curve"
+          ],
+          "correctIndex": 2,
+          "explanation": "A declining LRATC means the long-run average cost falls as output expands—by definition, this is economies of scale. The firm becomes more cost-efficient as it grows."
+        }
+      ]
+    },
+    {
+      "id": "perfect-competition",
+      "title": "Perfect competition",
+      "lessons": [
+        {
+          "id": "pc-structure",
+          "title": "The perfectly competitive market",
+          "bodyMarkdown": "## Four defining characteristics\n\n**1. Many small buyers and sellers:** no single participant is large enough to influence the market price. Each firm's output is a negligible fraction of total market supply.\n\n**2. Identical (homogeneous) product:** buyers are completely indifferent between sellers. Wheat from one Iowa farm is identical to wheat from another. Buyers have no reason to pay a premium for any particular seller.\n\n**3. Free entry and exit:** there are no barriers preventing new firms from entering the industry or existing firms from leaving in the long run. No patents, no licensing restrictions, no massive startup costs relative to firm size.\n\n**4. Perfect information:** all buyers and sellers have full knowledge of prices and product quality throughout the market.\n\n## Real-world examples\n\nPure perfect competition is a theoretical model, but commodity markets come close: wheat, corn, soybeans, crude oil (from independent wells), some financial securities like Treasury bills. In these markets, millions of units trade every day and no single seller sets the price.\n\n## The price-taking firm\n\nBecause the competitive firm's output is tiny relative to the market, it takes market price as given. It cannot charge above P (buyers would go elsewhere) and has no reason to charge below P (it can sell everything it wants at P). It is a pure **price taker**, not a price setter.\n\n## The MRDARP line\n\nThe firm's demand curve is **perfectly elastic (horizontal) at market price P**. This single line serves four roles simultaneously:\n\n- **D** — demand for this firm's output at P\n- **MR** — each unit adds exactly P to revenue\n- **AR** — average revenue = TR/Q = P always\n- **P** — market price\n\nAP exams require you to label this line **MRDARP** on free-response graphs. It is the most commonly labeled line in AP Micro."
+        },
+        {
+          "id": "pc-profit-max",
+          "title": "Profit maximization and the three cases",
+          "bodyMarkdown": "## The rule: produce where P = MC\n\nSince MR = P for a competitive firm, the MR = MC rule becomes **P = MC**. Find the output where market price equals marginal cost — that is the profit-maximizing quantity Q*. Always confirm MC is rising at Q* (not falling).\n\n## Three possible profit outcomes\n\nAfter finding Q*, compare P to ATC at that quantity:\n\n**Case 1 — Economic profit (P > ATC):**\nPrice exceeds average cost. The firm earns above-normal returns. Profit per unit = P - ATC. Total economic profit = (P - ATC) x Q*. On the graph, shade the **rectangle above ATC up to the P line**, spanning from 0 to Q*.\n\n**Case 2 — Zero economic profit (P = ATC):**\nPrice exactly equals average cost at Q*. The firm earns normal profit. This is the long-run equilibrium outcome for perfect competition. The P line is tangent to the minimum of ATC.\n\n**Case 3 — Economic loss (P < ATC):**\nPrice is below average cost. The firm is losing money. Loss per unit = ATC - P. Total loss = (ATC - P) x Q*. Shade the **rectangle below the P line down to ATC**.\n\n## Should a losing firm produce or shut down?\n\nAn economic loss does not automatically mean shut down. Compare P to **AVC** at Q*:\n\n- If **P >= AVC**: produce. Revenue at least covers all variable costs; the firm is also paying back some fixed costs. Better than shutting down and losing all TFC.\n- If **P < AVC**: shut down now. Revenue does not even cover variable costs. Every unit produced deepens the loss beyond TFC. Shut down and lose only TFC.\n\n## Drawing the graph correctly\n\nFor AP exam FRQ graphs, draw: a U-shaped MC (swoosh), AVC below ATC (both U-shaped), MC crossing each at their minimum, and the horizontal MRDARP line. Label Q* where MRDARP intersects MC, and shade the appropriate profit/loss rectangle."
+        },
+        {
+          "id": "pc-lr-adjustment",
+          "title": "Long-run adjustment and efficiency",
+          "bodyMarkdown": "## Free entry and exit drives out profits and losses\n\n**Short-run economic profit leads to entry:**\nIf P > ATC, existing firms earn economic profit. This signals to outsiders that this industry is a good place for resources. New firms enter. Market supply shifts right. Price falls. This continues until P returns to minimum ATC and economic profit = 0.\n\n**Short-run economic loss leads to exit:**\nIf P < ATC, firms are losing money. Resources are better used elsewhere. Firms leave. Market supply shifts left. Price rises. This continues until P returns to minimum ATC and losses disappear.\n\n## Long-run competitive equilibrium\n\nThe market settles at:\n\n> P = MR = MC = minimum ATC\n\nEvery firm earns **zero economic profit** (normal profit). There is no incentive for entry or exit. The representative firm produces at the minimum point of ATC.\n\n## Two efficiency results\n\n**Productive efficiency:** firms produce at minimum ATC — the lowest possible cost per unit. No waste; society's resources produce output as cheaply as possible.\n\n**Allocative efficiency:** P = MC. The price consumers pay exactly equals the marginal cost to society of producing that last unit. Resources go to their highest-valued use. The market produces exactly the quantity society wants.\n\nPerfect competition achieves both simultaneously in long-run equilibrium. This is why economists use it as the welfare benchmark — the gold standard against which all other market structures are compared.\n\n## The long-run supply curve\n\nFor a **constant-cost industry** (input prices don't change as the industry expands), the long-run supply curve is **perfectly elastic (horizontal)** at the minimum ATC price. Any price above this attracts entry until price returns to minimum ATC. Any price below triggers exit until it recovers."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-pc-def",
+          "front": "Perfect competition (definition)",
+          "back": "Market structure with: (1) many small firms, (2) identical product, (3) free entry and exit, (4) perfect information. Every firm is a price taker."
+        },
+        {
+          "id": "fc-pricetaker",
+          "front": "Price taker",
+          "back": "A firm that cannot influence market price — it accepts the market price as given and decides only how much to produce at that price."
+        },
+        {
+          "id": "fc-mrdarp",
+          "front": "MRDARP",
+          "back": "For a competitive firm: the single horizontal line at market price P that simultaneously represents D, MR, AR, and P. Must be labeled MRDARP on AP FRQ graphs."
+        },
+        {
+          "id": "fc-pc-profit",
+          "front": "Economic profit formula (from graph)",
+          "back": "(P - ATC) x Q* at the MR=MC quantity. Positive if P > ATC, zero if P = ATC, negative (loss) if P < ATC."
+        },
+        {
+          "id": "fc-shutdown",
+          "front": "Short-run shutdown rule",
+          "back": "Shut down if P < AVC at Q*. If P >= AVC, produce even if making a loss — revenue at least covers variable costs and some fixed costs."
+        },
+        {
+          "id": "fc-sr-supply",
+          "front": "Firm's short-run supply curve",
+          "back": "The portion of the MC curve at and above AVC. Below AVC, the firm shuts down. Above AVC, it supplies along MC."
+        },
+        {
+          "id": "fc-lr-eq",
+          "front": "Long-run competitive equilibrium",
+          "back": "P = MR = MC = minimum ATC. Zero economic profit. Productive and allocative efficiency achieved. No entry or exit incentive."
+        },
+        {
+          "id": "fc-efficiency",
+          "front": "Productive vs. allocative efficiency",
+          "back": "Productive: P = minimum ATC (lowest cost production). Allocative: P = MC (resources allocated to highest-valued use). Both hold in LR perfect competition."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-pc-1",
+          "prompt": "For a perfectly competitive firm, the demand curve it faces is:",
+          "choices": [
+            "Downward sloping at market price",
+            "Perfectly elastic (horizontal) at market price P",
+            "Identical to the market demand curve",
+            "Upward sloping because more production requires higher prices"
+          ],
+          "correctIndex": 1,
+          "explanation": "The individual competitive firm is a price taker. It can sell any amount it wants at the market price P. This makes the demand facing the firm perfectly horizontal (perfectly elastic) at P."
+        },
+        {
+          "id": "q-pc-2",
+          "prompt": "In long-run equilibrium in perfect competition, economic profit is:",
+          "choices": [
+            "Maximized for all firms",
+            "Negative — firms operate at a loss to stay competitive",
+            "Zero (normal profit)",
+            "Equal to total revenue minus explicit costs only"
+          ],
+          "correctIndex": 2,
+          "explanation": "Free entry and exit drive economic profit to zero in the long run. If profits are positive, entry occurs; if losses exist, exit occurs. The equilibrium is P = min ATC with zero economic profit."
+        },
+        {
+          "id": "q-pc-3",
+          "prompt": "A competitive firm should continue producing in the short run (not shut down) when:",
+          "choices": [
+            "P is greater than ATC",
+            "P is greater than or equal to AVC",
+            "P is greater than MC",
+            "Economic profit is positive"
+          ],
+          "correctIndex": 1,
+          "explanation": "The shutdown rule compares P to AVC. If P >= AVC, the firm covers at least its variable costs and is paying back some fixed cost — better to produce than shut down and lose all TFC. Shutdown occurs only when P < AVC."
+        },
+        {
+          "id": "q-pc-4",
+          "prompt": "The firm's short-run supply curve in perfect competition is:",
+          "choices": [
+            "Its AVC curve everywhere",
+            "Its ATC curve above AVC",
+            "Its MC curve at and above AVC",
+            "The horizontal MRDARP line"
+          ],
+          "correctIndex": 2,
+          "explanation": "The firm supplies along its MC curve (since P = MC determines Q* at each price), but only when price is at or above AVC. Below AVC, the firm shuts down and supplies zero."
+        },
+        {
+          "id": "q-pc-5",
+          "prompt": "If competitive firms are currently earning economic profit in the short run, the long-run adjustment will involve:",
+          "choices": [
+            "Existing firms raising prices to maintain profits",
+            "New firms entering, supply shifting right, price falling to minimum ATC",
+            "Government intervention to limit excess profits",
+            "Firms reducing output to restore normal profit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Economic profit attracts entry. New firms enter the industry, shifting market supply to the right. Price falls until it equals minimum ATC and economic profit = 0."
+        },
+        {
+          "id": "q-pc-6",
+          "prompt": "In long-run perfect competition equilibrium, which statement is TRUE?",
+          "choices": [
+            "P = MC only (not ATC)",
+            "P = ATC only (not MC)",
+            "P = MC = minimum ATC — both allocative and productive efficiency are achieved",
+            "Firms maximize accounting profit but earn zero economic profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "In LR equilibrium: P = MR = MC = minimum ATC. Allocative efficiency means P = MC (right amount produced). Productive efficiency means P = min ATC (lowest possible cost). Perfect competition achieves both."
+        },
+        {
+          "id": "q-pc-7",
+          "prompt": "At market price P = $18, a competitive firm finds Q* = 80 units where P = MC, and ATC at Q* = $22. The firm should:",
+          "choices": [
+            "Continue producing because P > AVC likely covers variable costs",
+            "Shut down immediately because P < ATC in any case",
+            "Raise its price to $22 to eliminate the loss",
+            "Exit the industry immediately to avoid any losses"
+          ],
+          "correctIndex": 0,
+          "explanation": "P < ATC means an economic loss, but the shutdown decision compares P to AVC. If P ($18) >= AVC, the firm covers variable costs and some fixed costs — producing is better than shutting down and losing all TFC. We need AVC to make a definitive call, but 'likely covers variable costs' reflects the standard short-run logic."
+        },
+        {
+          "id": "q-pc-8",
+          "prompt": "A perfectly competitive firm is a 'price taker' because:",
+          "choices": [
+            "It sets a take-it-or-leave-it price",
+            "It is too small to influence the market price by changing its own output",
+            "Government regulations force it to accept the posted price",
+            "Its product is unique"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each competitive firm is so small relative to the market that it can sell all it wants at the market price or nothing at a higher price. No single firm's output decision moves the market price."
+        },
+        {
+          "id": "q-pc-9",
+          "prompt": "If price rises above minimum ATC in a perfectly competitive industry, the long-run adjustment is:",
+          "choices": [
+            "Existing firms cut production",
+            "New firms enter, increasing supply and lowering price back to minimum ATC",
+            "The government imposes a price ceiling",
+            "Firms differentiate their products"
+          ],
+          "correctIndex": 1,
+          "explanation": "Above-normal (economic) profit attracts new entrants. Market supply increases, driving price down until economic profit returns to zero—the long-run equilibrium at P = minimum ATC."
+        },
+        {
+          "id": "q-pc-10",
+          "prompt": "In long-run perfectly competitive equilibrium, P = MC implies:",
+          "choices": [
+            "Productive efficiency only",
+            "Allocative efficiency — the last unit's value to consumers equals its cost to produce",
+            "The firm earns economic profit",
+            "The market is in the short run"
+          ],
+          "correctIndex": 1,
+          "explanation": "P = MC is the condition for allocative efficiency: the price consumers pay (their marginal value) equals the marginal cost of production. Society is getting exactly the 'right' amount of this good."
+        },
+        {
+          "id": "q-pc-11",
+          "prompt": "A competitive firm produces where P = $15, MC = $15, ATC = $18, AVC = $12. In the short run, the firm should:",
+          "choices": [
+            "Shut down immediately",
+            "Continue operating and earn a loss",
+            "Raise its price to $18",
+            "Exit the industry immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "P = $15 > AVC = $12, so the firm covers variable costs and contributes $3 per unit toward fixed costs. It minimises losses by staying open. Only if P < AVC should a firm shut down in the short run."
+        },
+        {
+          "id": "q-pc-12",
+          "prompt": "The perfectly competitive firm's short-run supply curve is the portion of the MC curve:",
+          "choices": [
+            "Everywhere below AVC",
+            "Above the minimum point of ATC",
+            "At or above the minimum point of AVC",
+            "Equal to MR"
+          ],
+          "correctIndex": 2,
+          "explanation": "A competitive firm supplies output only when P ≥ AVC (the shutdown condition). The supply curve traces the upward-sloping MC curve starting from the minimum of AVC—below that the firm produces zero."
+        },
+        {
+          "id": "q-pc-13",
+          "prompt": "In long-run competitive equilibrium, which efficiency conditions hold simultaneously?",
+          "choices": [
+            "P = MC only",
+            "P = minimum ATC only",
+            "P = MC = minimum ATC (both allocative and productive efficiency)",
+            "MR = MC only"
+          ],
+          "correctIndex": 2,
+          "explanation": "Long-run competitive equilibrium achieves both: P = MC (allocative efficiency—right quantity for society) and P = minimum ATC (productive efficiency—lowest possible cost per unit). This is the benchmark outcome."
+        },
+        {
+          "id": "q-pc-14",
+          "prompt": "A constant-cost competitive industry has a long-run supply curve that is:",
+          "choices": [
+            "Upward sloping",
+            "Downward sloping",
+            "Horizontal (perfectly elastic)",
+            "Vertical (perfectly inelastic)"
+          ],
+          "correctIndex": 2,
+          "explanation": "In a constant-cost industry, input prices do not change as industry output expands. New firms can enter at the same minimum ATC as existing firms, so the long-run equilibrium price stays constant—giving a flat long-run supply curve."
+        },
+        {
+          "id": "q-pc-15",
+          "prompt": "If a competitive market price drops below a firm's minimum AVC, the firm will:",
+          "choices": [
+            "Raise its price to minimum AVC",
+            "Produce where MR = MC as usual",
+            "Shut down and produce zero output",
+            "Earn zero economic profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "Below minimum AVC the firm cannot cover even its variable costs. Every unit produced increases losses beyond fixed costs. The shutdown rule says: if P < min AVC, produce Q = 0 in the short run."
+        }
+      ]
+    },
+    {
+      "id": "monopoly",
+      "title": "Monopoly",
+      "lessons": [
+        {
+          "id": "mono-structure",
+          "title": "Market power and barriers to entry",
+          "bodyMarkdown": "## What is a monopoly?\n\nA monopoly is a market with a single seller of a product that has no close substitutes. Because there is only one firm, that firm IS the industry. It faces the entire downward-sloping market demand curve — not the horizontal demand that a competitive firm faces.\n\nThe key distinction: the monopolist is a **price maker**, not a price taker. It can choose any price-quantity combination on the demand curve. It typically selects the quantity that maximizes profit, then reads the corresponding price off the demand curve.\n\n## Four barriers to entry\n\n**1. Government franchise:** The government grants an exclusive legal right to supply — local utility companies, some postal services. No competitor can legally enter.\n\n**2. Patents and copyrights:** Pharmaceutical companies hold patents giving exclusive rights to sell a drug for approximately 20 years. During the patent period, the drug's inventor is the only supplier. When the patent expires, generic competitors enter and price typically collapses.\n\n**3. Natural monopoly:** When one firm can supply the entire market at a lower per-unit cost than two or more smaller firms could, it is a natural monopoly. The classic example is a utility's infrastructure — building a second set of gas pipes under a city makes no economic sense. LRATC never stops falling across the full range of market demand.\n\n**4. Control of an essential resource:** De Beers historically controlled the majority of the world's diamond supply and could price accordingly. OPEC coordinates pricing by collectively controlling a large fraction of petroleum output.\n\n## Why monopoly matters for the AP exam\n\nMonopoly is the polar opposite of perfect competition in market structure. Every graph, every efficiency comparison, and every policy question on imperfect competition starts with understanding what a monopolist does and why it is inefficient. The two-diagram structure (market demand IS the firm's demand; MR lies below it) is the foundation for monopolistic competition and oligopoly as well."
+        },
+        {
+          "id": "mono-mreqmc",
+          "title": "Why MR < P and the output decision",
+          "bodyMarkdown": "## The downward-sloping demand creates a wedge\n\nFor a competitive firm, MR = P because selling one more unit does not require lowering the price on existing sales. For the monopolist, this is not true.\n\nTo sell one more unit, the monopolist must lower the price on ALL units it sells (assuming it cannot price discriminate). Suppose the monopolist sells 5 units at $20 each. To sell the 6th unit, it must drop price to $19 for all six.\n\n- Revenue gain from the 6th unit: $19\n- Revenue lost on the 5 units that now sell for $1 less: 5 x $1 = $5\n- **Net MR = $19 - $5 = $14 < P = $19**\n\nThis gap between MR and P exists for any firm facing a downward-sloping demand curve.\n\n## MR formula for a linear demand\n\nIf demand is P = a - bQ, then MR = a - 2bQ — same y-intercept, exactly double the slope. The MR curve always lies below the demand curve (except at zero output) and hits zero when demand is at its midpoint.\n\n## Profit-maximizing rule: still MR = MC\n\nThe monopolist still maximizes profit using the universal rule MR = MC. The steps are:\n\n1. Find Q* where MR = MC (with MC rising at Q*)\n2. Go vertically up to the demand curve to read P* — the price consumers will pay for Q* units\n3. Read ATC at Q* to compute profit per unit\n4. Economic profit = (P* - ATC*) x Q*\n\n**Critical trap:** the monopolist does NOT set price equal to MC or MR. Price comes from the demand curve; output comes from the MR = MC intersection.\n\n## The allocative inefficiency\n\nAt Q*, the monopolist charges P* > MC. The last unit produced costs MC to make but is valued at P* by consumers — but units beyond Q* (valued above MC by consumers) are not produced. This under-production is the source of deadweight loss."
+        },
+        {
+          "id": "mono-dwl-regulation",
+          "title": "Deadweight loss, natural monopoly, and regulation",
+          "bodyMarkdown": "## Deadweight loss — the social cost of monopoly\n\nIn perfect competition, P = MC — allocatively efficient. The monopolist sets P > MC at Q*, leaving some mutually beneficial trades unmade. These foregone trades form a triangular area between the demand curve, the MC curve, and the vertical line at Q* — the **deadweight loss (DWL)**.\n\nDWL is a pure welfare loss. Nobody receives it — not the firm, not consumers. It simply evaporates because those units are not produced.\n\n**Monopoly vs. perfect competition:**\n- P is higher (monopoly extracts consumer surplus)\n- Q is lower\n- Productive efficiency may or may not hold (depends on whether the monopolist is at min ATC)\n- Allocative efficiency definitely fails (P > MC)\n- DWL exists\n\n## Natural monopoly and regulation\n\nA natural monopoly exists when LRATC never rises over the relevant range of demand — one firm's average cost falls continuously as it scales up. The infrastructure is so large that a second firm could never match the incumbent's per-unit cost.\n\nPolicies to correct monopoly:\n\n**Marginal-cost pricing regulation:** Force P = MC. This is allocatively efficient but creates a loss for the natural monopolist (since ATC > MC at that output). Government must then subsidize the firm.\n\n**Average-cost pricing regulation:** Force P = ATC. The firm breaks even (zero economic profit). Slightly above MC, so some DWL remains, but the firm doesn't need a subsidy.\n\n**Antitrust / breakup:** For non-natural monopolies, the government may force the firm to split up (e.g., AT&T 1982, Microsoft antitrust case).\n\n## The innovation caveat\n\nMonopoly is not always welfare-reducing on net. Patent monopolies provide incentives for R&D. Without patent protection, any successful drug would be instantly copied and the original inventor would earn nothing — so no firm would invest in the costly research to begin with. The temporary monopoly is the quid pro quo for innovation."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-mono-def",
+          "front": "Monopoly (definition)",
+          "back": "Single seller with no close substitutes, facing the entire downward-sloping market demand. A price maker."
+        },
+        {
+          "id": "fc-mono-barriers",
+          "front": "Four barriers to entry",
+          "back": "Government franchise, patents/copyrights, natural monopoly (falling LRATC), control of an essential resource."
+        },
+        {
+          "id": "fc-mono-mrbp",
+          "front": "Why MR < P for a monopolist",
+          "back": "To sell one more unit, the monopolist must lower price on ALL units. Revenue lost on existing units makes MR < P."
+        },
+        {
+          "id": "fc-mono-mrformula",
+          "front": "MR for a linear demand P = a - bQ",
+          "back": "MR = a - 2bQ. Same y-intercept, double the slope. Always below D except at Q = 0."
+        },
+        {
+          "id": "fc-mono-rule",
+          "front": "Monopoly profit-maximizing rule",
+          "back": "Find Q* where MR = MC. Read P* off the DEMAND curve (not MR). Profit = (P* - ATC*) x Q*."
+        },
+        {
+          "id": "fc-mono-dwl",
+          "front": "Deadweight loss from monopoly",
+          "back": "Triangle between demand, MC, and Q*. Represents mutually beneficial trades that don't occur because P > MC. Social welfare loss."
+        },
+        {
+          "id": "fc-natural-mono",
+          "front": "Natural monopoly",
+          "back": "LRATC falls over the entire relevant range of demand — one firm can supply at lower ATC than any combination of smaller firms."
+        },
+        {
+          "id": "fc-mono-eff",
+          "front": "Monopoly efficiency results",
+          "back": "Allocative efficiency fails (P > MC). DWL exists. Productive efficiency may or may not hold. Consumer surplus is reduced vs. competitive outcome."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-mono-1",
+          "prompt": "For a monopolist, marginal revenue is less than price because:",
+          "choices": [
+            "The monopolist produces at a higher cost than competitive firms",
+            "To sell more output, the monopolist must lower price on all units sold",
+            "The government caps prices below the competitive level",
+            "The monopolist's ATC exceeds P at the profit-maximizing output"
+          ],
+          "correctIndex": 1,
+          "explanation": "The monopolist faces a downward-sloping demand. To sell one more unit, it must reduce price on all existing units. This revenue loss on existing sales makes MR < P."
+        },
+        {
+          "id": "q-mono-2",
+          "prompt": "A monopolist maximizes profit by producing where:",
+          "choices": [
+            "P = MC",
+            "MR = P",
+            "MR = MC (with P read from the demand curve)",
+            "ATC is minimized"
+          ],
+          "correctIndex": 2,
+          "explanation": "The universal rule MR = MC applies. The output is found where MR intersects MC. Then the monopolist reads price off the demand curve (above MR), not off MR."
+        },
+        {
+          "id": "q-mono-3",
+          "prompt": "Compared to the perfectly competitive outcome, a monopolist produces:",
+          "choices": [
+            "More output at a lower price",
+            "Less output at a higher price",
+            "The same output but at a higher price",
+            "More output at a higher price"
+          ],
+          "correctIndex": 1,
+          "explanation": "The monopolist restricts output to Q* (where MR=MC < P) and charges P* > MC. Competitive equilibrium would occur at a higher Q where P = MC."
+        },
+        {
+          "id": "q-mono-4",
+          "prompt": "The deadweight loss from monopoly represents:",
+          "choices": [
+            "The monopolist's economic profit",
+            "Consumer surplus transferred to the monopolist",
+            "Mutually beneficial trades that don't occur because P > MC",
+            "The cost of government regulation"
+          ],
+          "correctIndex": 2,
+          "explanation": "DWL is the triangular area between demand, MC, and Q*. These are units that consumers value above marginal cost but the monopolist doesn't produce. No one gains this welfare — it is lost to society."
+        },
+        {
+          "id": "q-mono-5",
+          "prompt": "A natural monopoly is characterized by:",
+          "choices": [
+            "A firm that earns zero economic profit in the long run",
+            "LRATC that falls over the entire relevant range of market demand",
+            "A firm with many close substitutes",
+            "A market where entry is legally unrestricted"
+          ],
+          "correctIndex": 1,
+          "explanation": "Natural monopoly arises when one firm's scale advantages are so large that LRATC continues falling across all output levels consumers demand. A second firm could never match the incumbent's per-unit cost."
+        },
+        {
+          "id": "q-mono-6",
+          "prompt": "If demand is P = 30 - 2Q, what is the marginal revenue equation?",
+          "choices": [
+            "MR = 30 - 2Q",
+            "MR = 30 - 4Q",
+            "MR = 15 - Q",
+            "MR = 30 - Q"
+          ],
+          "correctIndex": 1,
+          "explanation": "For a linear demand P = a - bQ, MR = a - 2bQ. Here a=30 and b=2, so MR = 30 - 2(2)Q = 30 - 4Q. Same y-intercept, double the slope."
+        },
+        {
+          "id": "q-mono-7",
+          "prompt": "Average-cost pricing regulation of a natural monopoly results in:",
+          "choices": [
+            "P = MC (allocative efficiency)",
+            "P = ATC (firm breaks even, some DWL remains)",
+            "The firm earns maximum economic profit",
+            "The same outcome as perfect competition"
+          ],
+          "correctIndex": 1,
+          "explanation": "Average-cost regulation forces P = ATC so the firm earns zero economic profit (normal profit) without needing a subsidy. However, P > MC still holds, so some DWL remains — it's not fully allocatively efficient."
+        },
+        {
+          "id": "q-mono-8",
+          "prompt": "A monopolist faces demand P = 40 − 2Q. When Q = 8, total revenue is:",
+          "choices": [
+            "$40",
+            "$192",
+            "$200",
+            "$320"
+          ],
+          "correctIndex": 1,
+          "explanation": "At Q = 8: P = 40 − 2(8) = 40 − 16 = $24. TR = P × Q = $24 × 8 = $192. Unlike a competitive firm, a monopolist must lower price to sell more, so TR is not linear."
+        },
+        {
+          "id": "q-mono-9",
+          "prompt": "Which of the following is NOT a barrier to entry that sustains monopoly?",
+          "choices": [
+            "A patent granting exclusive rights to produce a drug",
+            "Ownership of the only known source of a rare mineral",
+            "Economies of scale making competition unviable",
+            "Advertising that differentiates the product slightly"
+          ],
+          "correctIndex": 3,
+          "explanation": "Advertising that creates mild differentiation describes monopolistic competition, not monopoly. True monopoly barriers include patents, unique resource control, and natural monopoly (economies of scale), which completely block competitors."
+        },
+        {
+          "id": "q-mono-10",
+          "prompt": "A monopolist produces Q* = 10, P* = $30, ATC = $22. Economic profit equals:",
+          "choices": [
+            "$80",
+            "$120",
+            "$220",
+            "$300"
+          ],
+          "correctIndex": 0,
+          "explanation": "Economic profit = (P − ATC) × Q = ($30 − $22) × 10 = $8 × 10 = $80. Unlike perfect competition, the monopolist earns positive profit in the long run because barriers to entry prevent rivals from eliminating it."
+        },
+        {
+          "id": "q-mono-11",
+          "prompt": "Marginal-cost pricing regulation of a monopoly results in:",
+          "choices": [
+            "A higher price than the unregulated monopoly",
+            "Elimination of deadweight loss but may require a government subsidy",
+            "The monopolist earning maximum profit",
+            "Higher output than the competitive outcome"
+          ],
+          "correctIndex": 1,
+          "explanation": "Setting P = MC eliminates DWL (the competitive outcome), but for a natural monopoly (declining ATC) this means P < ATC. The firm loses money and needs a government subsidy to remain in operation."
+        },
+        {
+          "id": "q-mono-12",
+          "prompt": "Price discrimination allows a monopolist to:",
+          "choices": [
+            "Produce more efficiently",
+            "Capture consumer surplus and convert it into producer surplus / profit",
+            "Lower deadweight loss only",
+            "Set a single price for all buyers"
+          ],
+          "correctIndex": 1,
+          "explanation": "Perfect price discrimination converts all consumer surplus into producer profit, eliminates DWL, and increases total output. Partial price discrimination captures some consumer surplus. Both require segmented markets and no resale."
+        },
+        {
+          "id": "q-mono-13",
+          "prompt": "Compared to perfect competition, a monopoly results in:",
+          "choices": [
+            "Higher output and lower price",
+            "Lower output, higher price, and deadweight loss",
+            "The same output but higher profits",
+            "Lower price but positive DWL"
+          ],
+          "correctIndex": 1,
+          "explanation": "The monopolist restricts output to keep price above marginal cost. This creates a deadweight loss—the foregone surplus from units that are worth more to buyers than they cost to produce but are not produced."
+        },
+        {
+          "id": "q-mono-14",
+          "prompt": "If a monopolist's demand is price elastic, it can raise total revenue by:",
+          "choices": [
+            "Raising price",
+            "Lowering price",
+            "Keeping price constant",
+            "Exiting the market"
+          ],
+          "correctIndex": 1,
+          "explanation": "On the elastic portion of demand, a price cut raises total revenue (the percentage quantity gain outweighs the percentage price drop). A profit-maximising monopolist always operates on the elastic portion of demand (where MR > 0)."
+        },
+        {
+          "id": "q-mono-15",
+          "prompt": "Which statement best explains why a monopolist does NOT have a supply curve?",
+          "choices": [
+            "It produces at the lowest possible cost",
+            "Its price is determined by MR = MC combined with the demand curve, not by price alone",
+            "It faces a horizontal demand curve",
+            "It maximises revenue, not profit"
+          ],
+          "correctIndex": 1,
+          "explanation": "A supply curve shows quantity supplied at each price. A monopolist's output depends on both MC and the demand curve (which determines MR). There is no unique price–quantity relationship independent of demand, so no supply curve exists."
+        }
+      ]
+    },
+    {
+      "id": "monopolistic-competition",
+      "title": "Monopolistic competition",
+      "lessons": [
+        {
+          "id": "mc-structure",
+          "title": "Product differentiation and the downward-sloping demand",
+          "bodyMarkdown": "## Between the extremes\n\nMonopolistic competition sits between the two polar extremes of perfect competition and monopoly. It shares features with both:\n\nLike **perfect competition:** many firms, each small relative to the market; free entry and exit in the long run; each firm's decisions don't significantly affect others.\n\nLike **monopoly:** each firm sells a differentiated product, giving it some — but limited — pricing power. The firm faces a downward-sloping demand curve because its product is distinct.\n\n## Product differentiation: why the demand slopes down\n\nIn monopolistic competition, firms sell similar but not identical products. Each firm has a mini-monopoly among customers who specifically prefer its version.\n\n**Examples of differentiated products:**\n- Restaurants — same basic function, but different cuisine, atmosphere, price, and location\n- Coffee shops — Starbucks, independent cafes, Peet's, Dunkin; similar drinks, different experience\n- Clothing brands — all make jeans, but Levi's buyers may not switch to a store brand even for a lower price\n- Haircut salons, smartphone brands, video games, gyms\n\nBecause buyers have preferences among differentiated products, a firm can raise price somewhat without losing all customers (unlike a competitive firm that would lose everyone). But not much — close substitutes exist.\n\n## The MR < P logic\n\nSame logic as monopoly: to sell more, the monopolistically competitive firm must lower price on all units. So MR < P. The graph looks just like a monopoly graph: downward-sloping D, MR below D with the same y-intercept and double slope, plus MC and ATC.\n\nProfit-maximizing rule is still MR = MC. Find Q*, go up to demand for P*, compare P* to ATC for profit/loss."
+        },
+        {
+          "id": "mc-lr-efficiency",
+          "title": "Long-run equilibrium and excess capacity",
+          "bodyMarkdown": "## Short run: profit or loss is possible\n\nIn the short run, a monopolistically competitive firm can earn positive economic profit (P > ATC) or suffer a loss (P < ATC), exactly like a monopolist. The number of competing firms is fixed in the short run.\n\n## Long-run adjustment: entry erodes profit, exit ends losses\n\n**If firms earn short-run profit:** new firms enter the market with slightly differentiated products. The increased competition steals demand from existing firms, shifting each existing firm's demand curve to the left. This continues until demand shifts enough that P = ATC — zero economic profit.\n\n**If firms suffer losses:** some firms exit. The remaining firms' demand curves shift right (more customers with fewer alternatives), raising price until losses disappear.\n\nIn both cases, the long-run equilibrium has **zero economic profit (normal profit)** — the same as perfect competition.\n\n## Long-run equilibrium: the tangency\n\nIn the long run, the demand curve facing the monopolistically competitive firm is tangent to (just touching) the ATC curve at the profit-maximizing output Q*.\n\n- P* = ATC at Q* (zero economic profit)\n- But P* > MC at Q* (still has market power — allocative inefficiency remains)\n- The tangency occurs on the DOWNWARD-SLOPING portion of ATC — NOT at the minimum\n\n## Excess capacity — the hallmark inefficiency\n\nBecause the tangency is left of minimum ATC, the firm produces less than the cost-minimizing quantity. **Excess capacity = min-ATC quantity minus Q***.\n\nThe firm COULD produce more at lower average cost, but its downward-sloping demand doesn't allow it — any attempt to produce more requires dropping price, which may not be profitable.\n\n**Bottom line on efficiency:**\n- Allocative efficiency FAILS: P > MC (same as monopoly)\n- Productive efficiency FAILS: firm does not produce at minimum ATC (unlike long-run PC)\n\n## The variety tradeoff\n\nMonopolistic competition is not purely bad. Consumers get genuine product variety — the range of differentiated products is itself a source of consumer value. The inefficiency cost is the excess capacity and P > MC. Whether the variety benefit exceeds the efficiency cost is a genuine welfare judgment. Most economists believe the variety offered by monopolistic competition is worth its modest efficiency loss."
+        }
+      ],
+      "flashcards": [
+        {
+          "id": "fc-mc-def",
+          "front": "Monopolistic competition (definition)",
+          "back": "Many firms, differentiated products, free entry and exit. Each firm has some market power (downward-sloping D) but faces many close substitutes."
+        },
+        {
+          "id": "fc-mc-diff",
+          "front": "Product differentiation",
+          "back": "Firms in monopolistic competition sell similar but distinct products. Differences in quality, branding, location, or style give each firm a downward-sloping demand curve."
+        },
+        {
+          "id": "fc-mc-sr",
+          "front": "Short-run equilibrium (monopolistic competition)",
+          "back": "Firm produces where MR = MC, reads P off demand. Can earn positive profit, zero profit, or loss — just like a monopolist."
+        },
+        {
+          "id": "fc-mc-lr",
+          "front": "Long-run equilibrium (monopolistic competition)",
+          "back": "Entry/exit drives profit to zero. Demand tangent to ATC at Q*. P = ATC (zero profit) but P > MC (allocative inefficiency remains)."
+        },
+        {
+          "id": "fc-mc-excess",
+          "front": "Excess capacity",
+          "back": "In LR MC equilibrium, the firm produces less than minimum-ATC quantity. The gap = min-ATC quantity minus Q*. The firm could lower per-unit cost but won't due to limited market power."
+        },
+        {
+          "id": "fc-mc-eff",
+          "front": "Efficiency in monopolistic competition (LR)",
+          "back": "Allocative efficiency fails (P > MC). Productive efficiency fails (P > min ATC, excess capacity). Normal profit achieved. Variety is provided."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q-mc-1",
+          "prompt": "In long-run monopolistic competition equilibrium, which relationship holds?",
+          "choices": [
+            "P = MC = min ATC (same as perfect competition)",
+            "P = ATC but P > MC",
+            "P > ATC (firms earn positive profit)",
+            "MR = P (firms are price takers)"
+          ],
+          "correctIndex": 1,
+          "explanation": "In LR equilibrium, entry/exit drives economic profit to zero (P = ATC). But because the firm has market power, P > MC still holds. Unlike perfect competition, firms do not produce at min ATC."
+        },
+        {
+          "id": "q-mc-2",
+          "prompt": "Excess capacity in monopolistic competition means:",
+          "choices": [
+            "Firms earn above-normal profit in the long run",
+            "Firms produce less than the minimum-ATC quantity",
+            "Firms set price below marginal cost",
+            "The market has too many consumers relative to firms"
+          ],
+          "correctIndex": 1,
+          "explanation": "Excess capacity is the gap between Q* (firm's equilibrium output) and the quantity at minimum ATC. The firm operates on the downward-sloping portion of ATC, not at its minimum — it could lower per-unit cost by producing more."
+        },
+        {
+          "id": "q-mc-3",
+          "prompt": "When monopolistically competitive firms are earning short-run profits, the long-run adjustment involves:",
+          "choices": [
+            "Existing firms raising prices to maintain profits",
+            "New firms entering, shifting each existing firm's demand leftward",
+            "Government imposing price controls",
+            "Existing firms merging to form a monopoly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Positive economic profit attracts entry. New entrants offer similar differentiated products, stealing customers and shifting existing firms' demand to the left until profits disappear."
+        },
+        {
+          "id": "q-mc-4",
+          "prompt": "Compared to a perfectly competitive firm in long-run equilibrium, a monopolistically competitive firm:",
+          "choices": [
+            "Has lower price and produces at minimum ATC",
+            "Has higher price, lower output, and excess capacity",
+            "Earns positive long-run economic profit",
+            "Is allocatively efficient (P = MC)"
+          ],
+          "correctIndex": 1,
+          "explanation": "In LR PC: P = MC = min ATC (no excess capacity, allocatively efficient). In LR MC: P > MC (allocatively inefficient), P = ATC but above min ATC (excess capacity). The MC firm has higher price, lower output, and unused capacity."
+        },
+        {
+          "id": "q-mc-5",
+          "prompt": "The primary social benefit of monopolistic competition (compared to perfect competition) is:",
+          "choices": [
+            "Lower prices for consumers",
+            "Greater allocative efficiency",
+            "Product variety — differentiated goods matching diverse consumer preferences",
+            "Higher firm profits funding R&D"
+          ],
+          "correctIndex": 2,
+          "explanation": "Monopolistic competition sacrifices some efficiency (excess capacity, P > MC) in exchange for product variety. Consumers get differentiated products that better match their preferences, which has genuine welfare value."
+        },
+        {
+          "id": "q-mc-6",
+          "prompt": "In the long-run equilibrium graph for monopolistic competition, the demand curve is:",
+          "choices": [
+            "Horizontal at the minimum ATC (price taker)",
+            "Downward-sloping and tangent to ATC from above at Q*",
+            "Below ATC at Q* (firm making a loss)",
+            "Identical to the MR curve"
+          ],
+          "correctIndex": 1,
+          "explanation": "The LR tangency means the downward-sloping demand curve just touches (is tangent to) the U-shaped ATC at the profit-maximizing output Q*. P = ATC at that point, giving zero economic profit."
+        },
+        {
+          "id": "q-mc-7",
+          "prompt": "In what key way is monopolistic competition similar to monopoly?",
+          "choices": [
+            "Both produce at minimum ATC in the long run",
+            "Both face a downward-sloping demand curve",
+            "Both earn positive economic profit in the long run",
+            "Both have significant barriers to entry"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each monopolistically competitive firm produces a differentiated product, so its demand curve slopes downward (unlike perfect competition). This is the 'monopoly' element of the name—each firm has some market power over its own variety."
+        },
+        {
+          "id": "q-mc-8",
+          "prompt": "In what key way is monopolistic competition similar to perfect competition?",
+          "choices": [
+            "P = minimum ATC in the long run",
+            "There are many sellers and free entry/exit",
+            "Products are homogeneous",
+            "P = MC in the long run"
+          ],
+          "correctIndex": 1,
+          "explanation": "Like perfect competition, monopolistic competition has many sellers, no significant barriers to entry or exit, and zero long-run economic profit. The key difference is product differentiation."
+        },
+        {
+          "id": "q-mc-9",
+          "prompt": "When monopolistically competitive firms are earning losses in the short run, the long-run adjustment is:",
+          "choices": [
+            "New firms enter, shifting each firm's demand left",
+            "Existing firms exit, shifting remaining firms' demand curves right",
+            "The government subsidises the industry",
+            "Firms merge to form larger companies"
+          ],
+          "correctIndex": 1,
+          "explanation": "Losses drive firms to exit. With fewer substitutes available, remaining firms gain customers—their demand curves shift rightward. Exit continues until zero economic profit is restored."
+        },
+        {
+          "id": "q-mc-10",
+          "prompt": "'Excess capacity' in monopolistic competition means each firm:",
+          "choices": [
+            "Produces more than the minimum-ATC output",
+            "Has more capital than it needs",
+            "Produces less than the output at minimum ATC",
+            "Has zero economic profit"
+          ],
+          "correctIndex": 2,
+          "explanation": "In long-run monopolistic competition equilibrium, firms produce where the demand curve is tangent to ATC on its downward-sloping portion—to the left of minimum ATC. The gap between the firm's actual output and minimum-ATC output is the excess capacity."
+        },
+        {
+          "id": "q-mc-11",
+          "prompt": "Advertising in monopolistic competition is intended primarily to:",
+          "choices": [
+            "Lower average cost",
+            "Make the firm's demand curve more elastic",
+            "Shift the firm's demand curve rightward and make it less elastic",
+            "Achieve productive efficiency"
+          ],
+          "correctIndex": 2,
+          "explanation": "Advertising aims to shift demand rightward (more customers) and simultaneously make it less elastic (stronger brand loyalty reduces substitution to rivals). Success allows the firm to charge a higher price without losing as many customers."
+        },
+        {
+          "id": "q-mc-12",
+          "prompt": "Which efficiency statement is TRUE about long-run monopolistic competition?",
+          "choices": [
+            "P = MC — allocatively efficient",
+            "P = minimum ATC — productively efficient",
+            "P > MC and P > minimum ATC — neither fully efficient",
+            "P = MC = minimum ATC — fully efficient"
+          ],
+          "correctIndex": 2,
+          "explanation": "In long-run monopolistic competition: P > MC (creating a wedge and DWL) and P > minimum ATC (excess capacity). The firm achieves zero economic profit but at a higher price and lower output than would occur under perfect competition."
+        },
+        {
+          "id": "q-mc-13",
+          "prompt": "Product differentiation in monopolistic competition can take the form of:",
+          "choices": [
+            "Identical products sold at different prices",
+            "Physical differences, location, service quality, or brand image",
+            "Only patented product innovations",
+            "Government-assigned product niches"
+          ],
+          "correctIndex": 1,
+          "explanation": "Differentiation is broad: a coffee shop on a busy corner, a restaurant with unique décor, a shoe brand with prestige, or a plumber known for reliability—all differentiate in monopolistic competition. It does not require physical differences."
+        },
+        {
+          "id": "q-mc-14",
+          "prompt": "A monopolistically competitive firm's long-run equilibrium output is at the tangency of D and ATC. At that point:",
+          "choices": [
+            "MR = P",
+            "Economic profit is maximised",
+            "MR = MC and P = ATC simultaneously",
+            "The firm minimises total cost"
+          ],
+          "correctIndex": 2,
+          "explanation": "At the tangency point, two conditions hold together: (1) MR = MC — profit maximisation — and (2) P = ATC — zero economic profit from free entry/exit. This joint condition defines the long-run equilibrium."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "id": "g-sr",
+      "term": "Short run",
+      "definition": "The period in which at least one input (typically capital) is fixed. Variable inputs can still be adjusted."
+    },
+    {
+      "id": "g-lr",
+      "term": "Long run",
+      "definition": "The period in which all inputs are variable. The firm can adjust scale, enter, or exit."
+    },
+    {
+      "id": "g-tp",
+      "term": "Total product (TP)",
+      "definition": "The total output produced by a given quantity of labor with capital held fixed."
+    },
+    {
+      "id": "g-mpl",
+      "term": "Marginal product of labor (MPL)",
+      "definition": "Extra output from one additional worker: change in TP / change in L. The slope of the TP curve."
+    },
+    {
+      "id": "g-apl",
+      "term": "Average product of labor (APL)",
+      "definition": "Output per worker: TP / L. Maximized where MPL = APL."
+    },
+    {
+      "id": "g-dmr",
+      "term": "Law of diminishing marginal returns",
+      "definition": "Adding more of a variable input to a fixed input eventually reduces marginal product. A short-run concept only."
+    },
+    {
+      "id": "g-tfc",
+      "term": "Total fixed cost (TFC)",
+      "definition": "Cost that does not change with output. A horizontal line on cost graphs. Owed even at zero output."
+    },
+    {
+      "id": "g-tvc",
+      "term": "Total variable cost (TVC)",
+      "definition": "Cost that rises with output and equals zero at zero output. S-shaped curve due to returns patterns."
+    },
+    {
+      "id": "g-mc",
+      "term": "Marginal cost (MC)",
+      "definition": "Change in total cost from producing one more unit: change in TC / change in Q. Swoosh-shaped; crosses AVC and ATC at their minimums."
+    },
+    {
+      "id": "g-afc",
+      "term": "Average fixed cost (AFC)",
+      "definition": "Fixed cost per unit: TFC / Q. Always falls as output rises (spreading fixed cost). Hyperbola-shaped."
+    },
+    {
+      "id": "g-avc",
+      "term": "Average variable cost (AVC)",
+      "definition": "Variable cost per unit: TVC / Q. U-shaped. MC crosses AVC at AVC's minimum."
+    },
+    {
+      "id": "g-atc",
+      "term": "Average total cost (ATC)",
+      "definition": "Total cost per unit: TC / Q = AFC + AVC. U-shaped; minimum is the productive efficiency point."
+    },
+    {
+      "id": "g-tr",
+      "term": "Total revenue (TR)",
+      "definition": "P x Q. For a competitive firm, a straight line through the origin with slope P."
+    },
+    {
+      "id": "g-mr",
+      "term": "Marginal revenue (MR)",
+      "definition": "Change in total revenue from selling one more unit. For a competitive firm, MR = P at every quantity."
+    },
+    {
+      "id": "g-explicit",
+      "term": "Explicit cost",
+      "definition": "Out-of-pocket cash payments a firm makes — wages, rent, materials, interest on loans."
+    },
+    {
+      "id": "g-implicit",
+      "term": "Implicit cost",
+      "definition": "Opportunity cost without a cash payment — owner's foregone salary, foregone return on invested capital."
+    },
+    {
+      "id": "g-accprofit",
+      "term": "Accounting profit",
+      "definition": "TR minus explicit costs only. Always >= economic profit when implicit costs are positive."
+    },
+    {
+      "id": "g-ecoprofit",
+      "term": "Economic profit",
+      "definition": "TR minus all costs (explicit and implicit). The true above-normal return on resources."
+    },
+    {
+      "id": "g-normal",
+      "term": "Normal profit",
+      "definition": "Zero economic profit — earning exactly the opportunity cost of all resources. Accounting profit is still positive."
+    },
+    {
+      "id": "g-lratc",
+      "term": "LRATC",
+      "definition": "Long-run average total cost; the envelope of all SRATC curves showing lowest achievable cost at each output with optimal plant size."
+    },
+    {
+      "id": "g-eos",
+      "term": "Economies of scale",
+      "definition": "LRATC falls as output increases. Causes: specialization, indivisible inputs, bulk purchasing, scale-dependent technology."
+    },
+    {
+      "id": "g-des",
+      "term": "Diseconomies of scale",
+      "definition": "LRATC rises as output increases. Causes: management overload, coordination failures, bureaucratic inefficiency."
+    },
+    {
+      "id": "g-mes",
+      "term": "Minimum efficient scale (MES)",
+      "definition": "The smallest output at which a firm achieves the lowest possible LRATC."
+    },
+    {
+      "id": "g-pc",
+      "term": "Perfect competition",
+      "definition": "Market with many small firms, identical product, free entry and exit, and perfect information. All firms are price takers."
+    },
+    {
+      "id": "g-mrdarp",
+      "term": "MRDARP",
+      "definition": "For a competitive firm: the single horizontal line at price P that equals D, MR, AR, and P simultaneously. Required label on AP FRQ graphs."
+    },
+    {
+      "id": "g-shutdown",
+      "term": "Short-run shutdown rule",
+      "definition": "Shut down if P < AVC at the profit-maximizing quantity. If P >= AVC, produce even at a loss."
+    },
+    {
+      "id": "g-sr-supply",
+      "term": "Firm's short-run supply curve",
+      "definition": "The MC curve at and above AVC. The firm shuts down below AVC, so it supplies zero for prices below AVC."
+    },
+    {
+      "id": "g-lr-eq",
+      "term": "Long-run competitive equilibrium",
+      "definition": "P = MR = MC = minimum ATC. Zero economic profit. Both productive and allocative efficiency achieved."
+    },
+    {
+      "id": "g-prod-eff",
+      "term": "Productive efficiency",
+      "definition": "Production at minimum ATC. Firms produce at the lowest possible cost per unit. Achieved in long-run perfect competition."
+    },
+    {
+      "id": "g-alloc-eff",
+      "term": "Allocative efficiency",
+      "definition": "P = MC. Society produces exactly the quantity of each good that maximizes total welfare. Achieved in long-run perfect competition."
+    },
+    {
+      "id": "g-monopoly",
+      "term": "Monopoly",
+      "definition": "Single seller with no close substitutes. Faces the full market demand curve. A price maker. Produces where MR = MC and reads price from demand."
+    },
+    {
+      "id": "g-barrier",
+      "term": "Barrier to entry",
+      "definition": "Anything preventing new firms from entering an industry: government franchise, patents, natural monopoly, or control of an essential resource."
+    },
+    {
+      "id": "g-natural-mono",
+      "term": "Natural monopoly",
+      "definition": "One firm can supply the entire market at lower average cost than any combination of smaller firms. LRATC falls over the full range of market demand."
+    },
+    {
+      "id": "g-mono-mr",
+      "term": "MR < P (monopoly)",
+      "definition": "For a downward-sloping demand, selling one more unit requires lowering price on all units — so MR < P. For linear D: P = a - bQ, MR = a - 2bQ."
+    },
+    {
+      "id": "g-dwl",
+      "term": "Deadweight loss (DWL)",
+      "definition": "The welfare triangle lost due to monopoly (or other inefficiencies). Units that would benefit both buyer and seller (value > MC) but aren't produced because P > MC."
+    },
+    {
+      "id": "g-price-maker",
+      "term": "Price maker",
+      "definition": "A firm with enough market power to choose its price. Sets price by choosing output along the demand curve. Contrasts with price taker (competitive firm)."
+    },
+    {
+      "id": "g-mono-comp",
+      "term": "Monopolistic competition",
+      "definition": "Many firms, differentiated products, free entry/exit. Each firm has some pricing power (D slopes down) but faces close substitutes."
+    },
+    {
+      "id": "g-product-diff",
+      "term": "Product differentiation",
+      "definition": "Differences in quality, features, branding, or location that make consumers prefer one firm's product over close substitutes."
+    },
+    {
+      "id": "g-excess-cap",
+      "term": "Excess capacity",
+      "definition": "In long-run monopolistic competition, Q* is less than min-ATC quantity. The firm produces below its efficient scale — it could lower per-unit cost by producing more."
+    },
+    {
+      "id": "g-mc-lr",
+      "term": "LR monopolistic competition equilibrium",
+      "definition": "P = ATC (zero profit from entry/exit), but P > MC (market power remains). Demand tangent to ATC. Excess capacity exists."
+    }
+  ]
+}

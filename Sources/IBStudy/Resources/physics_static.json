@@ -1,0 +1,589 @@
+{
+  "unitId": "physics-static",
+  "title": "Static Electricity",
+  "sections": [
+    {
+      "id": "static-lesson1",
+      "title": "Electric Charge",
+      "lessons": [
+        {
+          "id": "sl1-structure",
+          "title": "The Structure of Matter",
+          "bodyMarkdown": "## The Structure of Matter\n\nAll matter is made of **atoms**, and atoms contain three types of particles:\n\n| Particle | Charge | Location |\n|---|---|---|\n| Proton | +1 | Nucleus |\n| Neutron | 0 | Nucleus |\n| Electron | −1 | Orbitals (shells) |\n\nThe **nucleus** sits at the center of the atom and contains protons and neutrons packed tightly together. Electrons orbit the nucleus at various energy levels.\n\n### Elementary Charge\n\nThe magnitude of the charge on a single proton or electron is called the **elementary charge**:\n\n> **e = 1.6 × 10⁻¹⁹ C**\n\nThe unit of charge is the **coulomb (C)**. Because individual charges are so small, it takes about 6.24 × 10¹⁸ electrons to make just one coulomb of charge.\n\n### Why Electrons Move — Not Protons\n\nProtons are locked inside the dense nucleus; it takes enormous nuclear energy to remove them. Electrons, however, exist in outer shells where they can be:\n\n- **Removed** from an atom (ionization)\n- **Transferred** to another object\n- **Redistributed** within a material\n\nThis is why we describe charging in terms of **electron transfer or redistribution** — protons never move in ordinary electrostatics.\n\n### Ions\n\nWhen an atom gains or loses electrons it becomes an **ion**:\n- **Cation (+)**: lost one or more electrons\n- **Anion (−)**: gained one or more electrons\n\n> **Key Insight:** Static electricity is entirely about electrons moving around. The nucleus stays put."
+        },
+        {
+          "id": "sl1-neutral-charged",
+          "title": "Neutral vs. Charged Objects",
+          "bodyMarkdown": "## Neutral vs. Charged Objects\n\nAn object is **electrically neutral** when it has equal numbers of protons and electrons. The positive and negative charges cancel exactly, so no net charge is detectable.\n\nAn object is **charged** (or has a **net charge**) when the number of protons ≠ number of electrons.\n\n| Object state | Condition | Net charge |\n|---|---|---|\n| Neutral | protons = electrons | 0 |\n| Positively charged | protons > electrons | + |\n| Negatively charged | electrons > protons | − |\n\n### Conservation of Charge\n\nOne of the fundamental laws of physics is the **Law of Conservation of Electric Charge**:\n\n> **Electric charge can neither be created nor destroyed; the total charge of an isolated system remains constant.**\n\nWhen you rub a rubber rod with fur and the rod becomes negative, the fur becomes equally positive. Electrons moved from fur to rod — no charge was created or destroyed, just transferred.\n\n### Charge is Quantized\n\nCharge only comes in whole-number multiples of the elementary charge *e*. You cannot have half an electron's worth of charge. This is called **quantization of charge**:\n\n> **Q = n × e**, where n is an integer\n\n### Practical Implication\n\nA \"charged\" everyday object like a balloon or plastic rod actually has an extremely tiny imbalance — perhaps 10¹⁰ extra electrons out of 10²³ total — but the imbalance is enough to exert detectable electric forces."
+        },
+        {
+          "id": "sl1-charge-interactions",
+          "title": "Charge Interactions",
+          "bodyMarkdown": "## Charge Interactions\n\nThe fundamental rule governing charged objects is simple and absolute:\n\n> **Like charges repel. Opposite charges attract.**\n\n- (+) and (+) → **repulsion** (push apart)\n- (−) and (−) → **repulsion** (push apart)\n- (+) and (−) → **attraction** (pull together)\n- Neutral objects are attracted toward both + and − charged objects (due to polarization)\n\n### Demonstrating Charge Interactions\n\n**Balloon experiment:** Inflate two balloons and rub both with wool. Each picks up excess electrons (becomes −). Hang them side-by-side and they repel each other, confirming like charges repel.\n\n**Pith ball electroscope:** A lightweight conducting ball suspended by a thread will be attracted toward a charged rod (opposite charge induction), then after contact, be repelled (same charge transfer).\n\n### The Role of Distance\n\nElectric force decreases rapidly with distance. Even small separations make a big difference — this is described precisely by Coulomb's Law (Lesson 3). For now, remember:\n\n- Closer objects → stronger force\n- Farther apart → weaker force\n\n### Charge Interactions and the Electroscope\n\nA **leaf electroscope** consists of two thin metal leaves hanging from a conducting rod. When a charged object touches the rod, charge spreads to both leaves. Since both leaves now have the **same sign** of charge, they repel each other and spread apart. The greater the charge, the wider the leaves spread."
+        },
+        {
+          "id": "sl1-conductors-insulators",
+          "title": "Conductors and Insulators",
+          "bodyMarkdown": "## Conductors and Insulators\n\nMaterials differ enormously in how freely electrons can move through them.\n\n### Conductors\n\nIn **conductors**, outer electrons (called **conduction electrons** or the \"sea of electrons\") are loosely bound and free to roam throughout the material.\n\n- **Examples:** copper, silver, aluminum, gold, saltwater, human body\n- Charge placed anywhere on a conductor spreads **instantly** across the entire surface\n- Conductors are used in wires, antennas, and circuit paths\n\n### Insulators\n\nIn **insulators**, electrons are tightly bound to individual atoms. They cannot move freely.\n\n- **Examples:** rubber, glass, plastic, wood (dry), air\n- Charge placed on an insulator **stays where it is placed**\n- This is what makes rubber rods and plastic combs useful for electrostatic demos\n\n### Semiconductors\n\n**Semiconductors** (silicon, germanium) fall between conductors and insulators. Their conductivity can be precisely controlled — the basis of all computer chips and transistors.\n\n### Why Conductors Lose Charge Through Touch\n\nWhen you touch a charged conductor, electrons flow between your hand and the object until equilibrium is reached. Your body (a conductor) then carries part of the charge to ground through your feet — this is why touching a charged object often neutralizes it.\n\n### Grounding\n\nA conductor connected to the Earth (\"grounded\") can give or receive any amount of charge. The Earth is so large it acts as an infinite reservoir of both positive and negative charge, keeping the grounded object neutral."
+        },
+        {
+          "id": "sl1-polarization",
+          "title": "Polarization",
+          "bodyMarkdown": "## Polarization\n\n**Polarization** is the redistribution of charge within a neutral object in response to a nearby charged object — without any actual charge transfer.\n\n### How Polarization Works\n\n1. A negatively charged rod is brought near a neutral conductor (but not touching)\n2. Free electrons in the conductor are **repelled** away from the near end\n3. The near end becomes **positive** (electron deficient); the far end becomes **negative** (electron rich)\n4. The object as a whole remains neutral — no charge entered or left\n5. But the **near end is now opposite** in charge to the rod → **net attraction**\n\n### This Explains Attraction of Neutral Objects\n\nYou've probably noticed a charged balloon sticking to a wall (neutral), or a charged comb picking up small pieces of paper. These neutral objects are attracted because the near side becomes oppositely charged through polarization.\n\n> **The near (opposite) side is closer, so it feels a stronger attraction than the far (same-sign) side feels repulsion → net attraction toward the charged object.**\n\n### Molecular Polarization in Insulators\n\nEven in insulators, where electrons can't flow freely, individual molecules can be polarized — their electrons shift slightly within each molecule. This produces the same net attraction effect, just on a molecular scale.\n\n### Permanent Dipoles (Polar Molecules)\n\nSome molecules like water (H₂O) are permanently polarized due to their asymmetric shape — the oxygen end is always slightly negative. This is why a charged rod can deflect a stream of water even though water appears neutral overall."
+        }
+      ],
+      "flashcards": [
+        { "id": "sl1-fc1", "front": "What are the three subatomic particles and their charges?", "back": "Proton (+1e), Neutron (0), Electron (−1e). Protons and neutrons are in the nucleus; electrons orbit in shells." },
+        { "id": "sl1-fc2", "front": "What is the elementary charge?", "back": "e = 1.6 × 10⁻¹⁹ C. This is the magnitude of charge on one proton or one electron." },
+        { "id": "sl1-fc3", "front": "What makes an object electrically neutral?", "back": "Equal numbers of protons and electrons, so positive and negative charges exactly cancel." },
+        { "id": "sl1-fc4", "front": "State the Law of Conservation of Electric Charge.", "back": "Electric charge cannot be created or destroyed. The total charge of an isolated system remains constant." },
+        { "id": "sl1-fc5", "front": "What is the rule for charge interactions?", "back": "Like charges repel; opposite charges attract. Neutral objects are attracted to both signs due to polarization." },
+        { "id": "sl1-fc6", "front": "What is a conductor vs. an insulator?", "back": "Conductor: electrons move freely (e.g., metals). Insulator: electrons are tightly bound (e.g., rubber, glass). Charge spreads in conductors; stays put in insulators." },
+        { "id": "sl1-fc7", "front": "What is polarization?", "back": "Redistribution of charge within a neutral object due to a nearby charged object, without charge transfer. Creates a net attractive force." },
+        { "id": "sl1-fc8", "front": "Why do neutral objects get attracted to charged objects?", "back": "Polarization makes the near side of the neutral object take on the opposite charge, which is closer and thus feels a stronger force than the same-sign far side." },
+        { "id": "sl1-fc9", "front": "What is charge quantization?", "back": "Charge only exists in whole-number multiples of e (1.6 × 10⁻¹⁹ C). You cannot have a fraction of an electron's charge." },
+        { "id": "sl1-fc10", "front": "Why do protons not move in ordinary electrostatics?", "back": "Protons are locked in the nucleus, held by the strong nuclear force. Only electrons move in electrostatic phenomena." }
+      ],
+      "questions": [
+        {
+          "id": "sl1-q1",
+          "prompt": "An atom has 17 protons and 18 electrons. What is the net charge?",
+          "choices": ["+1e", "−1e", "0", "+17e"],
+          "correctIndex": 1,
+          "explanation": "Net charge = protons − electrons = 17 − 18 = −1. The atom has one extra electron, so it is a negative ion (anion) with charge −1e."
+        },
+        {
+          "id": "sl1-q2",
+          "prompt": "A rubber rod is rubbed with fur. The rod becomes negatively charged. What happened to the fur?",
+          "choices": ["It became negative too", "It became positive", "It remained neutral", "It lost protons"],
+          "correctIndex": 1,
+          "explanation": "By conservation of charge, if the rod gained electrons (became −), the fur lost electrons (became +). Total charge is conserved."
+        },
+        {
+          "id": "sl1-q3",
+          "prompt": "Which of the following is the best conductor of electricity?",
+          "choices": ["Dry wood", "Rubber", "Copper", "Glass"],
+          "correctIndex": 2,
+          "explanation": "Copper is a metal with a 'sea' of free electrons. Dry wood, rubber, and glass are all insulators."
+        },
+        {
+          "id": "sl1-q4",
+          "prompt": "Two negatively charged balloons are held close together. What happens?",
+          "choices": ["They attract each other", "They repel each other", "Nothing happens", "One becomes neutral"],
+          "correctIndex": 1,
+          "explanation": "Like charges repel. Both balloons carry negative charge, so they push each other away."
+        },
+        {
+          "id": "sl1-q5",
+          "prompt": "A charged object is brought near (but not touching) a neutral metal sphere. The near side of the sphere becomes positive. What type of charge did the object carry?",
+          "choices": ["Positive", "Negative", "Neutral", "Either positive or negative"],
+          "correctIndex": 1,
+          "explanation": "A negative object repels electrons in the metal away from the near side, leaving the near side positive (electron-deficient). This is polarization."
+        },
+        {
+          "id": "sl1-q6",
+          "prompt": "What is the value of the elementary charge?",
+          "choices": ["1.6 × 10⁻¹⁹ C", "9.0 × 10⁹ N·m²/C²", "6.02 × 10²³", "1.6 × 10⁻²⁷ kg"],
+          "correctIndex": 0,
+          "explanation": "The elementary charge e = 1.6 × 10⁻¹⁹ C. This is the magnitude of charge on one proton or electron."
+        },
+        {
+          "id": "sl1-q7",
+          "prompt": "A neutral piece of paper is attracted to a negatively charged plastic rod. Why?",
+          "choices": ["Paper has positive charges", "Polarization makes the near side of the paper positive", "Negative charges always attract neutral objects equally on both sides", "The paper lost electrons"],
+          "correctIndex": 1,
+          "explanation": "The rod's negative charge repels electrons in the paper's molecules away from the near side, making the near face slightly positive. The opposite sign is closer → net attraction."
+        },
+        {
+          "id": "sl1-q8",
+          "prompt": "An object has charge Q = −4.8 × 10⁻¹⁹ C. How many excess electrons does it have?",
+          "choices": ["1", "2", "3", "4"],
+          "correctIndex": 2,
+          "explanation": "n = Q/e = 4.8×10⁻¹⁹ / 1.6×10⁻¹⁹ = 3 excess electrons."
+        },
+        {
+          "id": "sl1-q9",
+          "prompt": "Which statement about electric charge is FALSE?",
+          "choices": ["Charge is conserved in isolated systems", "Charge is quantized in units of e", "Protons can transfer between objects in contact", "Conductors allow charge to spread freely"],
+          "correctIndex": 2,
+          "explanation": "Protons are locked in the nucleus and do NOT transfer in ordinary electrostatics. Only electrons move."
+        },
+        {
+          "id": "sl1-q10",
+          "prompt": "A neutral leaf electroscope has charge placed on it. The leaves spread apart. Why?",
+          "choices": ["The leaves are attracted to the rod still nearby", "Both leaves have the same sign charge and repel each other", "The leaves gained mass", "Polarization pushed the leaves apart"],
+          "correctIndex": 1,
+          "explanation": "When charge is added to the electroscope, it distributes to both leaves. Both leaves now carry the same sign of charge and repel each other, causing them to spread."
+        },
+        {
+          "id": "sl1-q11",
+          "prompt": "An insulator is charged by rubbing. Where does the charge stay?",
+          "choices": ["It spreads over the entire surface", "It moves to the ends", "It stays where it was placed", "It transfers to the air"],
+          "correctIndex": 2,
+          "explanation": "In insulators, electrons cannot move freely. Charge deposited in one region stays there because there are no free electrons to redistribute it."
+        },
+        {
+          "id": "sl1-q12",
+          "prompt": "Object A has charge +6e and Object B has charge −2e. They touch, then separate. What is the charge on each?",
+          "choices": ["+6e and −2e", "+4e and 0", "+2e and +2e", "+3e and +1e"],
+          "correctIndex": 2,
+          "explanation": "Total charge = +6e + (−2e) = +4e. This distributes equally: each object gets +4e/2 = +2e."
+        }
+      ]
+    },
+    {
+      "id": "static-lesson2",
+      "title": "Methods of Charging",
+      "lessons": [
+        {
+          "id": "sl2-friction",
+          "title": "Charging by Friction",
+          "bodyMarkdown": "## Charging by Friction (Triboelectric Charging)\n\nWhen two different materials are rubbed together, electrons transfer from one to the other. This is called the **triboelectric effect**.\n\n### Why It Works\n\nDifferent materials hold their electrons with different strength. When they are in close contact (rubbing increases this contact), the material that holds electrons more tightly **steals** electrons from the other.\n\n- Material that **gains** electrons → becomes **negatively** charged\n- Material that **loses** electrons → becomes **positively** charged\n\n### The Triboelectric Series\n\nMaterials can be ranked by their tendency to gain or lose electrons:\n\n```\n+  Human skin (loses electrons easily)\n   Rabbit fur\n   Glass\n   Nylon\n   Wool\n   Silk\n   Aluminum\n   Paper\n   Rubber / Ebonite\n−  Teflon (gains electrons easily)\n```\n\nWhen two materials are rubbed, the one **higher** on the list becomes positive and the one **lower** becomes negative.\n\n### Classic Demonstrations\n\n- **Rubber rod + fur:** Rod gains electrons → (−); fur loses electrons → (+)\n- **Glass rod + silk:** Glass loses electrons → (+); silk gains electrons → (−)\n- Socks on carpet, then touching a doorknob — the classic static shock!\n\n### Energy Requirement\n\nFriction doesn't create charge — it provides the mechanical energy needed to pull electrons away from atoms and transfer them. The total charge is conserved."
+        },
+        {
+          "id": "sl2-induction",
+          "title": "Charging by Induction",
+          "bodyMarkdown": "## Charging by Induction\n\nCharging by induction allows you to charge an object **without touching it**. The charged object is never in contact with the object being charged.\n\n### Step-by-Step Process\n\n1. **Start:** A negatively charged rod is brought near (not touching) a neutral conducting sphere\n2. **Polarization:** Electrons in the sphere are repelled to the far side; near side becomes (+), far side becomes (−)\n3. **Ground the sphere:** Touch the far side with your finger (or connect a wire to ground). Electrons now flow off the sphere to Earth, since they are repelled by the rod.\n4. **Remove ground:** Lift your finger before removing the rod\n5. **Remove the rod:** The sphere now has a deficit of electrons → it is positively charged\n\n> **Result: The sphere is charged opposite to the inducing rod — without ever touching it.**\n\n### Key Features of Induction\n\n- **No direct contact** with the charging object\n- The induced charge is **opposite** in sign to the inducing charge\n- Grounding is essential — without it, the polarized charges recombine when the rod is removed\n- Works only with **conductors** (electrons must be able to move)\n\n### The Role of Grounding\n\nGrounding provides a path for electrons to escape (if the rod is negative) or arrive (if the rod is positive). Without grounding, you just get temporary polarization, not permanent charging.\n\n> **Memory tip:** Induction → Indirect → Induced charge is Inverse (opposite sign)"
+        },
+        {
+          "id": "sl2-conduction",
+          "title": "Charging by Conduction",
+          "bodyMarkdown": "## Charging by Conduction\n\nCharging by conduction involves **direct physical contact** between a charged object and a neutral (or differently charged) object.\n\n### How It Works\n\n1. A charged object (say, a negative rod) touches a neutral conducting sphere\n2. Excess electrons on the rod are repelled from each other; some flow to the sphere\n3. When separated, both objects carry **negative** charge\n4. The rod loses some of its charge; the sphere gains some\n\n> **Result: Both objects end up with the same sign charge as the original.**\n\n### Contrast with Induction\n\n| Feature | Induction | Conduction |\n|---|---|---|\n| Contact needed? | No | Yes |\n| Resulting sign | **Opposite** to charger | **Same** as charger |\n| Works on insulators? | Partially (polarization) | Poorly |\n| Charge transfer? | No (electrons just redistribute) | Yes |\n\n### Charge Sharing\n\nWhen two conductors of **equal size** touch, they share the total charge equally:\n\n> **Q_each = Q_total / 2**\n\nIf the spheres are different sizes, charge distributes proportionally (larger sphere gets more charge per unit area on average, but surface charge density equalizes).\n\n### Practical Example\n\nA Van de Graaff generator charges objects placed on it by conduction. Small spheres or hair on the generator get the same sign charge and repel each other — that's why hair stands up!"
+        },
+        {
+          "id": "sl2-grounding",
+          "title": "Grounding",
+          "bodyMarkdown": "## Grounding\n\n**Grounding** is the process of connecting a charged object to the Earth, allowing charge to flow until the object becomes neutral (or nearly so).\n\n### The Earth as a Charge Reservoir\n\nThe Earth is essentially an infinite reservoir of both positive and negative charges. When connected:\n\n- **Negatively charged object:** Excess electrons flow to Earth (electrons repel each other and the Earth accepts them)\n- **Positively charged object:** Electrons flow from Earth onto the object (the object's deficit is replenished)\n\n### Grounding Symbol\n\nIn circuit diagrams, grounding is shown as a set of horizontal lines (≡) or a triangle pointing down. In everyday life, grounding paths include:\n\n- The ground wire in electrical outlets (green or bare copper)\n- Your body connected to a large surface (skin → feet → floor → Earth)\n- A wire connected to a water pipe or structural steel\n\n### Grounding in the Induction Process\n\nRecall from induction: after polarizing the object, grounding is what **removes** electrons permanently before the inducing rod is taken away. Without this step, you just have temporary polarization.\n\n### Safety: The Lightning Rod\n\nA **lightning rod** is a pointed conductor on a building connected to a grounding wire. It does two things:\n1. **Slowly bleeds off** charge from the air/building through the pointed tip (charge concentrates at points → corona discharge)\n2. If lightning strikes, provides a **low-resistance path** to ground, protecting the building\n\n### Anti-Static Applications\n\nGrounding straps worn by electronics technicians prevent static discharge from damaging components. Fuel trucks touch a grounding wire to the aircraft before refueling to prevent spark ignition."
+        }
+      ],
+      "flashcards": [
+        { "id": "sl2-fc1", "front": "What happens during charging by friction?", "back": "Electrons transfer from one material to the other. The material that gains electrons becomes negative; the one that loses electrons becomes positive." },
+        { "id": "sl2-fc2", "front": "What is the triboelectric series?", "back": "A ranking of materials by their tendency to lose or gain electrons when rubbed. Materials higher on the list lose electrons (become +); lower ones gain electrons (become −)." },
+        { "id": "sl2-fc3", "front": "What charge sign does an object acquire when charged by induction?", "back": "Opposite to the inducing charge. A negative rod induces positive charge on the nearby conductor (because grounding removes electrons)." },
+        { "id": "sl2-fc4", "front": "What is the key step that makes induction permanent?", "back": "Grounding the object while the charging rod is still nearby. This removes (or adds) electrons before the polarizing rod is taken away." },
+        { "id": "sl2-fc5", "front": "How does charging by conduction differ from induction?", "back": "Conduction requires direct contact; the charged object and the neutral object both end up with the same sign charge. Induction is contactless; the result is the opposite sign." },
+        { "id": "sl2-fc6", "front": "What happens when two equal-sized conducting spheres, one charged (+6e) and one neutral, are touched together?", "back": "Total charge = +6e is shared equally. Each sphere ends up with +3e." },
+        { "id": "sl2-fc7", "front": "What is grounding?", "back": "Connecting a charged object to Earth, allowing charge to flow until the object reaches equilibrium (neutral). Earth acts as an infinite charge reservoir." },
+        { "id": "sl2-fc8", "front": "Why does a lightning rod protect a building?", "back": "It provides a low-resistance grounded path for lightning current (and slowly bleeds charge from the air via corona discharge at its tip)." },
+        { "id": "sl2-fc9", "front": "Can charging by induction occur in an insulator? Why or why not?", "back": "Not true induction — insulators can't redistribute charge freely. However, molecular polarization creates a similar but weaker effect." }
+      ],
+      "questions": [
+        {
+          "id": "sl2-q1",
+          "prompt": "A glass rod is rubbed with silk. What charge does the glass rod acquire?",
+          "choices": ["Negative", "Positive", "Neutral", "Depends on the temperature"],
+          "correctIndex": 1,
+          "explanation": "Glass is higher on the triboelectric series than silk. Glass tends to lose electrons when rubbed → glass becomes positively charged. Silk gains those electrons → silk becomes negative."
+        },
+        {
+          "id": "sl2-q2",
+          "prompt": "In charging by induction, what charge does the grounded object acquire if the inducing rod is negative?",
+          "choices": ["Negative", "Neutral", "Positive", "It acquires no charge"],
+          "correctIndex": 2,
+          "explanation": "The negative rod repels electrons away through the ground connection. When the ground is removed and the rod taken away, the object has fewer electrons than protons → it is positively charged."
+        },
+        {
+          "id": "sl2-q3",
+          "prompt": "What is the correct order of steps for charging by induction?",
+          "choices": [
+            "Bring rod near → touch with finger → remove finger → remove rod",
+            "Touch object with rod → remove rod → ground object",
+            "Ground object → bring rod near → remove ground → remove rod",
+            "Bring rod near → remove rod → ground object"
+          ],
+          "correctIndex": 0,
+          "explanation": "Correct order: (1) bring charged rod near object, (2) ground the object (touch with finger), (3) remove ground while rod is still near, (4) remove rod. The ground must be removed BEFORE the rod."
+        },
+        {
+          "id": "sl2-q4",
+          "prompt": "A +8e charged sphere touches a neutral sphere of equal size. After separation, each sphere has what charge?",
+          "choices": ["+8e and 0", "+4e and +4e", "+8e and +8e", "+2e and +6e"],
+          "correctIndex": 1,
+          "explanation": "Total charge = +8e + 0 = +8e. Equal-size conductors share charge equally: each gets +8e/2 = +4e."
+        },
+        {
+          "id": "sl2-q5",
+          "prompt": "Which method of charging requires direct contact between the charger and the object being charged?",
+          "choices": ["Induction", "Friction", "Conduction", "Polarization"],
+          "correctIndex": 2,
+          "explanation": "Charging by conduction requires direct physical contact, so charge can flow from the charged object to the neutral one. Induction is contactless."
+        },
+        {
+          "id": "sl2-q6",
+          "prompt": "Two rubber rods, both charged by fur, are brought near each other. What interaction occurs?",
+          "choices": ["Attraction", "Repulsion", "No interaction", "First attraction then repulsion"],
+          "correctIndex": 1,
+          "explanation": "Both rubber rods gain electrons from fur (both become negative). Like charges repel."
+        },
+        {
+          "id": "sl2-q7",
+          "prompt": "An object charged by induction ends up with a charge that is _____ the inducing charge.",
+          "choices": ["The same sign as", "The opposite sign to", "Twice the magnitude of", "Zero regardless of"],
+          "correctIndex": 1,
+          "explanation": "Induction always produces an opposite sign on the object. This is because grounding removes electrons if the rod is negative (leaving the object +) or brings electrons if the rod is positive (leaving the object −)."
+        },
+        {
+          "id": "sl2-q8",
+          "prompt": "What is the purpose of the grounding step in the induction process?",
+          "choices": [
+            "To increase the strength of the inducing field",
+            "To permanently remove electrons so the charge imbalance stays after the rod leaves",
+            "To transfer charge directly from the rod to the object",
+            "To reverse the polarity of the object"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without grounding, the polarized charges recombine when the inducing rod is removed. Grounding allows electrons to leave (or arrive) permanently, creating a lasting charge imbalance."
+        },
+        {
+          "id": "sl2-q9",
+          "prompt": "A person wearing anti-static wrist straps is connected to a grounded surface. Why does this prevent damage to electronic components?",
+          "choices": [
+            "It insulates the person from static fields",
+            "It keeps the person at a fixed potential equal to ground, preventing charge buildup and sparking",
+            "It magnetizes the person, attracting static away",
+            "It reverses the person's charge sign"
+          ],
+          "correctIndex": 1,
+          "explanation": "Grounding prevents charge from accumulating on the technician. Without a charge difference, no spark can occur between the person and the sensitive electronics."
+        },
+        {
+          "id": "sl2-q10",
+          "prompt": "Wool gloves rub a Teflon rod. Teflon is at the bottom (gains electrons) of the triboelectric series. What is the charge of the Teflon rod?",
+          "choices": ["Positive", "Negative", "Neutral", "Cannot be determined"],
+          "correctIndex": 1,
+          "explanation": "Teflon gains electrons when rubbed, making it negatively charged. Wool loses electrons and becomes positive."
+        },
+        {
+          "id": "sl2-q11",
+          "prompt": "A negatively charged rod is brought near a neutral metal sphere, but NO grounding occurs. The rod is then removed. What is the sphere's final charge?",
+          "choices": ["Positive", "Negative", "Neutral", "Depends on sphere size"],
+          "correctIndex": 2,
+          "explanation": "Without grounding, electrons only redistributed temporarily (polarization). When the rod leaves, electrons return to their original distribution. The sphere returns to neutral."
+        },
+        {
+          "id": "sl2-q12",
+          "prompt": "Charging by conduction gives the charged object and the newly charged object _____ charges.",
+          "choices": ["Opposite sign", "The same sign", "Zero on both", "One neutral and one charged"],
+          "correctIndex": 1,
+          "explanation": "In conduction, charge flows from the more-charged object to the less-charged one until they reach equilibrium. Both end up with the same sign of charge as the original."
+        }
+      ]
+    },
+    {
+      "id": "static-lesson3",
+      "title": "Electric Force",
+      "lessons": [
+        {
+          "id": "sl3-interactions",
+          "title": "Charge Interactions Revisited",
+          "bodyMarkdown": "## Charge Interactions Revisited\n\nNow that we understand charge and how objects become charged, let's look more carefully at the **factors that determine the strength** of the electric force between charges.\n\n### Three Key Variables\n\nThe electric force between two charged objects depends on:\n\n1. **The amount of charge on each object** — more charge → stronger force\n2. **The distance between them** — less distance → stronger force (dramatically!)\n3. **The medium between them** — (in vacuum/air, a constant k applies)\n\n### Qualitative Observations\n\n- **Double one charge** → force doubles\n- **Double both charges** → force quadruples\n- **Double the distance** → force drops to **one-fourth** (not one-half!)\n- **Triple the distance** → force drops to **one-ninth**\n\nThis rapid decrease with distance is called the **inverse square relationship**.\n\n### Direction of the Force\n\nThe electric force is always directed along the **line connecting** the two charges:\n- Like charges: force pushes them **apart** along this line\n- Opposite charges: force pulls them **together** along this line\n\n### Electric Force vs. Gravity\n\nBoth gravity and electric force are **inverse square** forces. However:\n- Gravity acts only **between masses** (always attractive)\n- Electric force acts between **charges** (can be attractive OR repulsive)\n- Electric force is **orders of magnitude stronger** than gravity for sub-atomic particles\n\nFor two electrons 1 m apart:\n- Electric force ≈ 2.3 × 10⁻²⁸ N (repulsive)\n- Gravitational force ≈ 5.5 × 10⁻⁷¹ N (attractive)\n\nThe electric force is ~10⁴² times stronger!"
+        },
+        {
+          "id": "sl3-coulombs-law",
+          "title": "Coulomb's Law",
+          "bodyMarkdown": "## Coulomb's Law\n\nIn 1785, Charles-Augustin de Coulomb used a sensitive torsion balance to measure the electric force between charges. His result is one of the most important equations in physics:\n\n## F = k·|q₁|·|q₂| / r²\n\n### Variables\n\n| Symbol | Meaning | Unit |\n|---|---|---|\n| F | Electric force | Newton (N) |\n| k | Coulomb's constant | 8.99 × 10⁹ N·m²/C² |\n| q₁, q₂ | Charges on the objects | Coulombs (C) |\n| r | Distance between centers | Meters (m) |\n\n### Coulomb's Constant\n\n> **k = 8.99 × 10⁹ N·m²/C² ≈ 9.0 × 10⁹ N·m²/C²**\n\n### Using Coulomb's Law\n\n**Example:** What is the force between a +3.0 μC charge and a −2.0 μC charge separated by 0.05 m?\n\n```\nF = kq₁q₂/r²\nF = (9.0×10⁹)(3.0×10⁻⁶)(2.0×10⁻⁶) / (0.05)²\nF = (9.0×10⁹)(6.0×10⁻¹²) / (2.5×10⁻³)\nF = 54×10⁻³ / 2.5×10⁻³\nF = 21.6 N  [attractive, since charges are opposite sign]\n```\n\n### The Sign Convention\n\n- The **magnitude** of force uses |q₁| and |q₂| (absolute values)\n- **Positive result** → can mean attractive or repulsive (use sign separately)\n- **Direction:** towards each other if opposite sign, away if same sign\n\n### Comparing to Gravity\n\nNote the structural similarity to Newton's Law of Universal Gravitation: F = Gm₁m₂/r². Both are inverse-square laws with a constant × two quantities / distance². Electric force uses charges; gravity uses masses."
+        },
+        {
+          "id": "sl3-inverse-square",
+          "title": "The Inverse Square Law",
+          "bodyMarkdown": "## The Inverse Square Law\n\nThe **inverse square** relationship between force and distance is the most important feature of Coulomb's Law:\n\n> **F ∝ 1/r²**\n\nDouble the distance → force becomes ¼. Triple the distance → force becomes 1/9. This is **not** linear!\n\n### Ratio Method (Comparing Forces)\n\nRather than computing absolute forces, we often compare two scenarios:\n\n**F₂/F₁ = (r₁/r₂)² × (q₂ₐ/q₁ₐ) × (q₂ᵦ/q₁ᵦ)**\n\n**Example:** Two charges are 3 cm apart with force F. The distance is increased to 9 cm. What is the new force?\n\n```\nF₂/F₁ = (r₁/r₂)²\nF₂/F₁ = (3/9)² = (1/3)² = 1/9\nF₂ = F₁/9\n```\n\n### Why Does 1/r² Appear?\n\nGeometrically, the influence of a point source spreads over the surface of a sphere. As radius r doubles, the sphere's area grows by 4 (area = 4πr²). The same total \"influence\" is now spread over 4× more area, so the intensity at any point drops to 1/4. This geometric dilution is the origin of all inverse-square laws.\n\n### Key Comparison Table\n\n| Change | Effect on Force |\n|---|---|\n| Double one charge | × 2 |\n| Halve one charge | × 1/2 |\n| Double both charges | × 4 |\n| Double distance | × 1/4 |\n| Triple distance | × 1/9 |\n| Halve distance | × 4 |\n| Halve distance, double charges | × 4 × 2 = × 8 |"
+        },
+        {
+          "id": "sl3-newtons-laws",
+          "title": "Newton's Laws and the Electric Force",
+          "bodyMarkdown": "## Newton's Laws and the Electric Force\n\nThe electric force obeys all of Newton's Laws of Motion, just like any other force.\n\n### Newton's Third Law\n\n> **Every electric force has an equal and opposite reaction force.**\n\nIf charge A exerts a force on charge B, then charge B exerts an **equal in magnitude, opposite in direction** force on charge A. Always. Even if the charges are different sizes.\n\n- A +3 μC charge pulls a −1 μC charge with 0.5 N to the left\n- Simultaneously, the −1 μC charge pulls the +3 μC charge with 0.5 N to the right\n\n### Newton's Second Law: Finding Acceleration\n\nOnce you know the electric force (from Coulomb's Law), use F = ma to find the acceleration:\n\n> **a = F_electric / m**\n\n**Example:** An electron (mass = 9.11 × 10⁻³¹ kg, charge = −1.6 × 10⁻¹⁹ C) is placed 1.0 nm from a proton. What is its acceleration?\n\n```\nF = kq₁q₂/r² = (9×10⁹)(1.6×10⁻¹⁹)² / (1×10⁻⁹)²\nF = (9×10⁹)(2.56×10⁻³⁸) / 10⁻¹⁸\nF = 230.4 × 10⁻²⁹ / 10⁻¹⁸ = 2.3 × 10⁻¹⁰ N\n\na = F/m = 2.3×10⁻¹⁰ / 9.11×10⁻³¹ ≈ 2.5 × 10²⁰ m/s²\n```\n\nThis is an enormous acceleration — 2.5 × 10²⁰ m/s²! This explains the incredibly fast orbital speeds of electrons.\n\n### Newton's First Law\n\nA charged particle will move in a straight line at constant velocity (or remain at rest) unless an unbalanced electric force acts on it. Near opposite charges, the particle accelerates; between like charges symmetrically placed, it can be in equilibrium."
+        }
+      ],
+      "flashcards": [
+        { "id": "sl3-fc1", "front": "State Coulomb's Law.", "back": "F = k|q₁||q₂|/r² where k = 8.99×10⁹ N·m²/C², q₁ and q₂ are charges in coulombs, and r is the distance in meters." },
+        { "id": "sl3-fc2", "front": "What is Coulomb's constant k?", "back": "k = 8.99 × 10⁹ N·m²/C² (often approximated as 9.0 × 10⁹ N·m²/C²)" },
+        { "id": "sl3-fc3", "front": "If the distance between two charges is doubled, how does the force change?", "back": "Force decreases by a factor of 4 (to one-quarter). F ∝ 1/r², so doubling r multiplies force by (1/2)² = 1/4." },
+        { "id": "sl3-fc4", "front": "If both charges are doubled and the distance is halved, how does the force change?", "back": "×4 from doubling both charges × ×4 from halving distance = ×16. The force becomes 16 times stronger." },
+        { "id": "sl3-fc5", "front": "What does Newton's 3rd Law say about the forces between two charged objects?", "back": "The force on charge A due to B is equal in magnitude and opposite in direction to the force on charge B due to A — regardless of charge size." },
+        { "id": "sl3-fc6", "front": "How is Coulomb's Law similar to Newton's Law of Universal Gravitation?", "back": "Both are inverse-square laws (F ∝ 1/r²). Gravity uses masses; Coulomb's uses charges. Both have a constant (G vs k). But electric force can repel; gravity only attracts." },
+        { "id": "sl3-fc7", "front": "Two charges separated by 0.3 m have a force of 9 N. What is the force if they are moved to 0.9 m apart?", "back": "New distance is 3× original. F_new = 9/(3²) = 9/9 = 1 N." },
+        { "id": "sl3-fc8", "front": "How do you find the acceleration of a charged particle in an electric force scenario?", "back": "Use F = ma → a = F/m. First compute F with Coulomb's Law, then divide by the particle's mass." }
+      ],
+      "questions": [
+        {
+          "id": "sl3-q1",
+          "prompt": "Two charges of +2 μC and +3 μC are separated by 0.1 m. What is the approximate magnitude of the electric force between them?",
+          "choices": ["0.54 N", "5.4 N", "54 N", "540 N"],
+          "correctIndex": 1,
+          "explanation": "F = kq₁q₂/r² = (9×10⁹)(2×10⁻⁶)(3×10⁻⁶)/(0.1)² = (9×10⁹)(6×10⁻¹²)/0.01 = 5.4 N."
+        },
+        {
+          "id": "sl3-q2",
+          "prompt": "Two charges are separated by distance d with force F. If the separation is tripled to 3d, the new force is:",
+          "choices": ["F/3", "F/6", "F/9", "3F"],
+          "correctIndex": 2,
+          "explanation": "F ∝ 1/r². Tripling r → force multiplied by (1/3)² = 1/9. New force = F/9."
+        },
+        {
+          "id": "sl3-q3",
+          "prompt": "Object A exerts a 6 N force on Object B. By Newton's Third Law, what force does Object B exert on Object A?",
+          "choices": ["6 N in the same direction", "6 N in the opposite direction", "3 N in the opposite direction", "Depends on the charge magnitude"],
+          "correctIndex": 1,
+          "explanation": "Newton's Third Law: action and reaction forces are equal in magnitude and opposite in direction. Object B exerts 6 N on A, in the direction opposite to A's force on B."
+        },
+        {
+          "id": "sl3-q4",
+          "prompt": "The force between two charges is 12 N. One charge is then doubled and the other is tripled. What is the new force?",
+          "choices": ["12 N", "24 N", "36 N", "72 N"],
+          "correctIndex": 3,
+          "explanation": "F ∝ q₁q₂. Doubling one × tripling the other = ×6. New force = 12 × 6 = 72 N."
+        },
+        {
+          "id": "sl3-q5",
+          "prompt": "Which of the following changes would result in the greatest increase in the electric force between two charges?",
+          "choices": [
+            "Doubling the distance",
+            "Doubling one charge",
+            "Halving the distance",
+            "Halving one charge"
+          ],
+          "correctIndex": 2,
+          "explanation": "Halving the distance multiplies force by (1/0.5)² = 4. Doubling one charge only doubles the force. So halving the distance gives the biggest increase."
+        },
+        {
+          "id": "sl3-q6",
+          "prompt": "An electron (charge −e) is held 2.0 × 10⁻¹⁰ m from a proton (charge +e). What is the attractive electric force? (e = 1.6 × 10⁻¹⁹ C, k = 9×10⁹)",
+          "choices": ["5.76 × 10⁻⁹ N", "5.76 × 10⁻⁸ N", "2.88 × 10⁻⁹ N", "1.15 × 10⁻⁸ N"],
+          "correctIndex": 0,
+          "explanation": "F = kq²/r² = (9×10⁹)(1.6×10⁻¹⁹)² / (2×10⁻¹⁰)² = (9×10⁹)(2.56×10⁻³⁸)/(4×10⁻²⁰) = 5.76×10⁻⁹ N."
+        },
+        {
+          "id": "sl3-q7",
+          "prompt": "Why is the electric force between two electrons far greater than the gravitational force between them?",
+          "choices": [
+            "Electrons have larger mass than protons",
+            "The value of k is enormously larger than G relative to the particle properties",
+            "Gravity is repulsive between electrons",
+            "The inverse square law only applies to electric forces"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both forces follow inverse-square laws, but k = 9×10⁹ while G = 6.67×10⁻¹¹. Combined with the tiny electron mass vs. charge ratio, the electric force exceeds gravity by a factor of ~10⁴²."
+        },
+        {
+          "id": "sl3-q8",
+          "prompt": "Two charges are placed on the x-axis: +4 μC at x = 0 and −2 μC at x = 3 m. What is the direction of the force on the +4 μC charge?",
+          "choices": ["+x direction (right)", "−x direction (left)", "No force", "Perpendicular to x-axis"],
+          "correctIndex": 0,
+          "explanation": "Opposite charges attract. The +4 μC charge is attracted toward the −2 μC charge, which is in the +x direction."
+        },
+        {
+          "id": "sl3-q9",
+          "prompt": "A +Q charge is placed midway between a +2Q charge and a −Q charge. The distance from +2Q to +Q is d, and from +Q to −Q is also d. What is the net force on the middle +Q charge?",
+          "choices": [
+            "Zero — it is in equilibrium",
+            "A net force toward +2Q",
+            "A net force toward −Q",
+            "Cannot be determined"
+          ],
+          "correctIndex": 2,
+          "explanation": "Force from +2Q on +Q: repulsive, directed toward −Q side = k(2Q)(Q)/d² away from +2Q. Force from −Q on +Q: attractive, directed toward −Q = k(Q)(Q)/d² toward −Q. Net force = k(2Q²)/d² + kQ²/d² = 3kQ²/d² directed toward −Q."
+        },
+        {
+          "id": "sl3-q10",
+          "prompt": "An alpha particle (charge +2e, mass 6.64 × 10⁻²⁷ kg) is 5 × 10⁻¹⁵ m from another alpha particle. What is the order of magnitude of its electric acceleration?",
+          "choices": ["10¹⁰ m/s²", "10²⁰ m/s²", "10²⁸ m/s²", "10³⁵ m/s²"],
+          "correctIndex": 2,
+          "explanation": "F = k(2e)²/r² ≈ (9×10⁹)(3.2×10⁻¹⁹)²/(5×10⁻¹⁵)² ≈ 9×10⁹×10⁻³⁷/2.5×10⁻²⁹ ≈ 36 N. a = F/m ≈ 36/6.64×10⁻²⁷ ≈ 5×10²⁸ m/s². Order ~10²⁸."
+        },
+        {
+          "id": "sl3-q11",
+          "prompt": "Coulomb's Law and Newton's Law of Universal Gravitation are similar because both:",
+          "choices": [
+            "Only act over short distances",
+            "Are always attractive",
+            "Follow an inverse-square relationship with distance",
+            "Use the same constant of proportionality"
+          ],
+          "correctIndex": 2,
+          "explanation": "Both forces are proportional to 1/r². They differ in that electric force can be repulsive, uses charges instead of mass, and has a much larger proportionality constant."
+        },
+        {
+          "id": "sl3-q12",
+          "prompt": "A proton and an electron are separated by 1 nm. The force on the proton is F. The force on the electron is:",
+          "choices": ["F in the same direction", "F in the opposite direction", "F/1836 in the opposite direction", "1836F in the opposite direction"],
+          "correctIndex": 1,
+          "explanation": "Newton's Third Law: the forces are equal in magnitude (F) and opposite in direction. The fact that the electron is less massive means it accelerates more, but the force magnitudes are identical."
+        }
+      ]
+    },
+    {
+      "id": "static-lesson4",
+      "title": "Electric Fields",
+      "lessons": [
+        {
+          "id": "sl4-action-distance",
+          "title": "Action at a Distance",
+          "bodyMarkdown": "## Action at a Distance\n\nA puzzling question: how does one charge \"know\" that another charge is nearby and feel a force from it? They don't touch — there's nothing visibly connecting them. This is called the **problem of action at a distance**.\n\n### The Field Concept\n\nMichael Faraday proposed a brilliant solution: a **field**. A charged object doesn't just \"reach out\" and grab another charge. Instead:\n\n1. A charge **creates an electric field** in the space around it — everywhere\n2. Another charge placed in that field **experiences a force** due to the field at that location\n3. The field is real — it exists even without a second charge present\n\n> **The field is the intermediary. Charges interact by affecting the field, and the field affects other charges.**\n\n### The Test Charge\n\nTo measure the electric field at a point, we imagine placing a tiny **positive test charge** q₀ there:\n- If q₀ feels a force, there IS an electric field at that point\n- The direction of force on q₀ gives the **direction** of E\n- The magnitude of force per unit charge gives the **magnitude** of E\n\n### Why a Tiny Test Charge?\n\nThe test charge must be small enough that it doesn't significantly disturb the field it's measuring. A large test charge would repel/attract the source charges and change the field configuration.\n\n### Fields vs. Forces\n\n- **Force** requires two charges present (Coulomb's Law gives the interaction)\n- **Field** exists around a single charge at every point in space\n- When a second charge enters the field, it experiences F = q₀E"
+        },
+        {
+          "id": "sl4-field-intensity",
+          "title": "Electric Field Intensity",
+          "bodyMarkdown": "## Electric Field Intensity\n\nThe **electric field intensity** (or just electric field, E) at a point is defined as the force per unit charge at that point:\n\n## E = F / q₀\n\nwhere q₀ is the test charge.\n\n### Units\n\n> **E is measured in N/C (Newtons per Coulomb) or equivalently V/m (Volts per meter)**\n\n### Direction\n\nBy definition, E points in the direction of force on a **positive** test charge:\n- Near a positive source charge: E points **away** (positive test charge is repelled)\n- Near a negative source charge: E points **toward** (positive test charge is attracted)\n\n### Field Due to a Point Charge\n\nSubstituting Coulomb's Law into E = F/q₀:\n\n## E = kQ / r²\n\nwhere Q is the source charge and r is the distance from Q to the field point.\n\n| Variable | Meaning |\n|---|---|\n| E | Electric field (N/C) |\n| k | 9.0 × 10⁹ N·m²/C² |\n| Q | Source charge (C) |\n| r | Distance from source to field point (m) |\n\n### Using the Field\n\nOnce E is known, the force on ANY charge q placed at that point is:\n\n> **F = qE**\n\n- If q is positive: force in same direction as E\n- If q is negative: force opposite to E\n\n### Example\n\nA +5 μC charge creates a field. What is E at a point 0.2 m away?\n\n```\nE = kQ/r² = (9×10⁹)(5×10⁻⁶) / (0.2)²\nE = 45000 / 0.04 = 1,125,000 N/C = 1.125 × 10⁶ N/C\n```"
+        },
+        {
+          "id": "sl4-field-lines",
+          "title": "Electric Field Lines",
+          "bodyMarkdown": "## Electric Field Lines\n\nElectric field lines are a visual tool for representing the electric field — they show both direction and relative strength at a glance.\n\n### Rules for Drawing Field Lines\n\n1. Field lines begin on **positive charges** and end on **negative charges** (or extend to infinity)\n2. The **direction** of the field at any point is **tangent to the field line** at that point\n3. Field lines never **cross** (a field cannot point in two directions at one point)\n4. The **density** (spacing) of field lines represents the **strength** of the field:\n   - Lines closer together → stronger field\n   - Lines farther apart → weaker field\n5. Field lines are always **perpendicular to the surface** of a conductor\n\n### Common Configurations\n\n**Single positive charge:** Lines radiate outward in all directions equally (like a star burst). Spacing increases with distance (weaker field farther away).\n\n**Single negative charge:** Lines converge inward toward the charge from all directions.\n\n**Two opposite charges (+/−):** Lines curve from + to −, bowing outward in the middle. Between the charges: strong, parallel-looking lines. This is a **dipole** field.\n\n**Two like charges (+/+):** Lines repel — none go from one to the other. Between the charges: zero-field point exists where lines cancel.\n\n**Uniform field (parallel plates):** Lines are parallel, equally spaced, pointing from + plate to − plate. Fringe effects at the edges.\n\n### Field Lines and Equipotentials\n\nElectric field lines are always perpendicular to **equipotential surfaces** (surfaces of constant electric potential). This is a useful relationship when studying electric potential in later courses."
+        },
+        {
+          "id": "sl4-fields-conductors",
+          "title": "Electric Fields and Conductors",
+          "bodyMarkdown": "## Electric Fields and Conductors\n\nConductors in electrostatic equilibrium (all charges at rest) have some remarkable properties:\n\n### Property 1: Field Inside is Zero\n\n> **The electric field inside a conductor at electrostatic equilibrium is exactly zero.**\n\n**Why?** If there were a field inside, free electrons would feel a force and move. They move until they create an equal and opposite field that cancels it. Equilibrium is reached only when E_internal = 0.\n\n### Property 2: Charge Resides on the Surface\n\n> **Any excess charge on a conductor resides entirely on the surface.**\n\nSince E = 0 inside, Gauss's Law tells us there can be no net charge inside — all charge is on the surface.\n\n### Property 3: Field at Surface is Perpendicular\n\n> **The field just outside a conductor's surface is perpendicular to that surface.**\n\nAny tangential component would drive electrons along the surface until it disappears.\n\n### Charge Distribution and Shape\n\nCharge doesn't distribute uniformly on an irregular conductor:\n- **Flat regions:** lower charge density, weaker external field\n- **Pointed regions / sharp edges:** highest charge density, strongest external field\n\nThis is why lightning rods are pointed — charge concentrates at the tip, creating a strong enough field to ionize air and allow continuous, gentle charge dissipation (corona discharge) before a lightning strike.\n\n### Faraday Cage\n\nA hollow conductor shields its interior from external electric fields. Since E = 0 inside, no external field penetrates. This is the **Faraday cage** effect — the principle behind:\n- Microwave oven mesh (keeps microwaves in)\n- Shielded cables (keeps EM interference out)\n- Car body protecting occupants from lightning\n\n> **Car example:** If lightning strikes your car, the charge flows along the metal body to ground. E = 0 inside the car — you're safe inside the conductor."
+        },
+        {
+          "id": "sl4-lightning",
+          "title": "Lightning",
+          "bodyMarkdown": "## Lightning\n\nLightning is one of nature's most dramatic demonstrations of static electricity — a massive electric discharge driven by enormous charge separation in storm clouds.\n\n### Charge Separation in Clouds\n\n1. In a thundercloud (cumulonimbus), violent updrafts and downdrafts cause collisions between ice crystals and larger graupel (soft hail)\n2. Smaller ice particles tend to become **positive** and are carried by updrafts to the cloud top\n3. Larger graupel particles become **negative** and fall to the cloud base\n4. Result: **negative charge at the bottom, positive at the top** of the cloud\n5. The negative cloud base **induces positive charge** on the Earth's surface below (polarization at scale!)\n\n### The Lightning Strike Process\n\n1. **Stepped leader:** The cloud sends an invisible, branching channel of ionized air (plasma) toward the ground in 50-meter steps (~1 ms each)\n2. **Return stroke:** When the stepped leader connects with an upward streamer from the ground, a brilliant visible flash travels upward along the channel at ~1/3 the speed of light. This is what we see.\n3. **Multiple return strokes:** A single flash often contains 3–5 return strokes, giving lightning its characteristic flicker\n\n### Thunder\n\nThe return stroke superheats air to ~30,000 K (5× hotter than the sun's surface) in microseconds. This explosive expansion creates a shock wave — **thunder**. Speed of sound (~340 m/s) is much slower than light → count seconds between flash and thunder, divide by 3 for distance in km (or 5 for miles).\n\n### Lightning Safety\n\n- **Indoors:** Safe in a building with proper grounding or in a car (Faraday cage)\n- **Avoid:** Trees, open fields, hilltops, water, tall objects\n- **30/30 rule:** If thunder follows lightning in <30 seconds, seek shelter. Wait 30 minutes after the last thunder before going outside."
+        }
+      ],
+      "flashcards": [
+        { "id": "sl4-fc1", "front": "What is the definition of electric field intensity E?", "back": "E = F/q₀ — the electric force per unit positive test charge at a point. Units: N/C or V/m." },
+        { "id": "sl4-fc2", "front": "What is the formula for the electric field due to a point charge Q at distance r?", "back": "E = kQ/r² where k = 9×10⁹ N·m²/C²" },
+        { "id": "sl4-fc3", "front": "What direction does E point near a positive charge? Near a negative charge?", "back": "Near a positive charge: E points away (outward). Near a negative charge: E points toward (inward). Always defined as force direction on a POSITIVE test charge." },
+        { "id": "sl4-fc4", "front": "What do electric field lines represent?", "back": "Visual representation of E field: direction = tangent to line; density = strength. Start on + charges, end on − charges. Never cross." },
+        { "id": "sl4-fc5", "front": "What is the electric field inside a conductor at electrostatic equilibrium?", "back": "Exactly zero. Free electrons redistribute until they cancel any internal field." },
+        { "id": "sl4-fc6", "front": "Where does excess charge reside on a conductor?", "back": "On the outer surface. Since E = 0 inside, Gauss's Law requires no net charge anywhere inside." },
+        { "id": "sl4-fc7", "front": "What is a Faraday cage?", "back": "A hollow conductor that shields its interior from external electric fields. Examples: car body, microwave mesh, shielded cable." },
+        { "id": "sl4-fc8", "front": "How does a stepped leader start a lightning bolt?", "back": "It's an invisible channel of ionized air propagating from the cloud toward the ground in 50-m steps. When it connects with an upward streamer, the brilliant return stroke travels upward." },
+        { "id": "sl4-fc9", "front": "Why do lightning rods have sharp points?", "back": "Charge concentrates at sharp points (highest curvature), creating extremely strong local fields that ionize air and allow slow corona discharge, safely dissipating charge." },
+        { "id": "sl4-fc10", "front": "If the electric field at a point is E = 500 N/C and a charge of +3 μC is placed there, what force acts on it?", "back": "F = qE = (3×10⁻⁶)(500) = 1.5×10⁻³ N = 1.5 mN, in the direction of E." }
+      ],
+      "questions": [
+        {
+          "id": "sl4-q1",
+          "prompt": "The electric field at a point in space is 400 N/C pointing east. A charge of +2 μC is placed at that point. What force acts on it?",
+          "choices": ["8×10⁻⁴ N east", "2×10⁻⁴ N west", "8×10⁻⁴ N west", "2×10⁻⁴ N east"],
+          "correctIndex": 0,
+          "explanation": "F = qE = (2×10⁻⁶)(400) = 8×10⁻⁴ N. Since q is positive, force is in the same direction as E: east."
+        },
+        {
+          "id": "sl4-q2",
+          "prompt": "A +5 μC charge creates an electric field. What is E at a point 0.3 m from the charge?",
+          "choices": ["5.0×10⁵ N/C", "1.5×10⁶ N/C", "5.0×10⁶ N/C", "1.5×10⁵ N/C"],
+          "correctIndex": 0,
+          "explanation": "E = kQ/r² = (9×10⁹)(5×10⁻⁶)/(0.3)² = 45000/0.09 = 5.0×10⁵ N/C."
+        },
+        {
+          "id": "sl4-q3",
+          "prompt": "In which direction do electric field lines point?",
+          "choices": [
+            "From negative to positive charges",
+            "From positive to negative charges",
+            "Perpendicular to the force on charges",
+            "Always in a straight line between charges"
+          ],
+          "correctIndex": 1,
+          "explanation": "Field lines are defined as the direction of force on a positive test charge. They point away from (+) charges and toward (−) charges: from + to −."
+        },
+        {
+          "id": "sl4-q4",
+          "prompt": "The electric field is strongest where field lines are:",
+          "choices": ["Farthest apart (sparse)", "Closest together (dense)", "Perpendicular to each other", "Parallel to a conductor surface"],
+          "correctIndex": 1,
+          "explanation": "The density of field lines represents field strength. Where lines are closely packed, the field is strong. Where they are spread out, the field is weak."
+        },
+        {
+          "id": "sl4-q5",
+          "prompt": "What is the electric field inside a hollow conductor that carries charge on its surface?",
+          "choices": ["Very large", "Equal to the field outside", "Zero", "Negative"],
+          "correctIndex": 2,
+          "explanation": "At electrostatic equilibrium, E = 0 inside any conductor (hollow or solid). Free electrons have redistributed to cancel any internal field."
+        },
+        {
+          "id": "sl4-q6",
+          "prompt": "A −3 μC charge is placed in a region where E = 200 N/C pointing north. What is the force on the charge?",
+          "choices": ["6×10⁻⁴ N north", "6×10⁻⁴ N south", "6×10⁻⁴ N east", "Zero"],
+          "correctIndex": 1,
+          "explanation": "F = qE = (3×10⁻⁶)(200) = 6×10⁻⁴ N. Since q is negative, force is opposite to E: south."
+        },
+        {
+          "id": "sl4-q7",
+          "prompt": "Which concept explains why you are safe inside a car during a lightning storm?",
+          "choices": ["The rubber tires insulate the car from ground", "The Faraday cage effect — the metal body shields the interior", "Lightning never strikes moving vehicles", "The car's engine creates a counter electric field"],
+          "correctIndex": 1,
+          "explanation": "The metal car body acts as a Faraday cage. Current flows along the exterior; the interior has E ≈ 0. Rubber tires are a secondary consideration — they would not protect from a direct strike."
+        },
+        {
+          "id": "sl4-q8",
+          "prompt": "Two electric field lines cross at a point. This is:",
+          "choices": [
+            "Possible if the charges are of equal magnitude",
+            "Impossible — field lines never cross",
+            "Normal near a conductor surface",
+            "Possible only in a vacuum"
+          ],
+          "correctIndex": 1,
+          "explanation": "Field lines never cross because the electric field at any point has only one direction. If lines crossed, the field at that point would have two directions simultaneously — impossible."
+        },
+        {
+          "id": "sl4-q9",
+          "prompt": "The charge on a conductor at electrostatic equilibrium resides:",
+          "choices": ["Uniformly throughout the volume", "Only at the center of the conductor", "On the outer surface", "Deep inside near the nucleus"],
+          "correctIndex": 2,
+          "explanation": "Since E = 0 inside a conductor, Gauss's Law requires zero net charge inside. All excess charge migrates to and distributes on the outer surface."
+        },
+        {
+          "id": "sl4-q10",
+          "prompt": "Charge on an irregularly shaped conductor is most concentrated at:",
+          "choices": ["Flat surfaces", "Sharp points or edges", "The geometric center", "Equally everywhere"],
+          "correctIndex": 1,
+          "explanation": "Charge concentrates at regions of high curvature (sharp points). This creates the strongest electric field there — the basis of lightning rod design and corona discharge."
+        },
+        {
+          "id": "sl4-q11",
+          "prompt": "What causes the negative charge at the base of a thundercloud?",
+          "choices": [
+            "Lightning from previous storms",
+            "Collisions between small ice crystals and larger graupel particles",
+            "Friction between the cloud and the air",
+            "Solar radiation ionizing water molecules"
+          ],
+          "correctIndex": 1,
+          "explanation": "Collisions between small ice crystals (blown upward) and larger graupel (falling) transfer electrons to the graupel, making it negative. The graupel sinks to the cloud base, leaving a negative bottom and positive top."
+        },
+        {
+          "id": "sl4-q12",
+          "prompt": "A test charge of +1 μC feels a force of 0.3 N at a point. What is the electric field magnitude at that point?",
+          "choices": ["3×10⁻⁷ N/C", "3×10⁵ N/C", "0.3 N/C", "0.3 μN/C"],
+          "correctIndex": 1,
+          "explanation": "E = F/q = 0.3 / (1×10⁻⁶) = 3×10⁵ N/C."
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    { "id": "g-s1", "term": "Electric Charge", "definition": "A fundamental property of matter. Comes in positive and negative types. Like charges repel; opposite charges attract. Measured in coulombs (C)." },
+    { "id": "g-s2", "term": "Elementary Charge (e)", "definition": "The smallest unit of free charge: e = 1.6 × 10⁻¹⁹ C. The magnitude of charge on one proton or one electron." },
+    { "id": "g-s3", "term": "Proton", "definition": "Positively charged subatomic particle in the nucleus. Charge = +1e. Mass ≈ 1.67 × 10⁻²⁷ kg." },
+    { "id": "g-s4", "term": "Electron", "definition": "Negatively charged particle orbiting the nucleus. Charge = −1e. Mass ≈ 9.11 × 10⁻³¹ kg. The particle responsible for ordinary electrostatics." },
+    { "id": "g-s5", "term": "Neutron", "definition": "Electrically neutral subatomic particle in the nucleus. Contributes to mass but not to charge." },
+    { "id": "g-s6", "term": "Conservation of Charge", "definition": "Fundamental law: electric charge cannot be created or destroyed. The total charge of an isolated system is constant." },
+    { "id": "g-s7", "term": "Quantization of Charge", "definition": "Charge only exists in whole-number multiples of e. Q = ne where n is an integer." },
+    { "id": "g-s8", "term": "Conductor", "definition": "Material in which electrons move freely (e.g., metals). Charge spreads instantly throughout a conductor." },
+    { "id": "g-s9", "term": "Insulator", "definition": "Material in which electrons are tightly bound and cannot move freely (e.g., rubber, glass). Charge stays where placed." },
+    { "id": "g-s10", "term": "Semiconductor", "definition": "Material with conductivity between conductors and insulators (e.g., silicon). Basis of all transistors and computer chips." },
+    { "id": "g-s11", "term": "Polarization", "definition": "Redistribution of charge within a neutral object due to a nearby charged object, without charge transfer. Causes neutral objects to be attracted to charged objects." },
+    { "id": "g-s12", "term": "Triboelectric Effect", "definition": "Charge transfer due to friction. Material that gains electrons becomes negative; material that loses electrons becomes positive." },
+    { "id": "g-s13", "term": "Triboelectric Series", "definition": "Ranking of materials by their tendency to gain or lose electrons when rubbed. Higher in list = more likely to become positive." },
+    { "id": "g-s14", "term": "Charging by Induction", "definition": "Charging a conductor without contact. A charged object is brought near, the conductor is grounded, then the ground is removed before the charged object. Result: opposite charge to inducer." },
+    { "id": "g-s15", "term": "Charging by Conduction", "definition": "Charging by direct contact. Both objects end up with the same sign of charge as the original. Total charge is shared." },
+    { "id": "g-s16", "term": "Grounding", "definition": "Connecting a charged object to the Earth, providing a path for excess charge to flow. Earth acts as an infinite charge reservoir." },
+    { "id": "g-s17", "term": "Coulomb's Law", "definition": "F = k|q₁||q₂|/r². The electric force between two point charges is proportional to each charge and inversely proportional to the square of the distance between them." },
+    { "id": "g-s18", "term": "Coulomb's Constant (k)", "definition": "k = 8.99 × 10⁹ N·m²/C². The proportionality constant in Coulomb's Law." },
+    { "id": "g-s19", "term": "Inverse Square Law", "definition": "Force (or field intensity) decreases as 1/r². Doubling distance reduces force to 1/4; tripling reduces to 1/9." },
+    { "id": "g-s20", "term": "Electric Field (E)", "definition": "A region of space where an electric force acts on a charge. Defined as E = F/q₀ (force per unit positive test charge). Units: N/C or V/m." },
+    { "id": "g-s21", "term": "Test Charge", "definition": "A tiny positive charge used conceptually to measure an electric field at a point without disturbing the field." },
+    { "id": "g-s22", "term": "Electric Field Lines", "definition": "Visual representation of E fields. Direction: tangent to line (force on positive charge). Density: field strength. Start on + charges, end on − charges. Never cross." },
+    { "id": "g-s23", "term": "Faraday Cage", "definition": "A hollow conductor that shields its interior from external electric fields. E = 0 inside. Examples: car body, microwave oven mesh, shielded cables." },
+    { "id": "g-s24", "term": "Lightning", "definition": "A massive electrostatic discharge between cloud and ground (or within a cloud), caused by charge separation in cumulonimbus clouds." },
+    { "id": "g-s25", "term": "Stepped Leader", "definition": "An invisible plasma channel propagating from a cloud toward the ground in steps before a lightning strike. Connects with an upward streamer to trigger the return stroke." },
+    { "id": "g-s26", "term": "Ion", "definition": "An atom that has gained or lost electrons. Cation = positive (lost electrons). Anion = negative (gained electrons)." },
+    { "id": "g-s27", "term": "Electroscope", "definition": "Device for detecting charge. Leaf electroscope: two metal leaves spread apart when charged (like charges repel)." },
+    { "id": "g-s28", "term": "Corona Discharge", "definition": "Ionization of air near a sharp conductor tip due to extremely high local electric field. Allows slow, continuous charge dissipation. Used by lightning rods." }
+  ]
+}

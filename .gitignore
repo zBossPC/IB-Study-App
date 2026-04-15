@@ -1,0 +1,24 @@
+.build/
+.swiftpm/
+*.xcodeproj
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Local tooling / editor
+.cursor/
+.firecrawl/
+
+# Built app bundle (build locally; distribute via GitHub Releases)
+IBStudy.app/
+
+# Icon / temp build artifacts
+iconbuild/
+
+# Website (Vercel / Next.js)
+website/node_modules/
+website/.next/
+website/out/
+website/.env*.local
+# Keep website/package-lock.json committed for reproducible installs
