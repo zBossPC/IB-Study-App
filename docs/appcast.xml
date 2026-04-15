@@ -6,6 +6,26 @@
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
 		<item>
+			<title>IBStudy v1.0.6</title>
+			<sparkle:version>9</sparkle:version>
+			<sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+			<description><![CDATA[
+				<ul>
+					<li>Ollama/brew subprocesses use a neutral working directory (fewer Documents privacy prompts)</li>
+					<li>DMG build assembles the app in /tmp so codesign succeeds under ~/Documents checkouts</li>
+					<li>Website + release tooling updates</li>
+				</ul>
+			]]></description>
+			<pubDate>Tue, 15 Apr 2026 23:15:00 +0000</pubDate>
+			<enclosure
+				url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.6/IBStudy-macos.dmg"
+				type="application/octet-stream"
+				sparkle:edSignature="0tT2BX2/W5mQK8VN7Nlt6Uy/gLIOaGVflEhdEF2EonChErhQ10Yl+up3oDddQNjCuLTjvhXotbLGPO4x9+8NAA=="
+				length="3943064"
+			/>
+		</item>
+		<item>
 			<title>IBStudy v1.0.5 — Big Dog</title>
 			<sparkle:version>8</sparkle:version>
 			<sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>

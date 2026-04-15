@@ -10,17 +10,23 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
 BUILD_DIR="$ROOT/.build/debug"
-APP="$ROOT/IBStudy.app"
 SPARKLE_FRAMEWORK="$BUILD_DIR/Sparkle.framework"
 RESOURCE_BUNDLE="$BUILD_DIR/IBStudy_IBStudy.bundle"
 OUT="$ROOT/IBStudy-macos.dmg"
 ICON="$ROOT/Sources/IBStudy/Resources/AppIcon.icns"
 
+# Build the .app under /tmp — assembling in ~/Documents can cause Finder/file-provider to
+# re-attach com.apple.FinderInfo before the outer codesign (codesign then fails).
+TMP_BUILD="$(mktemp -d "${TMPDIR:-/tmp}/ibstudy-app.XXXXXX")"
+STAGE="$(mktemp -d "${TMPDIR:-/tmp}/ibstudy-dmg.XXXXXX")"
+APP="$TMP_BUILD/IBStudy.app"
+trap 'rm -rf "$TMP_BUILD" "$STAGE"' EXIT
+
 echo "==> swift build"
 swift build
 
-echo "==> Assembling clean app bundle"
-rm -rf "$APP"
+echo "==> Assembling clean app bundle (in temp dir)"
+rm -rf "$ROOT/IBStudy.app" 2>/dev/null || true
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" "$APP/Contents/Frameworks"
 
 # -X = do not copy HFS+ extended attributes / Finder flags onto the binary
@@ -69,8 +75,6 @@ codesign --force --sign - "$APP"
 codesign --verify --strict "$APP"
 echo "    Signature valid"
 
-STAGE="$(mktemp -d "${TMPDIR:-/tmp}/ibstudy-dmg.XXXXXX")"
-trap 'rm -rf "$STAGE"' EXIT
 ditto --norsrc --noextattr --noqtn "$APP" "$STAGE/IBStudy.app"
 find "$STAGE" -name '.DS_Store' -delete
 xattr -cr "$STAGE" 2>/dev/null || true
@@ -101,6 +105,6 @@ else
   hdiutil create -volname "IBStudy" -srcfolder "$STAGE" -ov -format UDZO -fs HFS+ "$OUT"
 fi
 
-touch "$APP"
+touch "$OUT"
 ls -lh "$OUT"
 echo "Done: $OUT"

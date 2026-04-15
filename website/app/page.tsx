@@ -3,7 +3,7 @@ import { Reveal } from "./components/Reveal";
 /** Defaults match the public GitHub repo; override in Vercel if you fork. */
 const DEFAULT_REPO = "https://github.com/zBossPC/IB-Study-App";
 const DEFAULT_DOWNLOAD =
-  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.5/IBStudy-macos.dmg";
+  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.6/IBStudy-macos.dmg";
 
 const downloadUrl =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || DEFAULT_DOWNLOAD;
@@ -59,7 +59,7 @@ export default function Home() {
       <main>
         <section className="hero wrap">
           <div className="hero-badge-row">
-            <span className="hero-badge">v1.0.5 · Big Dog</span>
+            <span className="hero-badge">v1.0.6</span>
             <span className="hero-badge-sub">Local AI that actually fits your Mac</span>
           </div>
 
@@ -96,7 +96,7 @@ export default function Home() {
                 </a>
                 <a
                   className="btn btn-ghost btn-lg"
-                  href={`${repoUrl}/releases/tag/v1.0.5`}
+                  href={`${repoUrl}/releases/tag/v1.0.6`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -241,7 +241,7 @@ export default function Home() {
         <section id="ai" className="section wrap ai-section">
           <Reveal>
             <div className="section-head">
-              <p className="section-kicker">Big Dog · v1.0.5</p>
+              <p className="section-kicker">v1.0.6</p>
               <h2>AI that matches the app—not a generic chatbot</h2>
               <p>
                 The same mascot you see on lessons and quizzes appears in the tutor. Setup walks you
@@ -372,9 +372,9 @@ export default function Home() {
                 />
               </div>
               <div className="cta-copy">
-                <h2>Ready for the Big Dog build?</h2>
+                <h2>Ready to download?</h2>
                 <p>
-                  v1.0.5 — download for macOS Tahoe (26+). Questions? Open an issue on GitHub.
+                  v1.0.6 — download for macOS Tahoe (26+). Questions? Open an issue on GitHub.
                 </p>
                 <a className="btn btn-primary btn-lg" href={downloadUrl}>
                   Download IBStudy
@@ -417,8 +417,8 @@ export default function Home() {
               <a href={repoUrl} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href={`${repoUrl}/releases/tag/v1.0.5`} target="_blank" rel="noopener noreferrer">
-                v1.0.5 notes
+              <a href={`${repoUrl}/releases/tag/v1.0.6`} target="_blank" rel="noopener noreferrer">
+                v1.0.6 notes
               </a>
             </div>
           </div>

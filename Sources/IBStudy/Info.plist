@@ -9,9 +9,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>IBStudy</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>CFBundleVersion</key>
-	<string>8</string>
+	<string>9</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>26.0</string>
 	<!-- Sparkle: hosted appcast (update docs/appcast.xml + sign releases). -->
