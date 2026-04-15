@@ -134,7 +134,6 @@ item = textwrap.dedent(f'''
 \t\t\t<title>IBStudy v{new_ver}</title>
 \t\t\t<sparkle:version>{new_build}</sparkle:version>
 \t\t\t<sparkle:shortVersionString>{new_ver}</sparkle:shortVersionString>
-\t\t\t<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 \t\t\t<description><![CDATA[
 \t\t\t\t<ul>
 \t\t\t\t\t<li>See commit and release notes on GitHub.</li>

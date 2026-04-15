@@ -10,7 +10,6 @@
 	<title>IBStudy v1.0.8</title>
 	<sparkle:version>11</sparkle:version>
 	<sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
-	<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 	<description><![CDATA[
 		<ul>
 			<li>See commit and release notes on GitHub.</li>
@@ -29,7 +28,6 @@
 	<title>IBStudy v1.0.7</title>
 	<sparkle:version>10</sparkle:version>
 	<sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
-	<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 	<description><![CDATA[
 		<ul>
 			<li>See commit and release notes on GitHub.</li>
@@ -47,7 +45,6 @@
 			<title>IBStudy v1.0.6</title>
 			<sparkle:version>9</sparkle:version>
 			<sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
-			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 			<description><![CDATA[
 				<ul>
 					<li>Ollama/brew subprocesses use a neutral working directory (fewer Documents privacy prompts)</li>
@@ -67,7 +64,6 @@
 			<title>IBStudy v1.0.5 — Big Dog</title>
 			<sparkle:version>8</sparkle:version>
 			<sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
-			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 			<description><![CDATA[
 				<ul>
 					<li>Local AI tuned for Gemma 4 e2b with context-aware tutor prompts</li>
@@ -87,7 +83,6 @@
 			<title>IBStudy v1.0.5</title>
 			<sparkle:version>7</sparkle:version>
 			<sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
-			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 			<description><![CDATA[
 				<ul>
 					<li>Fullscreen first-launch splash with animated glow and spring transitions</li>
@@ -107,7 +102,6 @@
 			<title>IBStudy v1.0.4</title>
 			<sparkle:version>6</sparkle:version>
 			<sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
-			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 			<description><![CDATA[
 				<ul>
 					<li>New transparent app icon — Liquid Glass renders the background</li>
@@ -126,7 +120,6 @@
 			<title>IBStudy v1.0.3 — macOS Tahoe (Liquid Glass)</title>
 			<sparkle:version>5</sparkle:version>
 			<sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
-			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
 			<description><![CDATA[
 				<ul>
 					<li>macOS Tahoe only — Liquid Glass icon support</li>
