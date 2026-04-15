@@ -9,9 +9,9 @@
 	<key>CFBundleName</key>
 	<string>IBStudy</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.9</string>
+	<string>1.0.10</string>
 	<key>CFBundleVersion</key>
-	<string>12</string>
+	<string>13</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>26.0</string>
 	<key>SUAutomaticallyUpdate</key>
