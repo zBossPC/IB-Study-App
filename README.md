@@ -17,7 +17,7 @@ Requires **macOS 14+**. See `AGENTS.md` for architecture and content layout.
 The folder **`website/`** is a small **Next.js** site for a public download link and first-run hints. Deploy it on **Vercel** with root directory `website`.
 
 **Repository:** [github.com/zBossPC/IB-Study-App](https://github.com/zBossPC/IB-Study-App)  
-**Releases / download:** [v1.0.2](https://github.com/zBossPC/IB-Study-App/releases/tag/v1.0.2) — get **`IBStudy-macos.dmg`** (unsigned; open with right-click → Open the first time).
+**Releases / download:** [v1.0.3](https://github.com/zBossPC/IB-Study-App/releases/tag/v1.0.3) — get **`IBStudy-macos.dmg`** (unsigned; open with right-click → Open the first time).
 
 **Build a DMG locally:** `./scripts/build-dmg.sh` (uses [create-dmg](https://github.com/create-dmg/create-dmg) if installed: `brew install create-dmg`).
 

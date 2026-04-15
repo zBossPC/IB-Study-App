@@ -9,9 +9,11 @@
 	<key>CFBundleDisplayName</key>
 	<string>IBStudy</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>CFBundleVersion</key>
-	<string>4</string>
+	<string>5</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>26.0</string>
 	<!-- Sparkle: hosted appcast (update docs/appcast.xml + sign releases). -->
 	<key>SUFeedURL</key>
 	<string>https://raw.githubusercontent.com/zBossPC/IB-Study-App/main/docs/appcast.xml</string>
