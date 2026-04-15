@@ -2,23 +2,18 @@
 
 This repo contains the **Swift/macOS app** at the root and a **Next.js site** in `website/` for downloads and instructions.
 
-## 1. Create the GitHub repository
+**Live repo:** [github.com/zBossPC/IB-Study-App](https://github.com/zBossPC/IB-Study-App)
 
-1. On GitHub: **New repository** → name e.g. `IBStudy` → Public (or Private for stricter sharing).
-2. Do **not** add a README/license on GitHub if you already have one locally (avoid merge conflicts).
+## 1. GitHub repository
 
-From your machine (replace `YOURUSER` and repo name):
+The project is hosted at **zBossPC/IB-Study-App**. To push updates:
 
 ```bash
 cd ~/Documents/IBStudy
 git add .
-git commit -m "Initial commit: IBStudy app and Vercel landing site"
-git branch -M main
-git remote add origin https://github.com/YOURUSER/IBStudy.git
-git push -u origin main
+git commit -m "Your message"
+git push origin main
 ```
-
-If the repo was created empty, `git push -u origin main` is enough.
 
 ## 2. Ship a zip on GitHub Releases (for the download button)
 
@@ -40,9 +35,9 @@ Friends should download a **zip of the app**, not clone the whole repo.
 
 3. On GitHub: **Releases** → **Draft a new release** → tag e.g. `v1.0.0` → upload `IBStudy-macos.zip` → publish.
 
-4. Copy the **browser download URL** for that asset (right-click “IBStudy-macos.zip” → copy link). It looks like:
+4. Copy the **browser download URL** for that asset (right-click “IBStudy-macos.zip” → copy link). Example for **v1.0.0**:
 
-   `https://github.com/YOURUSER/IBStudy/releases/download/v1.0.0/IBStudy-macos.zip`
+   `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.zip`
 
 ## 3. Deploy the site on Vercel
 
@@ -50,10 +45,12 @@ Friends should download a **zip of the app**, not clone the whole repo.
 2. **Add New** → **Project** → import the `IBStudy` repository.
 3. **Root Directory**: set to `website` (important).
 4. Framework: Vercel should detect **Next.js**. Leave defaults.
-5. **Environment variables** (Production):
+5. **Environment variables** (optional — the site already defaults to the repo above):
 
-   - `NEXT_PUBLIC_DOWNLOAD_URL` = the Release asset URL from step 2.
-   - `NEXT_PUBLIC_GITHUB_REPO_URL` = `https://github.com/YOURUSER/IBStudy` (optional).
+   - `NEXT_PUBLIC_DOWNLOAD_URL` — override if you publish a new release with a different tag.
+   - `NEXT_PUBLIC_GITHUB_REPO_URL` — override if you fork.
+
+   Defaults are set in `website/app/page.tsx` for **zBossPC/IB-Study-App** and **v1.0.0**.
 
 6. **Deploy**. Your site will be at something like `ib-study.vercel.app` (you can add a custom domain later).
 

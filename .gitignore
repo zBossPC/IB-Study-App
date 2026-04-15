@@ -16,6 +16,9 @@ IBStudy.app/
 # Icon / temp build artifacts
 iconbuild/
 
+# Release artifact (built locally; hosted on GitHub Releases)
+IBStudy-macos.zip
+
 # Website (Vercel / Next.js)
 website/node_modules/
 website/.next/

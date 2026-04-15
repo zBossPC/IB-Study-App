@@ -16,6 +16,9 @@ Requires **macOS 14+**. See `AGENTS.md` for architecture and content layout.
 
 The folder **`website/`** is a small **Next.js** site for a public download link and first-run hints. Deploy it on **Vercel** with root directory `website`.
 
+**Repository:** [github.com/zBossPC/IB-Study-App](https://github.com/zBossPC/IB-Study-App)  
+**Releases / download:** [v1.0.0](https://github.com/zBossPC/IB-Study-App/releases/tag/v1.0.0)
+
 **Full steps:** [docs/GITHUB_AND_VERCEL.md](docs/GITHUB_AND_VERCEL.md)
 
 ## License

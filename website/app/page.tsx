@@ -1,10 +1,14 @@
+/** Defaults match the public GitHub repo; override in Vercel if you fork. */
+const DEFAULT_REPO = "https://github.com/zBossPC/IB-Study-App";
+const DEFAULT_DOWNLOAD =
+  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.zip";
+
 const defaultDownload =
-  process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || "";
-const defaultRepo = process.env.NEXT_PUBLIC_GITHUB_REPO_URL?.trim() || "";
+  process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || DEFAULT_DOWNLOAD;
+const defaultRepo =
+  process.env.NEXT_PUBLIC_GITHUB_REPO_URL?.trim() || DEFAULT_REPO;
 
 export default function Home() {
-  const hasDownload = defaultDownload.length > 0;
-
   return (
     <main
       style={{
@@ -75,39 +79,30 @@ export default function Home() {
             <code style={{ fontSize: "0.85em", opacity: 0.9 }}>Applications</code>.
           </p>
 
-          {hasDownload ? (
-            <a
-              href={defaultDownload}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 10,
-                padding: "14px 28px",
-                fontSize: "1rem",
-                fontWeight: 700,
-                color: "#0a0e14",
-                background: "linear-gradient(135deg, #7ec8f0 0%, #5b9fd4 50%, #4a8fc4 100%)",
-                borderRadius: 14,
-                boxShadow: "0 8px 32px rgba(91, 159, 212, 0.35)",
-              }}
-            >
-              Download for macOS
-            </a>
-          ) : (
-            <p style={{ margin: 0, fontSize: "0.95rem", color: "var(--muted)" }}>
-              Set{" "}
-              <code style={{ fontSize: "0.85em" }}>NEXT_PUBLIC_DOWNLOAD_URL</code> in Vercel
-              (see <code style={{ fontSize: "0.85em" }}>website/README.md</code>) to point at
-              your latest Release asset.
-            </p>
-          )}
+          <a
+            href={defaultDownload}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 10,
+              padding: "14px 28px",
+              fontSize: "1rem",
+              fontWeight: 700,
+              color: "#0a0e14",
+              background: "linear-gradient(135deg, #7ec8f0 0%, #5b9fd4 50%, #4a8fc4 100%)",
+              borderRadius: 14,
+              boxShadow: "0 8px 32px rgba(91, 159, 212, 0.35)",
+            }}
+          >
+            Download for macOS
+          </a>
 
-          {defaultRepo && (
-            <p style={{ margin: "20px 0 0", fontSize: "0.875rem" }}>
-              <a href={defaultRepo}>Source on GitHub</a>
-            </p>
-          )}
+          <p style={{ margin: "20px 0 0", fontSize: "0.875rem" }}>
+            <a href={defaultRepo}>Source on GitHub</a>
+            {" · "}
+            <a href={`${defaultRepo}/releases/tag/v1.0.0`}>Release notes (v1.0.0)</a>
+          </p>
         </div>
 
         <section
