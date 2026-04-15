@@ -23,6 +23,8 @@ The folder **`website/`** is a small **Next.js** site for a public download link
 
 **Full steps:** [docs/GITHUB_AND_VERCEL.md](docs/GITHUB_AND_VERCEL.md)
 
+**Documents folder prompt:** If macOS asks for access to **Documents** on launch, it often means the app (or a dev build) is being run from a folder under `~/Documents/` (for example the project repo). Install **`IBStudy.app` into `/Applications`** and open it from there, or allow access once in **System Settings → Privacy & Security → Files and Folders**. The app also sets a neutral working directory for Ollama/brew subprocesses so they do not inherit that path.
+
 ## License
 
 Add a `LICENSE` file when you’re ready; not included here.

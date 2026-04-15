@@ -142,6 +142,8 @@ final class OllamaSetupManager: ObservableObject {
         p.executableURL = URL(fileURLWithPath: path)
         p.arguments     = ["serve"]
         p.environment   = ProcessInfo.processInfo.environment  // inherit HOME, PATH, etc.
+        // Avoid inheriting CWD from a GUI app launched under ~/Documents (can trigger a Documents privacy prompt).
+        p.currentDirectoryURL = URL(fileURLWithPath: "/")
         p.standardOutput = FileHandle.nullDevice
         p.standardError  = FileHandle.nullDevice
         try? p.run()
@@ -217,6 +219,7 @@ final class OllamaSetupManager: ObservableObject {
                 p.executableURL  = URL(fileURLWithPath: path)
                 p.arguments      = ["pull", model]
                 p.environment    = ProcessInfo.processInfo.environment
+                p.currentDirectoryURL = URL(fileURLWithPath: "/")
                 p.standardOutput = outP
                 p.standardError  = errP
 
@@ -270,6 +273,7 @@ final class OllamaSetupManager: ObservableObject {
                 p.executableURL  = URL(fileURLWithPath: exe)
                 p.arguments      = args
                 p.environment    = ProcessInfo.processInfo.environment
+                p.currentDirectoryURL = URL(fileURLWithPath: "/")
                 p.standardOutput = pipe
                 p.standardError  = pipe
 

@@ -125,6 +125,7 @@ When you (or the user) want to **publish** the app: run **`./scripts/publish.sh 
 ---
 
 ## Known Issues / Notes
+- **Documents folder TCC prompt:** Common when the `.app` or dev build lives under `~/Documents/…`. Prefer **`/Applications`**. `OllamaSetupManager` sets `Process.currentDirectoryURL` to `/` so `ollama`/`brew` subprocesses do not inherit a Documents CWD.
 - `swift run` requires `NSApp.activate(ignoringOtherApps: true)` in `init()` to grab keyboard focus (already in place)
 - Ollama `gemma4:e2b` — if setup fails, check `ollama serve` is running: `curl http://127.0.0.1:11434/api/tags`
 - The build artifact is at `.build/debug/IBStudy` (debug) or `.build/release/IBStudy` (release)
