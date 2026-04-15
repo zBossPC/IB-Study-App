@@ -38,6 +38,7 @@ struct RootView: View {
                 .navigationSplitViewStyle(.automatic)
                 .background(themeManager.pageGradient)
                 .background(SplitViewDividerTuner())
+                .animation(nil, value: columnVisibility)
                 .scaleEffect(showWelcomeSplash ? 0.93 : 1.0)
                 .opacity(showWelcomeSplash ? 0.86 : 1.0)
                 .animation(.spring(response: 0.5, dampingFraction: 0.72), value: showWelcomeSplash)
@@ -136,11 +137,12 @@ struct RootView: View {
                     )
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .strokeBorder(Color.white.opacity(0.18), lineWidth: 1)
-                Image(systemName: "graduationcap.fill")
-                    .font(.system(size: 22, weight: .black))
-                    .foregroundStyle(.white)
+                MascotGuideView(mood: .guiding, size: 46, showOrb: false, animated: false)
+                    .frame(width: 48, height: 48)
+                    .clipped()
             }
             .frame(width: 52, height: 52)
+            .clipped()
 
             VStack(alignment: .leading, spacing: 3) {
                 Text("IBStudy")

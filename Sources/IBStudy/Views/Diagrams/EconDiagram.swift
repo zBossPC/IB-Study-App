@@ -386,7 +386,6 @@ struct MonopolyDiagramView: View {
             }
             Slider(value: $chosenQ, in: 1...14, step: 0.2)
                 .tint(.purple)
-                .onChange(of: chosenQ) { _, _ in progress.recordExploreOpened(sectionId: "monopoly") }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
@@ -462,7 +461,6 @@ struct CostCurvesDiagramView: View {
                 .tint(.red)
                 .padding(.horizontal, 16)
                 .padding(.bottom, 10)
-                .onChange(of: chosenQ) { _, _ in progress.recordExploreOpened(sectionId: "short-run-costs") }
         }
         .diagramCard(tint: .orange)
         .onAppear { progress.recordExploreOpened(sectionId: "short-run-costs") }
@@ -575,7 +573,6 @@ struct PCFirmDiagramView: View {
                 .tint(.purple)
                 .padding(.horizontal, 16)
                 .padding(.bottom, 10)
-                .onChange(of: marketPrice) { _, _ in progress.recordExploreOpened(sectionId: "perfect-competition") }
         }
         .diagramCard(tint: .teal)
         .onAppear { progress.recordExploreOpened(sectionId: "perfect-competition") }
@@ -674,7 +671,6 @@ struct MonCompDiagramView: View {
             }
             .frame(height: 380)
             .padding(.horizontal, 4)
-            .animation(.spring(response: 0.4, dampingFraction: 0.85), value: isLongRun)
 
             HStack {
                 Spacer()
@@ -685,7 +681,6 @@ struct MonCompDiagramView: View {
                 .pickerStyle(.segmented)
                 .frame(maxWidth: 240)
                 .padding(.vertical, 8)
-                .onChange(of: isLongRun) { _, _ in progress.recordExploreOpened(sectionId: "monopolistic-competition") }
                 Spacer()
             }
             .padding(.bottom, 4)
@@ -784,7 +779,6 @@ struct ProductionDiagramView: View {
                 .tint(.blue)
                 .padding(.horizontal, 16)
                 .padding(.bottom, 10)
-                .onChange(of: workers) { _, _ in progress.recordExploreOpened(sectionId: "production") }
         }
         .diagramCard(tint: .blue)
         .onAppear { progress.recordExploreOpened(sectionId: "production") }
@@ -874,7 +868,6 @@ struct LRATCDiagramView: View {
             .padding(.horizontal, 16).padding(.top, 8)
             Slider(value: $scale, in: 1...12, step: 0.5)
                 .tint(.orange).padding(.horizontal, 16).padding(.bottom, 10)
-                .onChange(of: scale) { _, _ in progress.recordExploreOpened(sectionId: "long-run-costs") }
         }
         .diagramCard(tint: .orange)
         .onAppear { progress.recordExploreOpened(sectionId: "long-run-costs") }
@@ -948,7 +941,6 @@ struct ProfitDiagramView: View {
             .padding(.horizontal, 16).padding(.top, 8)
             Slider(value: $chosenQ, in: 0.5...14, step: 0.25)
                 .tint(.blue).padding(.horizontal, 16).padding(.bottom, 10)
-                .onChange(of: chosenQ) { _, _ in progress.recordExploreOpened(sectionId: "cost-revenue-profit") }
         }
         .diagramCard(tint: .green)
         .onAppear { progress.recordExploreOpened(sectionId: "cost-revenue-profit") }
