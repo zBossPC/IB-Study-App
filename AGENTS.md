@@ -115,6 +115,15 @@ open IBStudy.app
 
 ---
 
+## Publishing a release
+
+When you (or the user) want to **publish** the app: run **`./scripts/publish.sh --ship`** from the repo root. That builds the DMG, prints Sparkle `edSignature` / `length` for `docs/appcast.xml`, uploads the DMG to the matching GitHub release via `gh` (if installed), and runs `npm run build` in `website/`.
+
+- **Manual pieces:** Add a new Sparkle `<item>` when the **build** number bumps; push so Vercel can deploy the site.
+- **Scripts:** `scripts/build-dmg.sh`, `scripts/sign-release.sh`, `scripts/publish.sh`
+
+---
+
 ## Known Issues / Notes
 - `swift run` requires `NSApp.activate(ignoringOtherApps: true)` in `init()` to grab keyboard focus (already in place)
 - Ollama `gemma4:e2b` — if setup fails, check `ollama serve` is running: `curl http://127.0.0.1:11434/api/tags`

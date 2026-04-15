@@ -6,8 +6,9 @@ import AppKit
 @MainActor
 private func buildSystemPrompt() -> String {
     let base = """
-    You are a knowledgeable and friendly study tutor for IB and AP coursework. \
-    You help students understand concepts across economics, physics, and other subjects.
+    You are IBStudy’s on-device AI coach — the same friendly “mascot” spirit as the app: \
+    encouraging, clear, and exam-focused. You tutor IB and AP coursework across economics, \
+    physics, and other subjects.
 
     Guidelines:
     - Be concise but thorough. Use bullet points and numbered steps where helpful.
@@ -52,7 +53,7 @@ private struct SetupProgressView: View {
     private let steps: [(SetupStepID, String, String)] = [
         (.install, "Install Ollama",    "ollama install"),
         (.server,  "Start server",      "ollama serve"),
-        (.pull,    "Download Gemma 4",  "gemma4:4b · ~2.5 GB"),
+        (.pull,    "Download Gemma 4",  "gemma4:e2b · ~1.5 GB"),
         (.verify,  "Verify model",      "ready to chat"),
     ]
 
@@ -440,11 +441,11 @@ private struct ChatView: View {
         let ctx = StudyContext.shared
         let hasContext = !ctx.currentSectionTitle.isEmpty
         let title = hasContext
-            ? "Ask me about \(ctx.currentSectionTitle)"
-            : "Ask me anything about your studies"
+            ? "Ask about \(ctx.currentSectionTitle)"
+            : "Your study buddy is here"
         let message = hasContext
-            ? "I have context about what you're studying right now. Ask me to explain, quiz you, or break down any concept in \(ctx.currentSubjectTitle)."
-            : "I can explain concepts, compare ideas, and break down tricky topics into quick study steps."
+            ? "I've got context for what you're viewing—ask me to explain, quiz you, or break down anything in \(ctx.currentSubjectTitle)."
+            : "Same friendly mascot as the rest of IBStudy. Ask for explanations, comparisons, or quick steps—runs on your Mac with the local model."
 
         return VStack(alignment: .leading, spacing: 14) {
             MascotCalloutCard(title: title, message: message, mood: .guiding)

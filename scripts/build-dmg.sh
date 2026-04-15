@@ -56,13 +56,15 @@ fi
 
 echo "==> Stripping extended attributes / detritus"
 find "$APP" -name '.DS_Store' -delete
-# Clear all xattrs (codesign rejects com.apple.FinderInfo, resource forks, quarantine, etc.)
+# Clear all xattrs (codesign rejects com.apple.FinderInfo, provenance, quarantine, etc.)
 xattr -cr "$APP" 2>/dev/null || true
 
 echo "==> Code signing (ad-hoc)"
 codesign --force --sign - "$APP/Contents/Frameworks/Sparkle.framework/Versions/B/XPCServices/Downloader.xpc"
 codesign --force --sign - "$APP/Contents/Frameworks/Sparkle.framework/Versions/B/XPCServices/Installer.xpc"
 codesign --force --sign - "$APP/Contents/Frameworks/Sparkle.framework"
+# Finder / file provider may re-attach com.apple.FinderInfo under ~/Documents if we wait; strip again immediately before the outer sign.
+xattr -cr "$APP" 2>/dev/null || true
 codesign --force --sign - "$APP"
 codesign --verify --strict "$APP"
 echo "    Signature valid"
