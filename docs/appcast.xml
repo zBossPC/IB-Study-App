@@ -5,6 +5,25 @@
 		<link>https://github.com/zBossPC/IB-Study-App/releases</link>
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
+
+<item>
+	<title>IBStudy v1.0.7</title>
+	<sparkle:version>10</sparkle:version>
+	<sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+	<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+	<description><![CDATA[
+		<ul>
+			<li>See commit and release notes on GitHub.</li>
+		</ul>
+	]]></description>
+	<pubDate>Wed, 15 Apr 2026 23:22:46 +0000</pubDate>
+	<enclosure
+		url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.7/IBStudy-macos.dmg"
+		type="application/octet-stream"
+		sparkle:edSignature="+ZxINEVE0MYp8J1x3T1cT2YilQukJUNDYdAAqe9ig+bX7f3ZsRuUdPW/6WwSH8kcWmx4gPTZnwHy8CwSv5GzDw=="
+		length="3952346"
+	/>
+</item>
 		<item>
 			<title>IBStudy v1.0.6</title>
 			<sparkle:version>9</sparkle:version>
