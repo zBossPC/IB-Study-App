@@ -17,7 +17,7 @@ Requires **macOS 26+** (Tahoe). See `AGENTS.md` for architecture and content lay
 The folder **`website/`** is a small **Next.js** site for a public download link and first-run hints. Deploy it on **Vercel** with root directory `website`.
 
 **Repository:** [github.com/zBossPC/IB-Study-App](https://github.com/zBossPC/IB-Study-App)  
-**Releases / download:** [v1.0.10](https://github.com/zBossPC/IB-Study-App/releases/tag/v1.0.10) — local AI (Gemma 4 e2b), context-aware tutor, mascot, Ollama CWD fix. Get **`IBStudy-macos.dmg`** (unsigned; right-click → Open the first time).
+**Releases / download:** [v1.0.11](https://github.com/zBossPC/IB-Study-App/releases/tag/v1.0.11) — local AI (Gemma 4 e2b), context-aware tutor, mascot, Ollama CWD fix. Get **`IBStudy-macos.dmg`** (unsigned; right-click → Open the first time).
 
 **Build a DMG locally:** `./scripts/build-dmg.sh` (uses [create-dmg](https://github.com/create-dmg/create-dmg) if installed: `brew install create-dmg`).
 
