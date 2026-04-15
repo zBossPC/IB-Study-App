@@ -1,7 +1,7 @@
 /** Defaults match the public GitHub repo; override in Vercel if you fork. */
 const DEFAULT_REPO = "https://github.com/zBossPC/IB-Study-App";
 const DEFAULT_DOWNLOAD =
-  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.zip";
+  "https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.dmg";
 
 const defaultDownload =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL?.trim() || DEFAULT_DOWNLOAD;
@@ -74,9 +74,10 @@ export default function Home() {
         >
           <p style={{ margin: "0 0 20px", fontSize: "0.9rem", color: "var(--muted)" }}>
             Requires <strong style={{ color: "var(--text)" }}>macOS 14+</strong> (Apple Silicon
-            or Intel). For friends: download the zip from GitHub Releases, unzip, and drag{" "}
-            <code style={{ fontSize: "0.85em", opacity: 0.9 }}>IBStudy.app</code> into{" "}
-            <code style={{ fontSize: "0.85em", opacity: 0.9 }}>Applications</code>.
+            or Intel). Download the <strong>unsigned DMG</strong>, open it, then drag{" "}
+            <code style={{ fontSize: "0.85em", opacity: 0.9 }}>IBStudy.app</code> onto the{" "}
+            <strong>Applications</strong> shortcut (or into your{" "}
+            <code style={{ fontSize: "0.85em", opacity: 0.9 }}>Applications</code> folder).
           </p>
 
           <a

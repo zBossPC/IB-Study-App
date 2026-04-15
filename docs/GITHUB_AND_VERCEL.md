@@ -26,18 +26,22 @@ Friends should download a **zip of the app**, not clone the whole repo.
    # Copy binary + bundle into IBStudy.app per your usual flow
    ```
 
-2. Zip the app bundle:
+2. Build an **unsigned DMG** (recommended — nice Finder window with app + Applications shortcut):
 
    ```bash
    cd ~/Documents/IBStudy
-   ditto -c -k --sequesterRsrc --keepParent IBStudy.app IBStudy-macos.zip
+   brew install create-dmg   # once, for the polished layout
+   chmod +x scripts/build-dmg.sh
+   ./scripts/build-dmg.sh    # produces IBStudy-macos.dmg
    ```
 
-3. On GitHub: **Releases** → **Draft a new release** → tag e.g. `v1.0.0` → upload `IBStudy-macos.zip` → publish.
+   Or zip only: `ditto -c -k --sequesterRsrc --keepParent IBStudy.app IBStudy-macos.zip`
 
-4. Copy the **browser download URL** for that asset (right-click “IBStudy-macos.zip” → copy link). Example for **v1.0.0**:
+3. On GitHub: **Releases** → **Draft a new release** → tag e.g. `v1.0.0` → upload **`IBStudy-macos.dmg`** (and optionally the zip) → publish.
 
-   `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.zip`
+4. Direct download URL for the DMG (example **v1.0.0**):
+
+   `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.0/IBStudy-macos.dmg`
 
 ## 3. Deploy the site on Vercel
 
