@@ -3,6 +3,9 @@
 # Requires: Xcode toolchain, swift, optional Homebrew `create-dmg`.
 set -euo pipefail
 
+# Avoid resource forks / Finder metadata on copies (fixes "resource fork... not allowed" from codesign).
+export COPYFILE_DISABLE=1
+
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
@@ -20,21 +23,23 @@ echo "==> Assembling clean app bundle"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" "$APP/Contents/Frameworks"
 
-cp "$BUILD_DIR/IBStudy" "$APP/Contents/MacOS/IBStudy"
+# -X = do not copy HFS+ extended attributes / Finder flags onto the binary
+cp -X "$BUILD_DIR/IBStudy" "$APP/Contents/MacOS/IBStudy" 2>/dev/null || cp "$BUILD_DIR/IBStudy" "$APP/Contents/MacOS/IBStudy"
 cp "$ROOT/IBStudy.app.plist" "$APP/Contents/Info.plist" 2>/dev/null \
   || cp "$ROOT/Sources/IBStudy/Info.plist" "$APP/Contents/Info.plist"
 
-# Sparkle framework
+# Sparkle framework — ditto avoids resource forks vs cp -R
 if [[ -d "$SPARKLE_FRAMEWORK" ]]; then
-  cp -R "$SPARKLE_FRAMEWORK" "$APP/Contents/Frameworks/Sparkle.framework"
+  mkdir -p "$APP/Contents/Frameworks"
+  ditto --norsrc --noextattr --noqtn "$SPARKLE_FRAMEWORK" "$APP/Contents/Frameworks/Sparkle.framework"
 fi
 
 # Flat resources only (no .bundle dirs — they break ad-hoc codesign)
-cp -f "$RESOURCE_BUNDLE/unit3.json" "$APP/Contents/Resources/"
-cp -f "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/"
-cp -f "$RESOURCE_BUNDLE/MascotGuide.png" "$APP/Contents/Resources/" 2>/dev/null || true
+cp -fX "$RESOURCE_BUNDLE/unit3.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/unit3.json" "$APP/Contents/Resources/"
+cp -fX "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/physics_static.json" "$APP/Contents/Resources/"
+cp -fX "$RESOURCE_BUNDLE/MascotGuide.png" "$APP/Contents/Resources/" 2>/dev/null || cp -f "$RESOURCE_BUNDLE/MascotGuide.png" "$APP/Contents/Resources/" 2>/dev/null || true
 if [[ -f "$ICON" ]]; then
-  cp "$ICON" "$APP/Contents/Resources/AppIcon.icns"
+  cp -fX "$ICON" "$APP/Contents/Resources/AppIcon.icns" 2>/dev/null || cp -f "$ICON" "$APP/Contents/Resources/AppIcon.icns"
 fi
 
 # Ensure the bundle Info.plist has required keys
@@ -49,8 +54,10 @@ fi
 /usr/libexec/PlistBuddy -c "Add :NSHighResolutionCapable bool true" "$APP/Contents/Info.plist" 2>/dev/null \
   || /usr/libexec/PlistBuddy -c "Set :NSHighResolutionCapable true" "$APP/Contents/Info.plist"
 
-echo "==> Stripping extended attributes"
-find "$APP" -exec xattr -cr {} + 2>/dev/null || true
+echo "==> Stripping extended attributes / detritus"
+find "$APP" -name '.DS_Store' -delete
+# Clear all xattrs (codesign rejects com.apple.FinderInfo, resource forks, quarantine, etc.)
+xattr -cr "$APP" 2>/dev/null || true
 
 echo "==> Code signing (ad-hoc)"
 codesign --force --sign - "$APP/Contents/Frameworks/Sparkle.framework/Versions/B/XPCServices/Downloader.xpc"
@@ -62,7 +69,12 @@ echo "    Signature valid"
 
 STAGE="$(mktemp -d "${TMPDIR:-/tmp}/ibstudy-dmg.XXXXXX")"
 trap 'rm -rf "$STAGE"' EXIT
-cp -R "$APP" "$STAGE/"
+ditto --norsrc --noextattr --noqtn "$APP" "$STAGE/IBStudy.app"
+find "$STAGE" -name '.DS_Store' -delete
+xattr -cr "$STAGE" 2>/dev/null || true
+
+rm -f "$OUT"
+rm -f "$ROOT"/rw.*.IBStudy-macos.dmg 2>/dev/null || true
 
 if command -v create-dmg >/dev/null 2>&1; then
   echo "==> create-dmg"
