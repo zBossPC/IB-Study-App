@@ -9,9 +9,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>IBStudy</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.3</string>
+	<string>1.0.4</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>6</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>26.0</string>
 	<!-- Sparkle: hosted appcast (update docs/appcast.xml + sign releases). -->
@@ -21,6 +21,8 @@
 	<key>SUPublicEDKey</key>
 	<string>6QFsk/Dz1gwdIzlggz1iXw0c1P6M4AY9hV+5PnV1pJA=</string>
 	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
 	<true/>
 </dict>
 </plist>

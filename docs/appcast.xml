@@ -6,6 +6,25 @@
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
 		<item>
+			<title>IBStudy v1.0.4</title>
+			<sparkle:version>6</sparkle:version>
+			<sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+			<description><![CDATA[
+				<ul>
+					<li>New transparent app icon — Liquid Glass renders the background</li>
+					<li>Auto-restart after updates finish installing</li>
+				</ul>
+			]]></description>
+			<pubDate>Tue, 15 Apr 2026 22:00:00 +0000</pubDate>
+			<enclosure
+				url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.4/IBStudy-macos.dmg"
+				type="application/octet-stream"
+				sparkle:edSignature="7tf2dRSHl1NnR9q2TpWij8FzwK/hxL+edOccUENMH0wwX18w7+75hOc6VYXzEnQK9jbRfPvd0/3kccJTKIevBQ=="
+				length="6370637"
+			/>
+		</item>
+		<item>
 			<title>IBStudy v1.0.3 — macOS Tahoe (Liquid Glass)</title>
 			<sparkle:version>5</sparkle:version>
 			<sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
@@ -17,7 +36,7 @@
 					<li>Single-variant icon; OS composites dark/tinted automatically</li>
 				</ul>
 			]]></description>
-			<pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+			<pubDate>Tue, 15 Apr 2026 18:00:00 +0000</pubDate>
 			<enclosure
 				url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.3/IBStudy-macos.dmg"
 				type="application/octet-stream"
