@@ -149,7 +149,7 @@ struct SectionDetailView: View {
                     }
                     MascotGuideView(
                         mood: studyTab == .challenge ? .celebrating : (studyTab == .review ? .guiding : .thinking),
-                        size: 94,
+                        size: 118,
                         animated: true
                     )
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -161,7 +161,7 @@ struct SectionDetailView: View {
                     Spacer(minLength: 0)
                     MascotGuideView(
                         mood: studyTab == .challenge ? .celebrating : (studyTab == .review ? .guiding : .thinking),
-                        size: 118,
+                        size: 142,
                         animated: true
                     )
                 }

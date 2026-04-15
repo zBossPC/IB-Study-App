@@ -57,15 +57,23 @@ struct MascotGuideView: View {
                     .offset(x: size * 0.30, y: -size * 0.20)
             }
 
-            Image("MascotGuide", bundle: .module)
-                .renderingMode(.original)
-                .resizable()
-                .interpolation(.high)
-                .scaledToFit()
-                .frame(width: size, height: size)
-                .rotationEffect(.degrees(animated ? (drifting ? -1.2 : 1.0) : 1.0))
-                .offset(y: animated ? (drifting ? -4 : 2) : 2)
-                .scaleEffect(animated ? (drifting ? 1.01 : 0.99) : 1)
+            Group {
+                if let img = MascotImageLoader.rasterImage() {
+                    Image(nsImage: img)
+                        .renderingMode(.original)
+                        .resizable()
+                        .interpolation(.high)
+                        .scaledToFit()
+                } else {
+                    Image(systemName: "sparkles")
+                        .font(.system(size: size * 0.38, weight: .bold))
+                        .foregroundStyle(.white.opacity(0.85))
+                }
+            }
+            .frame(width: size, height: size)
+            .rotationEffect(.degrees(animated ? (drifting ? -1.2 : 1.0) : 1.0))
+            .offset(y: animated ? (drifting ? -4 : 2) : 2)
+            .scaleEffect(animated ? (drifting ? 1.01 : 0.99) : 1)
         }
         .frame(width: size * 1.15, height: size * 1.05)
         .onAppear {
@@ -110,7 +118,7 @@ struct MascotCalloutCard: View {
 
     var body: some View {
         HStack(spacing: 16) {
-            MascotGuideView(mood: mood, size: 88, showOrb: false)
+            MascotGuideView(mood: mood, size: 108, showOrb: false)
 
             VStack(alignment: .leading, spacing: 6) {
                 Text(title)
