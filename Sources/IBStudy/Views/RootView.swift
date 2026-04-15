@@ -159,7 +159,7 @@ struct RootView: View {
     }
 
     private var subjectPicker: some View {
-        HStack(spacing: 6) {
+        LazyVGrid(columns: subjectPickerColumns, spacing: 6) {
             ForEach(store.subjects) { subj in
                 Button {
                     withAnimation(.spring(response: 0.3)) {
@@ -167,14 +167,26 @@ struct RootView: View {
                         sidebarSelection = .home
                     }
                 } label: {
-                    HStack(spacing: 5) {
+                    HStack(alignment: .top, spacing: 7) {
                         Image(systemName: subj.icon)
-                            .font(.system(size: 11, weight: .semibold))
-                        Text(subj.title)
-                            .font(.system(size: 12, weight: .medium))
+                            .font(.system(size: 12, weight: .semibold))
+                            .frame(width: 14, height: 14)
+
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(subj.title)
+                                .font(.system(size: 12, weight: .semibold))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.85)
+                            Text(subj.subtitle)
+                                .font(.system(size: 10, weight: .medium))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.8)
+                                .opacity(0.85)
+                        }
                     }
                     .padding(.horizontal, 10)
-                    .padding(.vertical, 6)
+                    .padding(.vertical, 8)
+                    .frame(minHeight: 46)
                     .frame(maxWidth: .infinity)
                     .background(
                         store.selectedSubjectId == subj.id
@@ -200,6 +212,12 @@ struct RootView: View {
         }
         .padding(6)
         .glassPanel(tint: .white, glow: .clear, radius: 16)
+    }
+
+    /// Keep subject chips in a stable two-row layout as subjects grow.
+    private var subjectPickerColumns: [GridItem] {
+        let columns = max(1, (store.subjects.count + 1) / 2)
+        return Array(repeating: GridItem(.flexible(minimum: 0), spacing: 6), count: columns)
     }
 
     private func homeLaunchCard(subject: Subject) -> some View {
