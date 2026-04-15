@@ -244,9 +244,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
 
-/* Shadow on the image only — filtering the container was washing out / clipping the artwork */
+/* Shadow on the image only — PNG uses alpha (no black matte) */
 .hero-mascot-img {
   display: block;
   width: 100%;
@@ -254,6 +255,8 @@ a:hover {
   max-height: min(42vw, 220px);
   object-fit: contain;
   object-position: center bottom;
+  background: transparent;
+  background-color: transparent;
   filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45))
     drop-shadow(0 0 20px rgba(126, 184, 234, 0.28));
 }

@@ -58,7 +58,9 @@ struct MascotGuideView: View {
             }
 
             Image("MascotGuide", bundle: .module)
+                .renderingMode(.original)
                 .resizable()
+                .interpolation(.high)
                 .scaledToFit()
                 .frame(width: size, height: size)
                 .rotationEffect(.degrees(animated ? (drifting ? -1.2 : 1.0) : 1.0))
