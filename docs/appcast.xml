@@ -5,9 +5,25 @@
 		<link>https://github.com/zBossPC/IB-Study-App/releases</link>
 		<description>IBStudy update feed for Sparkle</description>
 		<language>en</language>
-		<!--
-		  Add a new &lt;item&gt; per release: sparkle:version, shortVersionString, enclosure url,
-		  sparkle:edSignature and length from Sparkle’s sign_update on the release zip.
-		-->
+		<item>
+			<title>IBStudy v1.0.3 — macOS Tahoe (Liquid Glass)</title>
+			<sparkle:version>5</sparkle:version>
+			<sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+			<sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+			<description><![CDATA[
+				<ul>
+					<li>macOS Tahoe only — Liquid Glass icon support</li>
+					<li>Swift 6.2 strict concurrency</li>
+					<li>Single-variant icon; OS composites dark/tinted automatically</li>
+				</ul>
+			]]></description>
+			<pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+			<enclosure
+				url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.3/IBStudy-macos.dmg"
+				type="application/octet-stream"
+				sparkle:edSignature="cmiaoZsDEzzmBML3VN7qwXSEvqCmp0jSG7CbNbZcXTnwvbUZ01ZrrJtSMixXE/bt65srkeRo+kXKjqLnx361CQ=="
+				length="39223683"
+			/>
+		</item>
 	</channel>
 </rss>
