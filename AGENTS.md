@@ -117,10 +117,9 @@ open IBStudy.app
 
 ## Publishing a release
 
-When you (or the user) want to **publish** the app: run **`./scripts/publish.sh --ship`** from the repo root. That builds the DMG, prints Sparkle `edSignature` / `length` for `docs/appcast.xml`, uploads the DMG to the matching GitHub release via `gh` (if installed), and runs `npm run build` in `website/`.
-
-- **Manual pieces:** Add a new Sparkle `<item>` when the **build** number bumps; push so Vercel can deploy the site.
-- **Scripts:** `scripts/build-dmg.sh`, `scripts/sign-release.sh`, `scripts/publish.sh`
+- **New marketing version (full release):** `./scripts/release.sh 1.0.8` — bumps `CFBundleShortVersionString` / `CFBundleVersion`, updates download URLs in `website/` + README, builds `IBStudy-macos.dmg`, signs Sparkle, **prepends** `docs/appcast.xml`, runs `npm run build` in `website/`, commits, pushes, and **`gh release create`**. Flags: `--dry-run`, `--no-git`.
+- **Rebuild DMG / upload only:** `./scripts/publish.sh --ship` (does not bump versions or edit the appcast by itself).
+- **Scripts:** `scripts/release.sh`, `scripts/publish.sh`, `scripts/build-dmg.sh`, `scripts/sign-release.sh`
 
 ---
 

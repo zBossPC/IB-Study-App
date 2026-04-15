@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # IBStudy release helper — build DMG, Sparkle signature, optional GitHub upload + website build.
+# For a full version bump + appcast + git + GitHub release, use ./scripts/release.sh <version> instead.
 # Usage:
 #   ./scripts/publish.sh              # build DMG + print Sparkle attrs + appcast reminder
 #   ./scripts/publish.sh --upload     # also: gh release upload (needs gh auth + existing release tag)
