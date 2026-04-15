@@ -35,25 +35,13 @@ struct RootView: View {
                 } detail: {
                     detailView(subject: subject)
                 }
-                .navigationSplitViewStyle(.balanced)
+                .navigationSplitViewStyle(.automatic)
                 .background(themeManager.pageGradient)
+                .background(SplitViewDividerTuner())
                 .scaleEffect(showWelcomeSplash ? 0.93 : 1.0)
                 .opacity(showWelcomeSplash ? 0.86 : 1.0)
                 .animation(.spring(response: 0.5, dampingFraction: 0.72), value: showWelcomeSplash)
                 .toolbar {
-                    ToolbarItem(placement: .navigation) {
-                        Button {
-                            withAnimation(.spring(response: 0.3)) {
-                                columnVisibility = columnVisibility == .all ? .detailOnly : .all
-                            }
-                        } label: {
-                            Label(
-                                columnVisibility == .all ? "Hide Sidebar" : "Show Sidebar",
-                                systemImage: columnVisibility == .all ? "sidebar.left" : "sidebar.left"
-                            )
-                        }
-                        .help(columnVisibility == .all ? "Hide sidebar" : "Show sidebar")
-                    }
                     ToolbarItem(placement: .primaryAction) {
                         HStack(spacing: 8) {
                             Button {

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Reveal } from "./components/Reveal";
 
 /** Defaults match the public GitHub repo; override in Vercel if you fork. */
@@ -52,12 +51,15 @@ export default function Home() {
       <main>
         <section className="hero wrap">
           <div className="hero-mascot">
-            <Image
+            {/* Plain img: Next/Image can mishandle alpha / layout and look like “glow only” on some deploys */}
+            <img
+              className="hero-mascot-img"
               src="/mascot.png"
               alt="IBStudy mascot"
-              width={180}
-              height={120}
-              priority
+              width={320}
+              height={200}
+              decoding="async"
+              fetchPriority="high"
             />
           </div>
           <p className="hero-kicker">

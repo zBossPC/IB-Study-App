@@ -239,24 +239,31 @@ a:hover {
 }
 
 .hero-mascot {
-  margin: 0 auto 24px;
-  width: 180px;
-  height: 120px;
+  margin: 0 auto 28px;
+  width: min(92vw, 300px);
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 28px rgba(126, 184, 234, 0.35));
 }
 
-.hero-mascot img {
+/* Shadow on the image only — filtering the container was washing out / clipping the artwork */
+.hero-mascot-img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: min(42vw, 220px);
   object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 0 20px rgba(126, 184, 234, 0.28));
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-mascot {
-    animation: hero-in 0.8s var(--ease-out) both, mascot-float 4s ease-in-out infinite 1s;
+    animation: hero-in 0.8s var(--ease-out) both;
+  }
+  .hero-mascot-img {
+    animation: mascot-float 4s ease-in-out infinite 1s;
   }
 }
 
