@@ -79,7 +79,7 @@ struct FirstLaunchSplashView: View {
 
                 // Foreground card — pops in after glow settles
                 VStack(spacing: 22) {
-                    MascotGuideView(mood: .celebrating, size: 120, showOrb: true, animated: true)
+                    MascotGuideView(mood: .celebrating, size: MascotSize.splash, showOrb: true, animated: true)
                         .shadow(color: accent.opacity(0.55), radius: 28, y: 8)
 
                     VStack(spacing: 8) {

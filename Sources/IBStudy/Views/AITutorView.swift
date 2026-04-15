@@ -80,7 +80,7 @@ private struct SetupProgressView: View {
 
     private var header: some View {
         HStack(spacing: 12) {
-            MascotGuideView(mood: .guiding, size: 44, showOrb: false)
+            MascotGuideView(mood: .guiding, size: MascotSize.panelHeader, showOrb: false)
             VStack(alignment: .leading, spacing: 2) {
                 Text("AI Tutor")
                     .font(.headline.weight(.bold))
@@ -346,7 +346,7 @@ private struct ChatView: View {
 
     private var chatHeader: some View {
         HStack(spacing: 12) {
-            MascotGuideView(mood: isGenerating ? .thinking : .guiding, size: 48, showOrb: false)
+            MascotGuideView(mood: isGenerating ? .thinking : .guiding, size: MascotSize.panelHeader, showOrb: false)
             VStack(alignment: .leading, spacing: 2) {
                 Text("AI Tutor")
                     .font(.headline.weight(.bold))
@@ -581,7 +581,7 @@ private struct MessageBubble: View {
         HStack(alignment: .bottom, spacing: 8) {
             if isUser { Spacer(minLength: 60) }
             if !isUser {
-                MascotGuideView(mood: .guiding, size: 34, showOrb: false)
+                MascotGuideView(mood: .guiding, size: MascotSize.chatBubble, showOrb: false)
             }
             Text(message.content.isEmpty ? " " : message.content)
                 .font(.body)
@@ -607,7 +607,7 @@ private struct TypingIndicator: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            MascotGuideView(mood: .thinking, size: 30, showOrb: false)
+            MascotGuideView(mood: .thinking, size: MascotSize.typingIndicator, showOrb: false)
 
             HStack(spacing: 5) {
                 ForEach(0..<3, id: \.self) { i in

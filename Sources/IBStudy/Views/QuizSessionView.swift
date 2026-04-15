@@ -46,7 +46,7 @@ struct QuizSessionView: View {
                 quizHeader
 
                 HStack(alignment: .center, spacing: 18) {
-                    MascotGuideView(mood: revealed ? .guiding : .thinking, size: 96)
+                    MascotGuideView(mood: revealed ? .guiding : .thinking, size: MascotSize.quizQuestion)
 
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Challenge prompt")
@@ -294,19 +294,19 @@ struct QuizSessionView: View {
                 let pct = Double(correctCount) / Double(max(questions.count, 1))
                 let perfect = correctCount == questions.count
 
-                MascotGuideView(mood: perfect ? .celebrating : .guiding, size: 124)
+                MascotGuideView(mood: perfect ? .celebrating : .guiding, size: MascotSize.quizResults)
 
                 ZStack {
                     Circle()
                         .stroke(Color.primary.opacity(0.10), lineWidth: 10)
-                        .frame(width: 130, height: 130)
+                        .frame(width: 142, height: 142)
                     Circle()
                         .trim(from: 0, to: pct)
                         .stroke(
                             perfect ? Color.yellow.gradient : sectionColor.gradient,
                             style: StrokeStyle(lineWidth: 10, lineCap: .round)
                         )
-                        .frame(width: 130, height: 130)
+                        .frame(width: 142, height: 142)
                         .rotationEffect(.degrees(-90))
                         .animation(.spring(response: 0.8), value: finished)
 

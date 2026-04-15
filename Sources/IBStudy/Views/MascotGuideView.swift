@@ -1,5 +1,31 @@
 import SwiftUI
 
+/// Shared point sizes so the mascot stays legible in sidebars, headers, and chat (avoid one-off tiny values).
+enum MascotSize {
+    /// Sidebar header badge — sized to `MascotGuideView`’s outer frame (~1.15× width).
+    static let sidebarBadge: CGFloat = 112
+    static let sectionBannerCompact: CGFloat = 140
+    static let sectionBannerWide: CGFloat = 168
+    static let welcomeHeroCompact: CGFloat = 128
+    static let welcomeHeroWide: CGFloat = 156
+    static let panelHeader: CGFloat = 72
+    static let chatBubble: CGFloat = 48
+    static let typingIndicator: CGFloat = 44
+    static let menuBarHeader: CGFloat = 52
+    static let menuBarEmpty: CGFloat = 96
+    static let menuBarTyping: CGFloat = 40
+    /// Assistant avatar next to replies in the menu bar chat
+    static let menuBarBubble: CGFloat = 38
+    /// Centerpiece while Ollama setup runs in the menu bar panel
+    static let menuBarSetup: CGFloat = 80
+    static let callout: CGFloat = 136
+    static let flashcardComplete: CGFloat = 140
+    static let flashcardHeader: CGFloat = 96
+    static let quizQuestion: CGFloat = 112
+    static let quizResults: CGFloat = 152
+    static let splash: CGFloat = 148
+}
+
 enum MascotMood {
     case idle
     case guiding
@@ -42,15 +68,21 @@ struct MascotGuideView: View {
 
     @State private var drifting = false
 
+    /// Smaller layouts get a slightly stronger halo so the PNG doesn’t disappear on busy backgrounds.
+    private var glowOpacity: CGFloat {
+        let t = min(size / 180, 1)
+        return 0.14 + (1 - t) * 0.10
+    }
+
     var body: some View {
         ZStack {
             RadialGradient(
-                colors: [mood.accent.opacity(0.14), .clear],
+                colors: [mood.accent.opacity(glowOpacity), .clear],
                 center: .center,
                 startRadius: 4,
-                endRadius: size * 0.42
+                endRadius: size * 0.48
             )
-            .frame(width: size * 0.82, height: size * 0.82)
+            .frame(width: size * 0.88, height: size * 0.88)
 
             if showOrb {
                 speechOrb
@@ -71,6 +103,7 @@ struct MascotGuideView: View {
                 }
             }
             .frame(width: size, height: size)
+            .shadow(color: mood.accent.opacity(0.28), radius: size * 0.07, y: size * 0.035)
             .rotationEffect(.degrees(animated ? (drifting ? -1.2 : 1.0) : 1.0))
             .offset(y: animated ? (drifting ? -4 : 2) : 2)
             .scaleEffect(animated ? (drifting ? 1.01 : 0.99) : 1)
@@ -115,12 +148,13 @@ struct MascotCalloutCard: View {
     let title: String
     let message: String
     var mood: MascotMood = .guiding
+    var mascotSize: CGFloat = MascotSize.callout
 
     var body: some View {
-        HStack(spacing: 16) {
-            MascotGuideView(mood: mood, size: 108, showOrb: false)
+        HStack(alignment: .center, spacing: 18) {
+            MascotGuideView(mood: mood, size: mascotSize, showOrb: false)
 
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 8) {
                 Text(title)
                     .font(.headline.weight(.black))
                     .foregroundStyle(.white)
@@ -132,7 +166,7 @@ struct MascotCalloutCard: View {
 
             Spacer(minLength: 0)
         }
-        .padding(18)
+        .padding(20)
         .glassPanel(tint: mood.accent, glow: mood.accent, radius: 24)
     }
 }

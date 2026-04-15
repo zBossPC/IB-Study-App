@@ -38,7 +38,7 @@ struct FlashcardStudyView: View {
 
     private var completedView: some View {
         VStack(spacing: 22) {
-            MascotGuideView(mood: .celebrating, size: 120)
+            MascotGuideView(mood: .celebrating, size: MascotSize.flashcardComplete)
 
             VStack(spacing: 8) {
                 Text("Review cleared")
@@ -81,7 +81,7 @@ struct FlashcardStudyView: View {
     private var progressHeader: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack(spacing: 16) {
-                MascotGuideView(mood: flipped ? .guiding : .thinking, size: 74, showOrb: false)
+                MascotGuideView(mood: flipped ? .guiding : .thinking, size: MascotSize.flashcardHeader, showOrb: false)
 
                 VStack(alignment: .leading, spacing: 6) {
                     Text("Review Loop")

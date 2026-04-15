@@ -127,7 +127,7 @@ struct RootView: View {
     private func sidebarHeader(subject: Subject) -> some View {
         HStack(alignment: .center, spacing: 12) {
             ZStack {
-                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                RoundedRectangle(cornerRadius: 28, style: .continuous)
                     .fill(
                         LinearGradient(
                             colors: [subject.color.opacity(0.95), themeManager.current.accentGlow.opacity(0.78)],
@@ -135,11 +135,14 @@ struct RootView: View {
                             endPoint: .bottomTrailing
                         )
                     )
-                RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .strokeBorder(Color.white.opacity(0.18), lineWidth: 1)
-                MascotGuideView(mood: .guiding, size: 82, showOrb: false, animated: true)
+                RoundedRectangle(cornerRadius: 28, style: .continuous)
+                    .strokeBorder(Color.white.opacity(0.20), lineWidth: 1)
+                MascotGuideView(mood: .guiding, size: MascotSize.sidebarBadge, showOrb: false, animated: true)
             }
-            .frame(width: 100, height: 96)
+            .frame(
+                width: MascotSize.sidebarBadge * 1.15 + 10,
+                height: MascotSize.sidebarBadge * 1.05 + 10
+            )
 
             VStack(alignment: .leading, spacing: 3) {
                 Text("IBStudy")

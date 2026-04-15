@@ -82,7 +82,7 @@ struct WelcomeDashboardView: View {
                         heroTextBlock(titleSize: 34)
                     }
                 }
-                MascotGuideView(mood: .guiding, size: 108, animated: true)
+                MascotGuideView(mood: .guiding, size: MascotSize.welcomeHeroCompact, animated: true)
                     .frame(maxWidth: .infinity, alignment: .center)
             }
         } else {
@@ -92,7 +92,7 @@ struct WelcomeDashboardView: View {
                     heroTextBlock(titleSize: 42)
                 }
                 Spacer(minLength: 0)
-                MascotGuideView(mood: .guiding, size: 132, animated: true)
+                MascotGuideView(mood: .guiding, size: MascotSize.welcomeHeroWide, animated: true)
             }
         }
     }

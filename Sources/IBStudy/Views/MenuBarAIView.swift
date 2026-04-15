@@ -30,7 +30,7 @@ struct MenuBarAIView: View {
 
     private var handle: some View {
         HStack(spacing: 10) {
-            MascotGuideView(mood: setup.phase == .done ? .guiding : .thinking, size: 34, showOrb: false)
+            MascotGuideView(mood: setup.phase == .done ? .guiding : .thinking, size: MascotSize.menuBarHeader, showOrb: false)
             Text("AI Tutor")
                 .font(.headline.weight(.semibold))
             Spacer()
@@ -113,7 +113,7 @@ private struct MenuBarChatView: View {
 
     private var emptyState: some View {
         VStack(spacing: 10) {
-            MascotGuideView(mood: .guiding, size: 76, showOrb: false)
+            MascotGuideView(mood: .guiding, size: MascotSize.menuBarEmpty, showOrb: false)
             Text("Ask anything about AP Micro")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
@@ -128,7 +128,10 @@ private struct MenuBarChatView: View {
     private func compactBubble(_ msg: ChatMessage) -> some View {
         let isUser = msg.role == .user
         return HStack(alignment: .bottom, spacing: 6) {
-            if isUser { Spacer(minLength: 40) }
+            if isUser { Spacer(minLength: 28) }
+            if !isUser {
+                MascotGuideView(mood: .guiding, size: MascotSize.menuBarBubble, showOrb: false)
+            }
             Text(msg.content.isEmpty ? " " : msg.content)
                 .font(.subheadline)
                 .textSelection(.enabled)
@@ -140,13 +143,13 @@ private struct MenuBarChatView: View {
                 )
                 .foregroundStyle(isUser ? .white : .primary)
                 .frame(maxWidth: .infinity, alignment: isUser ? .trailing : .leading)
-            if !isUser { Spacer(minLength: 40) }
+            if !isUser { Spacer(minLength: 28) }
         }
     }
 
     private var compactTyping: some View {
         HStack(spacing: 8) {
-            MascotGuideView(mood: .thinking, size: 22, showOrb: false)
+            MascotGuideView(mood: .thinking, size: MascotSize.menuBarTyping, showOrb: false)
             HStack(spacing: 4) {
                 ForEach(0..<3, id: \.self) { _ in
                     Circle().fill(accent.opacity(0.5)).frame(width: 6, height: 6)
@@ -229,6 +232,7 @@ private struct MenuBarSetupView: View {
     @ObservedObject var manager: OllamaSetupManager
     var body: some View {
         VStack(spacing: 16) {
+            MascotGuideView(mood: .thinking, size: MascotSize.menuBarSetup, showOrb: false, animated: true)
             ProgressView()
             Text(phaseLabel)
                 .font(.subheadline)
