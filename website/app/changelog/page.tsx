@@ -12,11 +12,21 @@ export const metadata: Metadata = {
 
 const releases = [
   {
+    version: "1.0.14",
+    date: "2026-04-15",
+    notes: [
+      "Overhauled website navigation: centered nav links on desktop, Download button on the right, mobile hamburger with full-width dropdown.",
+      "Replaced placeholder homepage cards with real product feature highlights (lessons, flashcards, AI tutor, themes).",
+      "Fixed broken AI tutor product screenshot (invalid UTF-8 in SVG), improved hero copy, and strengthened CTA section.",
+      "App icon now used consistently across nav header and footer instead of mascot image.",
+    ],
+  },
+  {
     version: "1.0.13",
     date: "2026-04-15",
     notes: [
       "Shipped a full multi-page website overhaul (Home, Features, Subjects, AI Tutor, Download, FAQ, Changelog).",
-      "Added mobile navigation, accessibility focus states, skip-link, sitemap/robots, and centralized macOS 26+ messaging.",
+      "Added mobile navigation, accessibility focus states, skip-link, sitemap/robots, and centralised macOS 26+ messaging.",
     ],
   },
   {

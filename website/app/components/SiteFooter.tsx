@@ -17,7 +17,7 @@ export function SiteFooter() {
           <div className="footer-brand">
             <Image
               className="footer-mascot"
-              src="/mascot.png"
+              src="/icon.png"
               alt=""
               width={36}
               height={36}

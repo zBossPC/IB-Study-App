@@ -230,6 +230,7 @@ summary:focus-visible,
 
 .mobile-nav {
   display: block;
+  position: relative;
 }
 
 .mobile-nav summary {
@@ -257,10 +258,10 @@ summary:focus-visible,
 }
 
 .mobile-nav-panel {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 100%;
+  top: var(--nav-h);
   display: grid;
   gap: 4px;
   padding: 16px 24px;
@@ -269,6 +270,7 @@ summary:focus-visible,
   background: rgba(7, 10, 15, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  z-index: 49;
 }
 
 .mobile-nav-panel a {
@@ -598,22 +600,27 @@ summary:focus-visible,
 }
 
 .page-intro {
-  padding: 62px 0 20px;
+  padding: 72px 0 48px;
   text-align: center;
 }
 
+.page-intro .section-kicker {
+  margin-bottom: 16px;
+}
+
 .page-intro h1 {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   font-size: clamp(2rem, 4.6vw, 3.1rem);
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  letter-spacing: -0.035em;
 }
 
 .page-intro p {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 680px;
   color: var(--text-muted);
-  font-size: 1.03rem;
-  line-height: 1.6;
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
 /* ——— Product preview card ——— */
@@ -976,20 +983,49 @@ summary:focus-visible,
   border: 1px solid var(--stroke);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.025);
-  padding: 10px 14px;
+  padding: 16px 20px;
+  transition: border-color 0.2s var(--ease-out), background 0.2s var(--ease-out);
+}
+
+.faq-item:hover {
+  border-color: var(--stroke-strong);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .faq-item summary {
   cursor: pointer;
   font-weight: 600;
+  font-size: 0.9375rem;
   color: var(--text);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.2s var(--ease-out);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
 }
 
 .faq-item p {
-  margin: 10px 2px 4px;
+  margin: 14px 0 2px;
   color: var(--text-muted);
   font-size: 0.9rem;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .timeline {
@@ -1000,25 +1036,35 @@ summary:focus-visible,
 }
 
 .timeline-item {
-  border-left: 3px solid rgba(126, 184, 234, 0.42);
-  background: rgba(255, 255, 255, 0.025);
+  border-left: 3px solid rgba(126, 184, 234, 0.45);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.015) 100%);
   border-radius: 10px;
-  padding: 14px 16px 14px 18px;
+  padding: 18px 20px 18px 22px;
+  transition: border-color 0.2s var(--ease-out);
+}
+
+.timeline-item:hover {
+  border-color: rgba(126, 184, 234, 0.7);
 }
 
 .timeline-meta {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .timeline-item ul {
   margin: 0;
   padding-left: 18px;
   color: var(--text-muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.timeline-item li + li {
+  margin-top: 6px;
 }
 
 /* ——— AI showcase ——— */
@@ -1157,18 +1203,23 @@ summary:focus-visible,
 
 .cta-copy h2 {
   margin: 0 0 10px;
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 .cta-copy p {
   margin: 0 0 20px;
   font-size: 0.9375rem;
   color: var(--text-muted);
+  line-height: 1.6;
 }
 
-.cta-copy .btn {
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
   margin-top: 4px;
 }
 
@@ -1218,15 +1269,17 @@ summary:focus-visible,
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 0.95rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
 }
 
 .footer-mascot {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .footer-col p,
