@@ -179,20 +179,19 @@ summary:focus-visible,
 }
 
 .nav-brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
-  background: linear-gradient(145deg, rgba(94, 176, 232, 0.25), rgba(99, 102, 241, 0.12));
-  border: 1px solid var(--stroke-strong);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-mascot-img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
   display: block;
 }
 
@@ -204,14 +203,6 @@ summary:focus-visible,
 
 @media (min-width: 768px) {
   .nav-links {
-    display: flex;
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-
-  .nav-cta {
     display: flex;
   }
 }
@@ -239,7 +230,6 @@ summary:focus-visible,
 
 .mobile-nav {
   display: block;
-  position: relative;
 }
 
 .mobile-nav summary {
@@ -268,16 +258,17 @@ summary:focus-visible,
 
 .mobile-nav-panel {
   position: absolute;
+  left: 0;
   right: 0;
-  top: calc(100% + 10px);
-  min-width: 220px;
+  top: 100%;
   display: grid;
   gap: 4px;
-  padding: 10px;
-  border-radius: 12px;
-  border: 1px solid var(--stroke-strong);
-  background: rgba(7, 10, 15, 0.95);
-  backdrop-filter: blur(14px);
+  padding: 16px 24px;
+  border-top: 1px solid var(--stroke-strong);
+  border-bottom: 1px solid var(--stroke-strong);
+  background: rgba(7, 10, 15, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .mobile-nav-panel a {
@@ -300,6 +291,12 @@ summary:focus-visible,
   margin-top: 2px;
   border-top: 1px solid var(--stroke);
   padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {

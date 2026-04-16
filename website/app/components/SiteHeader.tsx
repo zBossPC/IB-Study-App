@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { primaryNav, repoUrl } from "@/lib/site";
+import { downloadUrl, primaryNav, repoUrl } from "@/lib/site";
 
 export function SiteHeader() {
   return (
@@ -11,10 +11,10 @@ export function SiteHeader() {
             <span className="nav-brand-mark" aria-hidden>
               <Image
                 className="nav-mascot-img"
-                src="/mascot.png"
+                src="/icon.png"
                 alt=""
-                width={28}
-                height={28}
+                width={36}
+                height={36}
                 priority
               />
             </span>
@@ -33,6 +33,11 @@ export function SiteHeader() {
         </div>
 
         <div className="nav-right">
+          <div className="nav-cta">
+            <a className="btn btn-primary" href={downloadUrl}>
+              Download
+            </a>
+          </div>
           <details className="mobile-nav">
             <summary aria-label="Open menu">
               <span />
