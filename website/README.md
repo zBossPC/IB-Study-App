@@ -18,8 +18,9 @@ In the Vercel project → **Settings** → **Environment Variables**:
 
 | Name | Example | Purpose |
 |------|---------|---------|
-| `NEXT_PUBLIC_DOWNLOAD_URL` | `https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.12/IBStudy-macos.dmg` | Direct link to the DMG on GitHub Releases |
+| `NEXT_PUBLIC_DOWNLOAD_URL` | `https://github.com/zBossPC/IB-Study-App/releases/download/vX.Y.Z/IBStudy-macos.dmg` | Direct link to the DMG on GitHub Releases |
 | `NEXT_PUBLIC_GITHUB_REPO_URL` | `https://github.com/yourname/IBStudy` | Optional “Source on GitHub” link |
+| `NEXT_PUBLIC_SITE_URL` | `https://ibstudy.vercel.app` | Canonical site URL used for metadata and sitemap |
 
 Redeploy after changing variables.
 

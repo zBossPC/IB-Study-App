@@ -1,0 +1,24 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="24" fill="#0C1018"/>
+  <rect x="32" y="32" width="1136" height="656" rx="18" fill="#111827" stroke="#334155"/>
+  <rect x="32" y="32" width="1136" height="54" rx="18" fill="#0B1220"/>
+  <circle cx="68" cy="59" r="8" fill="#EF4444"/>
+  <circle cx="94" cy="59" r="8" fill="#F59E0B"/>
+  <circle cx="120" cy="59" r="8" fill="#22C55E"/>
+  <rect x="70" y="124" width="250" height="510" rx="14" fill="#0B1220" stroke="#1F2937"/>
+  <rect x="350" y="124" width="790" height="160" rx="16" fill="#111827" stroke="#334155"/>
+  <rect x="382" y="156" width="220" height="20" rx="10" fill="#60A5FA"/>
+  <rect x="382" y="190" width="320" height="14" rx="7" fill="#475569"/>
+  <rect x="382" y="214" width="270" height="14" rx="7" fill="#334155"/>
+  <rect x="350" y="308" width="380" height="326" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="760" y="308" width="380" height="326" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="382" y="344" width="180" height="16" rx="8" fill="#A78BFA"/>
+  <rect x="382" y="376" width="300" height="12" rx="6" fill="#475569"/>
+  <rect x="382" y="398" width="250" height="12" rx="6" fill="#334155"/>
+  <rect x="792" y="344" width="120" height="16" rx="8" fill="#22D3EE"/>
+  <rect x="792" y="376" width="300" height="12" rx="6" fill="#475569"/>
+  <rect x="792" y="398" width="290" height="12" rx="6" fill="#334155"/>
+  <rect x="792" y="446" width="320" height="164" rx="12" fill="#111827"/>
+  <polyline points="810,565 860,520 915,542 970,490 1020,510 1086,470" stroke="#7DD3FC" stroke-width="6" fill="none"/>
+  <text x="380" y="596" fill="#94A3B8" font-size="24" font-family="Arial, sans-serif">Dashboard overview</text>
+</svg>
