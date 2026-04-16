@@ -17,5 +17,5 @@
   <rect x="74" y="608" width="1052" height="46" rx="12" fill="#0A1020" stroke="#334155"/>
   <rect x="96" y="621" width="760" height="20" rx="10" fill="#1E293B"/>
   <rect x="1068" y="618" width="40" height="26" rx="8" fill="#38BDF8"/>
-  <text x="94" y="98" fill="#94A3B8" font-size="20" font-family="Arial, sans-serif">AI Tutor · Local model status: Online</text>
+  <text x="94" y="98" fill="#94A3B8" font-size="20" font-family="Arial, sans-serif">AI Tutor &#183; Local model status: Online</text>
 </svg>
