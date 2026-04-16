@@ -7,6 +7,24 @@
 		<language>en</language>
 
 <item>
+	<title>IBStudy v1.0.13</title>
+	<sparkle:version>16</sparkle:version>
+	<sparkle:shortVersionString>1.0.13</sparkle:shortVersionString>
+	<description><![CDATA[
+		<ul>
+			<li>See commit and release notes on GitHub.</li>
+		</ul>
+	]]></description>
+	<pubDate>Thu, 16 Apr 2026 00:33:10 +0000</pubDate>
+	<enclosure
+		url="https://github.com/zBossPC/IB-Study-App/releases/download/v1.0.13/IBStudy-macos.dmg"
+		type="application/octet-stream"
+		sparkle:edSignature="JDFSXe+yWC1uIeesomVbspoW/UJLwYM/u3m6nTtPHLC+1CdoNSwFIilXfd0AdvqfM15U1i4LxSF6WUzGBYACCQ=="
+		length="3981465"
+	/>
+</item>
+
+<item>
 	<title>IBStudy v1.0.12</title>
 	<sparkle:version>15</sparkle:version>
 	<sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
