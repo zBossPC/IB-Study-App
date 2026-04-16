@@ -1,5 +1,5 @@
 export const SITE_NAME = "IBStudy";
-export const APP_VERSION = "1.0.13";
+export const APP_VERSION = "1.0.14";
 export const RELEASE_TAG = `v${APP_VERSION}`;
 export const MACOS_REQUIREMENT = "macOS 26+";
 export const MACOS_CODENAME = "Tahoe";
