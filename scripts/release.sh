@@ -79,7 +79,7 @@ echo "==> Releasing $NEW_VER (build $NEW_BUILD), was $OLD_VER (build $OLD_BUILD)
 
 # ── Marketing strings (same pattern as prior manual releases) ─────────────
 if [[ "$OLD_VER" != "$NEW_VER" ]]; then
-  for f in "$ROOT/website/app/page.tsx" "$ROOT/website/README.md" "$ROOT/README.md"; do
+  for f in "$ROOT/website/app/page.tsx" "$ROOT/website/README.md" "$ROOT/README.md" "$ROOT/website/lib/site.ts"; do
     if [[ -f "$f" ]]; then
       # macOS sed in-place
       sed -i '' "s/${OLD_VER}/${NEW_VER}/g" "$f"
